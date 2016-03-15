@@ -11,7 +11,7 @@
       module mo_imp_sol
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
-          USE chem_mods, ONLY: clscnt4, gas_pcnst, clsmap
+          USE chem_mods, ONLY: clscnt4, gas_pcnst, clsmap, nzcnt 
 
           USE kgen_utils_mod, ONLY: kgen_dp, kgen_array_sumcheck
           IMPLICIT NONE
@@ -28,6 +28,23 @@
 
       real(r8) :: epsilon(clscnt4)
       logical :: factor(itermax)
+
+      real(r8) :: prod(858,max(1,clscnt4))
+      real(r8) :: loss(858,max(1,clscnt4))
+      real(r8) :: ind_prd(858,max(1,clscnt4))
+      real(r8) :: max_delta(max(1,clscnt4))
+      real(r8) :: sys_jac(858,max(1,nzcnt))
+      real(r8) :: lin_jac(858,max(1,nzcnt))
+      real(r8) :: solution(858,max(1,clscnt4))
+      real(r8) :: forcing(858,max(1,clscnt4))
+      real(r8) :: iter_invariant(858,max(1,clscnt4))  
+      real(r8) :: sbase_sol(858,gas_pcnst)
+      real(r8) :: wrk(858)
+      logical :: convergence
+      logical :: spc_conv(858,max(1,clscnt4))
+      logical :: cls_conv(858)
+      logical :: converged(max(1,clscnt4))
+
 
       PRIVATE
       PUBLIC imp_sol
@@ -99,21 +116,21 @@
       real(r8) :: interval_done
       real(r8) :: dt
       real(r8) :: dti
-      real(r8) :: max_delta(max(1,clscnt4))
-      real(r8) :: sys_jac(chnkpnts,max(1,nzcnt))
-      real(r8) :: lin_jac(chnkpnts,max(1,nzcnt))
-      real(r8) :: solution(chnkpnts,max(1,clscnt4))
-      real(r8) :: forcing(chnkpnts,max(1,clscnt4))
-      real(r8) :: iter_invariant(chnkpnts,max(1,clscnt4))
-      real(r8) :: prod(chnkpnts,max(1,clscnt4))
-      real(r8) :: loss(chnkpnts,max(1,clscnt4))
-      real(r8) :: ind_prd(chnkpnts,max(1,clscnt4))
-      real(r8) :: sbase_sol(chnkpnts,gas_pcnst)
-      real(r8) :: wrk(chnkpnts)
-      logical :: convergence
-      logical :: spc_conv(chnkpnts,max(1,clscnt4))
-      logical :: cls_conv(chnkpnts)
-      logical :: converged(max(1,clscnt4))
+!      real(r8) :: max_delta(max(1,clscnt4))
+!      real(r8) :: sys_jac(chnkpnts,max(1,nzcnt))
+!      real(r8) :: lin_jac(chnkpnts,max(1,nzcnt))
+!      real(r8) :: solution(chnkpnts,max(1,clscnt4))
+!      real(r8) :: forcing(chnkpnts,max(1,clscnt4))
+!      real(r8) :: iter_invariant(chnkpnts,max(1,clscnt4))
+!      real(r8) :: prod(chnkpnts,max(1,clscnt4))
+!      real(r8) :: loss(chnkpnts,max(1,clscnt4))
+!      real(r8) :: ind_prd(chnkpnts,max(1,clscnt4))
+!      real(r8) :: sbase_sol(chnkpnts,gas_pcnst)
+!      real(r8) :: wrk(chnkpnts)
+!      logical :: convergence
+!      logical :: spc_conv(chnkpnts,max(1,clscnt4))
+!      logical :: cls_conv(chnkpnts)
+!      logical :: converged(max(1,clscnt4))
       integer :: vec_len
       vec_len = ncol
 !-----------------------------------------------------------------------
