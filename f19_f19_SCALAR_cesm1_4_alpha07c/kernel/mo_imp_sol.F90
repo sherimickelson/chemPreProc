@@ -8,10 +8,6 @@ module mo_imp_sol
     USE chem_mods, ONLY: clscnt4, gas_pcnst, clsmap
     USE cam_logfile, ONLY: iulog
     USE kgen_utils_mod, ONLY: kgen_dp, kgen_array_sumcheck
-
-      USE ppgrid, ONLY: pver
-
-
     IMPLICIT NONE
     PRIVATE
     PUBLIC imp_sol
@@ -45,14 +41,6 @@ module mo_imp_sol
   ! for xnox ozone chemistry diagnostics
   integer :: o3a_ndx, xno2_ndx, no2xno3_ndx, xno2no3_ndx, xno3_ndx, o1da_ndx, xno_ndx
   integer :: usr4a_ndx, usr16a_ndx, usr16b_ndx, usr17b_ndx
-
-
-
-
-    real(r8), dimension(13,pver,max(1,clscnt4)) :: prod_out, loss_out
-
-
-
   PUBLIC kr_externs_in_mo_imp_sol
   PUBLIC kr_externs_out_mo_imp_sol
 contains
@@ -151,7 +139,7 @@ contains
     !-----------------------------------------------------------------------
       USE chem_mods, ONLY: rxntot, extcnt, nzcnt, permute, cls_rxt_cnt
       USE mo_tracname, ONLY: solsym
-!      USE ppgrid, ONLY: pver
+      USE ppgrid, ONLY: pver
       USE mo_lin_matrix, ONLY: linmat
       USE mo_nln_matrix, ONLY: nlnmat
       USE mo_lu_factor, ONLY: lu_fac
@@ -202,7 +190,7 @@ contains
     logical :: convergence
     logical :: frc_mask, iter_conv
     logical :: converged(max(1,clscnt4))
-!    real(r8), dimension(ncol,pver,max(1,clscnt4)) :: prod_out, loss_out
+    real(r8), dimension(ncol,pver,max(1,clscnt4)) :: prod_out, loss_out
     real(r8), dimension(ncol,pver) :: prod_hydrogen_peroxides_out
     if (present(o3s_loss)) then
        o3s_loss(:,:) = 0._r8
