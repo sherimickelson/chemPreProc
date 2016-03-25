@@ -11,12 +11,13 @@
       module mo_lu_factor
 
           USE kgen_utils_mod, ONLY: kgen_dp, kgen_array_sumcheck
+          USE chem_mods, ONLY: nzcnt
           PRIVATE
           PUBLIC lu_fac
 
       contains
 
-      subroutine lu_fac01( ofl, ofu, lu )
+      subroutine lu_fac01( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -28,7 +29,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -146,7 +148,7 @@
 
       end subroutine lu_fac01
 
-      subroutine lu_fac02( ofl, ofu, lu )
+      subroutine lu_fac02( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -158,7 +160,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -297,7 +300,7 @@
 
       end subroutine lu_fac02
 
-      subroutine lu_fac03( ofl, ofu, lu )
+      subroutine lu_fac03( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -309,7 +312,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -450,7 +454,7 @@
 
       end subroutine lu_fac03
 
-      subroutine lu_fac04( ofl, ofu, lu )
+      subroutine lu_fac04( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -462,7 +466,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -614,7 +619,7 @@
 
       end subroutine lu_fac04
 
-      subroutine lu_fac05( ofl, ofu, lu )
+      subroutine lu_fac05( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -626,7 +631,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -774,7 +780,7 @@
 
       end subroutine lu_fac05
 
-      subroutine lu_fac06( ofl, ofu, lu )
+      subroutine lu_fac06( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -786,7 +792,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -955,7 +962,7 @@
 
       end subroutine lu_fac06
 
-      subroutine lu_fac07( ofl, ofu, lu )
+      subroutine lu_fac07( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -967,7 +974,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1148,7 +1156,7 @@
 
       end subroutine lu_fac07
 
-      subroutine lu_fac08( ofl, ofu, lu )
+      subroutine lu_fac08( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -1160,7 +1168,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1354,7 +1363,7 @@
 
       end subroutine lu_fac08
 
-      subroutine lu_fac09( ofl, ofu, lu )
+      subroutine lu_fac09( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -1366,7 +1375,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1597,7 +1607,7 @@
 
       end subroutine lu_fac09
 
-      subroutine lu_fac10( ofl, ofu, lu )
+      subroutine lu_fac10( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -1609,7 +1619,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1861,7 +1872,7 @@
 
       end subroutine lu_fac10
 
-      subroutine lu_fac11( ofl, ofu, lu )
+      subroutine lu_fac11( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -1873,7 +1884,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2067,7 +2079,7 @@
 
       end subroutine lu_fac11
 
-      subroutine lu_fac12( ofl, ofu, lu )
+      subroutine lu_fac12( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -2079,7 +2091,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2364,7 +2377,7 @@
 
       end subroutine lu_fac12
 
-      subroutine lu_fac13( ofl, ofu, lu )
+      subroutine lu_fac13( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -2376,7 +2389,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2699,7 +2713,7 @@
 
       end subroutine lu_fac13
 
-      subroutine lu_fac14( ofl, ofu, lu )
+      subroutine lu_fac14( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -2711,7 +2725,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -3105,7 +3120,7 @@
 
       end subroutine lu_fac14
 
-      subroutine lu_fac15( ofl, ofu, lu )
+      subroutine lu_fac15( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -3117,7 +3132,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -3443,7 +3459,7 @@
 
       end subroutine lu_fac15
 
-      subroutine lu_fac16( ofl, ofu, lu )
+      subroutine lu_fac16( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -3455,7 +3471,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -3932,7 +3949,7 @@
 
       end subroutine lu_fac16
 
-      subroutine lu_fac17( ofl, ofu, lu )
+      subroutine lu_fac17( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -3944,7 +3961,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -4335,7 +4353,7 @@
 
       end subroutine lu_fac17
 
-      subroutine lu_fac18( ofl, ofu, lu )
+      subroutine lu_fac18( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -4347,7 +4365,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -4974,7 +4993,7 @@
 
       end subroutine lu_fac18
 
-      subroutine lu_fac19( ofl, ofu, lu )
+      subroutine lu_fac19( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -4986,7 +5005,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -5568,7 +5588,7 @@
 
       end subroutine lu_fac19
 
-      subroutine lu_fac20( ofl, ofu, lu )
+      subroutine lu_fac20( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -5580,7 +5600,8 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -5776,7 +5797,7 @@
 
       end subroutine lu_fac20
 
-      subroutine lu_fac( ofl, ofu, lu )
+      subroutine lu_fac( ofl, ofu, lu, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -5788,28 +5809,29 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(inout) :: lu(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
 
-      call lu_fac01( ofl, ofu, lu )
-      call lu_fac02( ofl, ofu, lu )
-      call lu_fac03( ofl, ofu, lu )
-      call lu_fac04( ofl, ofu, lu )
-      call lu_fac05( ofl, ofu, lu )
-      call lu_fac06( ofl, ofu, lu )
-      call lu_fac07( ofl, ofu, lu )
-      call lu_fac08( ofl, ofu, lu )
-      call lu_fac09( ofl, ofu, lu )
-      call lu_fac10( ofl, ofu, lu )
-      call lu_fac11( ofl, ofu, lu )
-      call lu_fac12( ofl, ofu, lu )
-      call lu_fac13( ofl, ofu, lu )
-      call lu_fac14( ofl, ofu, lu )
-      call lu_fac15( ofl, ofu, lu )
-      call lu_fac16( ofl, ofu, lu )
-      call lu_fac17( ofl, ofu, lu )
-      call lu_fac18( ofl, ofu, lu )
-      call lu_fac19( ofl, ofu, lu )
-      call lu_fac20( ofl, ofu, lu )
+      call lu_fac01( ofl, ofu, lu, chnkpnts )
+      call lu_fac02( ofl, ofu, lu, chnkpnts )
+      call lu_fac03( ofl, ofu, lu, chnkpnts )
+      call lu_fac04( ofl, ofu, lu, chnkpnts )
+      call lu_fac05( ofl, ofu, lu, chnkpnts )
+      call lu_fac06( ofl, ofu, lu, chnkpnts )
+      call lu_fac07( ofl, ofu, lu, chnkpnts )
+      call lu_fac08( ofl, ofu, lu, chnkpnts )
+      call lu_fac09( ofl, ofu, lu, chnkpnts )
+      call lu_fac10( ofl, ofu, lu, chnkpnts )
+      call lu_fac11( ofl, ofu, lu, chnkpnts )
+      call lu_fac12( ofl, ofu, lu, chnkpnts )
+      call lu_fac13( ofl, ofu, lu, chnkpnts )
+      call lu_fac14( ofl, ofu, lu, chnkpnts )
+      call lu_fac15( ofl, ofu, lu, chnkpnts )
+      call lu_fac16( ofl, ofu, lu, chnkpnts )
+      call lu_fac17( ofl, ofu, lu, chnkpnts )
+      call lu_fac18( ofl, ofu, lu, chnkpnts )
+      call lu_fac19( ofl, ofu, lu, chnkpnts )
+      call lu_fac20( ofl, ofu, lu, chnkpnts )
 
       end subroutine lu_fac
 

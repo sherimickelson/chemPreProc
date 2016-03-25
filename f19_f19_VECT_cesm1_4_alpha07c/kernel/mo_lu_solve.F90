@@ -10,13 +10,14 @@
 
       module mo_lu_solve
 
+          USE chem_mods, ONLY: clscnt4, nzcnt
           USE kgen_utils_mod, ONLY: kgen_dp, kgen_array_sumcheck
           PRIVATE
           PUBLIC lu_slv
 
       contains
 
-      subroutine lu_slv01( ofl, ofu, lu, b )
+      subroutine lu_slv01( ofl, ofu, lu, b, chnkpnts )
 
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
@@ -28,8 +29,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 
 !-----------------------------------------------------------------------
 ! ... Local variables
@@ -249,7 +251,7 @@
          b(k,142) = b(k,142) - lu(k,294) * b(k,82)
       end do
       end subroutine lu_slv01
-      subroutine lu_slv02( ofl, ofu, lu, b )
+      subroutine lu_slv02( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -257,8 +259,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -470,7 +473,7 @@
          b(k,142) = b(k,142) - lu(k,556) * b(k,110)
       end do
       end subroutine lu_slv02
-      subroutine lu_slv03( ofl, ofu, lu, b )
+      subroutine lu_slv03( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -478,8 +481,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -692,7 +696,7 @@
          b(k,146) = b(k,146) - lu(k,865) * b(k,130)
       end do
       end subroutine lu_slv03
-      subroutine lu_slv04( ofl, ofu, lu, b )
+      subroutine lu_slv04( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -700,8 +704,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -826,7 +831,7 @@
          b(k,146) = b(k,146) - lu(k,1434) * b(k,145)
       end do
       end subroutine lu_slv04
-      subroutine lu_slv05( ofl, ofu, lu, b )
+      subroutine lu_slv05( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -834,8 +839,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1054,7 +1060,7 @@
          b(k,120) = b(k,120) - lu(k,1252) * b(k,141)
       end do
       end subroutine lu_slv05
-      subroutine lu_slv06( ofl, ofu, lu, b )
+      subroutine lu_slv06( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -1062,8 +1068,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1291,7 +1298,7 @@
          b(k,36) = b(k,36) - lu(k,984) * b(k,135)
       end do
       end subroutine lu_slv06
-      subroutine lu_slv07( ofl, ofu, lu, b )
+      subroutine lu_slv07( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -1299,8 +1306,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1512,7 +1520,7 @@
          b(k,102) = b(k,102) * lu(k,456)
       end do
       end subroutine lu_slv07
-      subroutine lu_slv08( ofl, ofu, lu, b )
+      subroutine lu_slv08( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -1520,8 +1528,9 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk;
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1656,7 +1665,7 @@
          b(k,1) = b(k,1) * lu(k,1)
       end do
       end subroutine lu_slv08
-      subroutine lu_slv( ofl, ofu, lu, b )
+      subroutine lu_slv( ofl, ofu, lu, b, chnkpnts  )
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
       implicit none
 !-----------------------------------------------------------------------
@@ -1664,15 +1673,16 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
-      real(r8), intent(in) :: lu(:,:)
-      real(r8), intent(inout) :: b(:,:)
-      call lu_slv01( ofl, ofu, lu, b )
-      call lu_slv02( ofl, ofu, lu, b )
-      call lu_slv03( ofl, ofu, lu, b )
-      call lu_slv04( ofl, ofu, lu, b )
-      call lu_slv05( ofl, ofu, lu, b )
-      call lu_slv06( ofl, ofu, lu, b )
-      call lu_slv07( ofl, ofu, lu, b )
-      call lu_slv08( ofl, ofu, lu, b )
+      integer, intent(in) :: chnkpnts ! total spatial points in chunk; ncol*pver
+      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      call lu_slv01( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv02( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv03( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv04( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv05( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv06( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv07( ofl, ofu, lu, b, chnkpnts )
+      call lu_slv08( ofl, ofu, lu, b, chnkpnts )
       end subroutine lu_slv
       end module mo_lu_solve

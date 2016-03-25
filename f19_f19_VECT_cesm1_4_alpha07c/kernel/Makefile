@@ -1,11 +1,15 @@
 # Makefile for KGEN-generated kernel
 
 FC := ifort
-FC_FLAGS := -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source    -xHost  -O2 -debug minimal  -openmp -free
+FC_FLAGS := -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal  -openmp -free
+#ARC_FLAG := -mmic
+#ARC_FLAG := -xCORE-AVX2
+ARC_FLAG := -xAVX
+FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG}
 
 ALL_OBJS := mo_gas_phase_chemdr.o mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o ppgrid.o kernel_driver.o kgen_utils.o
 
-run: build
+run: build 
 	./kernel.exe
 
 build: ${ALL_OBJS}

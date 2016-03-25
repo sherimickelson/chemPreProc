@@ -180,11 +180,11 @@ iter_loop : do nr_iter = 1,itermax
 ! ... the non-linear component
 !-----------------------------------------------------------------------
                if( factor(nr_iter) ) then
-                  call nlnmat( ofl, ofu, sys_jac, base_sol, reaction_rates, lin_jac, dti )
+                  call nlnmat( ofl, ofu, sys_jac, base_sol, reaction_rates, lin_jac, dti, chnkpnts )
 !-----------------------------------------------------------------------
 ! ... factor the "system" matrix
 !-----------------------------------------------------------------------
-                  call lu_fac( ofl, ofu, sys_jac )
+                  call lu_fac( ofl, ofu, sys_jac, chnkpnts )
                end if
 !-----------------------------------------------------------------------
 ! ... form f(y)
@@ -198,7 +198,7 @@ iter_loop : do nr_iter = 1,itermax
 !-----------------------------------------------------------------------
 ! ... solve for the mixing ratio at t(n+1)
 !-----------------------------------------------------------------------
-               call lu_slv( ofl, ofu, sys_jac, forcing )
+               call lu_slv( ofl, ofu, sys_jac, forcing, chnkpnts )
                do m = 1,clscnt4
                   where( .not. cls_conv(ofl:ofu) )
                      solution(ofl:ofu,m) = solution(ofl:ofu,m) + forcing(ofl:ofu,m)
