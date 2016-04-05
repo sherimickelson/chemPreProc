@@ -1,19 +1,32 @@
 # Makefile for KGEN-generated kernel
 
 FC := ifort
-FC_FLAGS := -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal  -openmp -free -no-fma
-ARC_FLAG := -mmic
-#ARC_FLAG := -xCORE-AVX2
-#ARC_FLAG := -xAVX
-FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG}
+#FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal  -openmp -free -no-fma
+#FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model fast=2 -O3 -debug minimal  -openmp -free -no-fma
+FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -debug minimal  -openmp -free -no-fma
+ARC_FLAG_MIC := -mmic -O2 -align array64byte
+ARC_FLAG_HASWELL := -xCORE-AVX2 -O2 -align array64byte 
+ARC_FLAG_SANDY := -xAVX -O2
+
+ifeq ($(cpu),haswell)
+	FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG_HASWELL}
+endif
+ifeq ($(cpu),sandybridge)
+        FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG_SANDY}
+endif
+ifeq ($(cpu),knc)
+        FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG_MIC}
+endif
 
 ALL_OBJS := mo_gas_phase_chemdr.o mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o ppgrid.o kernel_driver.o kgen_utils.o
 
-run: build 
-	./kernel.exe
+#run: build 
+#	./kernel.exe
 
 build: ${ALL_OBJS}
 	${FC} ${FC_FLAGS}   -o kernel.exe $^
+
+
 
 mo_gas_phase_chemdr.o: mo_gas_phase_chemdr.F90 mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o ppgrid.o kgen_utils.o
 	${FC} ${FC_FLAGS} -c -o $@ $<
