@@ -115,17 +115,13 @@
       logical :: cls_conv(chnkpnts)
       logical :: converged(max(1,clscnt4))
       integer :: vec_len
-      vec_len = ncol
+      !vec_len = ncol
+      vec_len=chnkpnts
 !-----------------------------------------------------------------------
 ! ... class independent forcing
 !-----------------------------------------------------------------------
-      !write(*,*)'Original vec_len =',vec_len
-      vec_len = chnkpnts
-      !write(*,*)'New vec_len =',vec_len
-      !write(*,*)'Dimensions for lu: ',chnkpnts,nzcnt
-
       if( cls_rxt_cnt(1,4) > 0 .or. extcnt > 0 ) then
-         call indprd( 4, ind_prd, base_sol, extfrc, reaction_rates )
+         call indprd( 4, ind_prd, base_sol, extfrc, reaction_rates, chnkpnts )
       else
          do m = 1,clscnt4
             ind_prd(:,m) = 0._r8
@@ -174,7 +170,7 @@ time_step_loop : &
 ! ... the linear component
 !-----------------------------------------------------------------------
             if( cls_rxt_cnt(2,4) > 0 ) then
-               call linmat( ofl, ofu, lin_jac, base_sol, reaction_rates, het_rates )
+               call linmat( ofl, ofu, lin_jac, base_sol, reaction_rates, het_rates, chnkpnts )
             end if
 !=======================================================================
 ! the newton-raphson iteration for f(y) = 0
@@ -195,7 +191,7 @@ iter_loop : do nr_iter = 1,itermax
 ! ... form f(y)
 !-----------------------------------------------------------------------
                call imp_prod_loss( ofl, ofu, prod, loss, base_sol, &
-                                   reaction_rates, het_rates )
+                                   reaction_rates, het_rates, chnkpnts )
                do m = 1,clscnt4
                   forcing(ofl:ofu,m) = solution(ofl:ofu,m)*dti &
                                      - (iter_invariant(ofl:ofu,m) + prod(ofl:ofu,m) - loss(ofl:ofu,m))
