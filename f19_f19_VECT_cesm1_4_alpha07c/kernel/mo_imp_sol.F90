@@ -119,6 +119,11 @@
 !-----------------------------------------------------------------------
 ! ... class independent forcing
 !-----------------------------------------------------------------------
+      !write(*,*)'Original vec_len =',vec_len
+      vec_len = chnkpnts
+      !write(*,*)'New vec_len =',vec_len
+      !write(*,*)'Dimensions for lu: ',chnkpnts,nzcnt
+
       if( cls_rxt_cnt(1,4) > 0 .or. extcnt > 0 ) then
          call indprd( 4, ind_prd, base_sol, extfrc, reaction_rates )
       else
