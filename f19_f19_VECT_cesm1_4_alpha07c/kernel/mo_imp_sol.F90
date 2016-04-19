@@ -49,9 +49,11 @@
 !!$      eps((/id_o3,id_no,id_no2,id_no3,id_hno3,id_ho2no2,id_n2o5,id_oh,id_ho2/)) = .0001_r8
 
 
+      subroutine imp_sol( base_sol_i, reaction_rates_i, het_rates_i, extfrc_i, delt, &
+                          ncol, lchnk, chnkpnts_i, chnkpnts )
 
-      subroutine imp_sol( base_sol, reaction_rates, het_rates, extfrc, delt, &
-                          ncol, lchnk, chnkpnts )
+!SAM      subroutine imp_sol( base_sol, reaction_rates, het_rates, extfrc, delt, &
+!                          ncol, lchnk, chnkpnts )
 !-----------------------------------------------------------------------
 ! ... imp_sol advances the volumetric mixing ratio
 ! forward one time step via the fully implicit euler scheme.
@@ -75,12 +77,19 @@
 !-----------------------------------------------------------------------
       integer, intent(in) :: ncol ! columns in chunck
       integer, intent(in) :: lchnk ! chunk id
-      integer, intent(in) :: chnkpnts ! total spatial points in chunk; ncol*pver
+      integer, intent(in) :: chnkpnts_i ! total spatial points in chunk; ncol*pver
+      integer, intent(in) :: chnkpnts
       real(r8), intent(in) :: delt ! time step (s)
-      real(r8), intent(in) :: reaction_rates(chnkpnts,max(1,rxntot)) ! rxt rates (1/cm^3/s)
-      real(r8), intent(in) :: extfrc(chnkpnts,max(1,extcnt)) ! external in-situ forcing (1/cm^3/s)
-      real(r8), intent(in) :: het_rates(chnkpnts,max(1,gas_pcnst)) ! washout rates (1/s)
-      real(r8), intent(inout) :: base_sol(chnkpnts,gas_pcnst) ! species mixing ratios (vmr)
+
+      real(r8), intent(in) :: reaction_rates_i(chnkpnts_i,max(1,rxntot)) ! rxt rates
+      real(r8), intent(in) :: extfrc_i(chnkpnts_i,max(1,extcnt)) ! external in-situ
+      real(r8), intent(in) :: het_rates_i(chnkpnts_i,max(1,gas_pcnst)) ! washout
+      real(r8), intent(inout) :: base_sol_i(chnkpnts_i,gas_pcnst) ! species mixing
+
+      real(r8) :: reaction_rates(chnkpnts,max(1,rxntot)) ! rxt rates (1/cm^3/s)
+      real(r8) :: extfrc(chnkpnts,max(1,extcnt)) ! external in-situ forcing (1/cm^3/s)
+      real(r8) :: het_rates(chnkpnts,max(1,gas_pcnst)) ! washout rates (1/s)
+      real(r8) :: base_sol(chnkpnts,gas_pcnst) ! species mixing ratios (vmr)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -117,6 +126,10 @@
       integer :: vec_len
       !vec_len = ncol
       vec_len=chnkpnts
+      reaction_rates = reaction_rates_i(1:chnkpnts,:)
+      extfrc = extfrc_i(1:chnkpnts,:)
+      het_rates = het_rates_i(1:chnkpnts,:)
+      base_sol = base_sol_i(1:chnkpnts,:)
 !-----------------------------------------------------------------------
 ! ... class independent forcing
 !-----------------------------------------------------------------------
