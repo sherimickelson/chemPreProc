@@ -116,7 +116,10 @@
       logical :: converged(max(1,clscnt4))
       integer :: vec_len
       !vec_len = ncol
-      vec_len=chnkpnts
+      !vec_len=chnkpnts
+
+      vec_len=64  ! Optimal value for SB
+!      vec_len=32
 !-----------------------------------------------------------------------
 ! ... class independent forcing
 !-----------------------------------------------------------------------

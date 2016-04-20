@@ -1,6 +1,7 @@
 # Makefile for KGEN-generated kernel
 
-FC := ifort
+#FC := ifort
+FC := mpiifort
 #FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal  -openmp -free -no-fma
 #FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model fast=2 -O3 -debug minimal  -openmp -free -no-fma
 FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -debug minimal  -openmp -free -no-fma
