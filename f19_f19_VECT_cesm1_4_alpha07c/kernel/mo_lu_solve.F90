@@ -20,7 +20,7 @@
       subroutine lu_slv01( ofl, ofu, lu, b, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -30,8 +30,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 
 !-----------------------------------------------------------------------
 ! ... Local variables
@@ -252,7 +252,7 @@
       end do
       end subroutine lu_slv01
       subroutine lu_slv02( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -260,8 +260,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -474,7 +474,7 @@
       end do
       end subroutine lu_slv02
       subroutine lu_slv03( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -482,8 +482,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -697,7 +697,7 @@
       end do
       end subroutine lu_slv03
       subroutine lu_slv04( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -705,8 +705,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -832,7 +832,7 @@
       end do
       end subroutine lu_slv04
       subroutine lu_slv05( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -840,8 +840,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1061,7 +1061,7 @@
       end do
       end subroutine lu_slv05
       subroutine lu_slv06( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -1069,8 +1069,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1299,7 +1299,7 @@
       end do
       end subroutine lu_slv06
       subroutine lu_slv07( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -1307,8 +1307,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1521,7 +1521,7 @@
       end do
       end subroutine lu_slv07
       subroutine lu_slv08( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -1529,8 +1529,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
 !-----------------------------------------------------------------------
 ! ... Local variables
 !-----------------------------------------------------------------------
@@ -1666,7 +1666,7 @@
       end do
       end subroutine lu_slv08
       subroutine lu_slv( ofl, ofu, lu, b, chnkpnts  )
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
       implicit none
 !-----------------------------------------------------------------------
 ! ... Dummy args
@@ -1674,8 +1674,8 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk; ncol*pver
-      real(r8), intent(in) :: lu(chnkpnts,nzcnt)
-      real(r8), intent(inout) :: b(chnkpnts,clscnt4)
+      real(r4), intent(in) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: b(chnkpnts,clscnt4)
       call lu_slv01( ofl, ofu, lu, b, chnkpnts )
       call lu_slv02( ofl, ofu, lu, b, chnkpnts )
       call lu_slv03( ofl, ofu, lu, b, chnkpnts )

@@ -20,7 +20,7 @@
       subroutine lu_fac01( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -30,7 +30,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -39,105 +39,105 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,1) = 1._r8 / lu(k,1)
+         lu(k,1) = 1._r4 / lu(k,1)
 
-         lu(k,2) = 1._r8 / lu(k,2)
+         lu(k,2) = 1._r4 / lu(k,2)
 
-         lu(k,3) = 1._r8 / lu(k,3)
+         lu(k,3) = 1._r4 / lu(k,3)
 
-         lu(k,4) = 1._r8 / lu(k,4)
+         lu(k,4) = 1._r4 / lu(k,4)
 
-         lu(k,5) = 1._r8 / lu(k,5)
+         lu(k,5) = 1._r4 / lu(k,5)
 !DIR$ DISTRIBUTE POINT
-         lu(k,6) = 1._r8 / lu(k,6)
+         lu(k,6) = 1._r4 / lu(k,6)
 
-         lu(k,7) = 1._r8 / lu(k,7)
+         lu(k,7) = 1._r4 / lu(k,7)
 
-         lu(k,8) = 1._r8 / lu(k,8)
+         lu(k,8) = 1._r4 / lu(k,8)
 
-         lu(k,9) = 1._r8 / lu(k,9)
+         lu(k,9) = 1._r4 / lu(k,9)
 
-         lu(k,10) = 1._r8 / lu(k,10)
+         lu(k,10) = 1._r4 / lu(k,10)
 !DIR$ DISTRIBUTE POINT
-         lu(k,11) = 1._r8 / lu(k,11)
+         lu(k,11) = 1._r4 / lu(k,11)
 
-         lu(k,12) = 1._r8 / lu(k,12)
+         lu(k,12) = 1._r4 / lu(k,12)
 
-         lu(k,13) = 1._r8 / lu(k,13)
+         lu(k,13) = 1._r4 / lu(k,13)
 
-         lu(k,14) = 1._r8 / lu(k,14)
+         lu(k,14) = 1._r4 / lu(k,14)
 
-         lu(k,15) = 1._r8 / lu(k,15)
+         lu(k,15) = 1._r4 / lu(k,15)
 !DIR$ DISTRIBUTE POINT
-         lu(k,16) = 1._r8 / lu(k,16)
+         lu(k,16) = 1._r4 / lu(k,16)
          lu(k,17) = lu(k,17) * lu(k,16)
 
-         lu(k,18) = 1._r8 / lu(k,18)
+         lu(k,18) = 1._r4 / lu(k,18)
 
-         lu(k,19) = 1._r8 / lu(k,19)
+         lu(k,19) = 1._r4 / lu(k,19)
          lu(k,20) = lu(k,20) * lu(k,19)
 !DIR$ DISTRIBUTE POINT
-         lu(k,21) = 1._r8 / lu(k,21)
+         lu(k,21) = 1._r4 / lu(k,21)
 
-         lu(k,22) = 1._r8 / lu(k,22)
+         lu(k,22) = 1._r4 / lu(k,22)
 
-         lu(k,23) = 1._r8 / lu(k,23)
+         lu(k,23) = 1._r4 / lu(k,23)
 
-         lu(k,24) = 1._r8 / lu(k,24)
+         lu(k,24) = 1._r4 / lu(k,24)
 
-         lu(k,25) = 1._r8 / lu(k,25)
+         lu(k,25) = 1._r4 / lu(k,25)
 !DIR$ DISTRIBUTE POINT
-         lu(k,26) = 1._r8 / lu(k,26)
+         lu(k,26) = 1._r4 / lu(k,26)
 
-         lu(k,27) = 1._r8 / lu(k,27)
+         lu(k,27) = 1._r4 / lu(k,27)
 
-         lu(k,28) = 1._r8 / lu(k,28)
+         lu(k,28) = 1._r4 / lu(k,28)
 
-         lu(k,29) = 1._r8 / lu(k,29)
+         lu(k,29) = 1._r4 / lu(k,29)
 !DIR$ DISTRIBUTE POINT
-         lu(k,30) = 1._r8 / lu(k,30)
+         lu(k,30) = 1._r4 / lu(k,30)
          lu(k,31) = lu(k,31) * lu(k,30)
          lu(k,32) = lu(k,32) * lu(k,30)
          lu(k,890) = lu(k,890) - lu(k,31) * lu(k,880)
          lu(k,903) = lu(k,903) - lu(k,32) * lu(k,880)
 !DIR$ DISTRIBUTE POINT
-         lu(k,33) = 1._r8 / lu(k,33)
+         lu(k,33) = 1._r4 / lu(k,33)
          lu(k,34) = lu(k,34) * lu(k,33)
          lu(k,35) = lu(k,35) * lu(k,33)
          lu(k,1139) = lu(k,1139) - lu(k,34) * lu(k,1090)
          lu(k,1179) = lu(k,1179) - lu(k,35) * lu(k,1090)
 !DIR$ DISTRIBUTE POINT
-         lu(k,36) = 1._r8 / lu(k,36)
+         lu(k,36) = 1._r4 / lu(k,36)
          lu(k,37) = lu(k,37) * lu(k,36)
          lu(k,38) = lu(k,38) * lu(k,36)
          lu(k,1109) = lu(k,1109) - lu(k,37) * lu(k,1091)
          lu(k,1179) = lu(k,1179) - lu(k,38) * lu(k,1091)
 !DIR$ DISTRIBUTE POINT
-         lu(k,39) = 1._r8 / lu(k,39)
+         lu(k,39) = 1._r4 / lu(k,39)
          lu(k,40) = lu(k,40) * lu(k,39)
          lu(k,41) = lu(k,41) * lu(k,39)
          lu(k,1116) = lu(k,1116) - lu(k,40) * lu(k,1092)
          lu(k,1179) = lu(k,1179) - lu(k,41) * lu(k,1092)
 !DIR$ DISTRIBUTE POINT
-         lu(k,42) = 1._r8 / lu(k,42)
+         lu(k,42) = 1._r4 / lu(k,42)
          lu(k,43) = lu(k,43) * lu(k,42)
          lu(k,44) = lu(k,44) * lu(k,42)
          lu(k,1122) = lu(k,1122) - lu(k,43) * lu(k,1093)
          lu(k,1179) = lu(k,1179) - lu(k,44) * lu(k,1093)
 !DIR$ DISTRIBUTE POINT
-         lu(k,45) = 1._r8 / lu(k,45)
+         lu(k,45) = 1._r4 / lu(k,45)
          lu(k,46) = lu(k,46) * lu(k,45)
          lu(k,47) = lu(k,47) * lu(k,45)
          lu(k,1171) = lu(k,1171) - lu(k,46) * lu(k,1094)
          lu(k,1179) = lu(k,1179) - lu(k,47) * lu(k,1094)
 !DIR$ DISTRIBUTE POINT
-         lu(k,48) = 1._r8 / lu(k,48)
+         lu(k,48) = 1._r4 / lu(k,48)
          lu(k,49) = lu(k,49) * lu(k,48)
          lu(k,50) = lu(k,50) * lu(k,48)
          lu(k,1179) = lu(k,1179) - lu(k,49) * lu(k,1095)
          lu(k,1183) = lu(k,1183) - lu(k,50) * lu(k,1095)
 !DIR$ DISTRIBUTE POINT
-         lu(k,51) = 1._r8 / lu(k,51)
+         lu(k,51) = 1._r4 / lu(k,51)
          lu(k,52) = lu(k,52) * lu(k,51)
          lu(k,53) = lu(k,53) * lu(k,51)
          lu(k,54) = lu(k,54) * lu(k,51)
@@ -152,7 +152,7 @@
       subroutine lu_fac02( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -162,7 +162,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -173,13 +173,13 @@
 !dir$ simd
       do k = ofl,ofu
 !DIR$ DISTRIBUTE POINT
-         lu(k,56) = 1._r8 / lu(k,56)
+         lu(k,56) = 1._r4 / lu(k,56)
          lu(k,57) = lu(k,57) * lu(k,56)
          lu(k,101) = lu(k,101) - lu(k,57) * lu(k,97)
          lu(k,1016) = lu(k,1016) - lu(k,57) * lu(k,984)
          lu(k,1179) = lu(k,1179) - lu(k,57) * lu(k,1097)
 !DIR$ DISTRIBUTE POINT
-         lu(k,58) = 1._r8 / lu(k,58)
+         lu(k,58) = 1._r4 / lu(k,58)
          lu(k,59) = lu(k,59) * lu(k,58)
          lu(k,60) = lu(k,60) * lu(k,58)
          lu(k,820) = lu(k,820) - lu(k,59) * lu(k,812)
@@ -187,7 +187,7 @@
          lu(k,890) = lu(k,890) - lu(k,59) * lu(k,881)
          lu(k,904) = lu(k,904) - lu(k,60) * lu(k,881)
 !DIR$ DISTRIBUTE POINT
-         lu(k,61) = 1._r8 / lu(k,61)
+         lu(k,61) = 1._r4 / lu(k,61)
          lu(k,62) = lu(k,62) * lu(k,61)
          lu(k,63) = lu(k,63) * lu(k,61)
          lu(k,64) = lu(k,64) * lu(k,61)
@@ -197,13 +197,13 @@
          lu(k,1179) = lu(k,1179) - lu(k,64) * lu(k,1098)
          lu(k,1183) = lu(k,1183) - lu(k,65) * lu(k,1098)
 !DIR$ DISTRIBUTE POINT
-         lu(k,66) = 1._r8 / lu(k,66)
+         lu(k,66) = 1._r4 / lu(k,66)
          lu(k,67) = lu(k,67) * lu(k,66)
          lu(k,68) = lu(k,68) * lu(k,66)
          lu(k,1101) = lu(k,1101) - lu(k,67) * lu(k,1099)
          lu(k,1179) = lu(k,1179) - lu(k,68) * lu(k,1099)
 !DIR$ DISTRIBUTE POINT
-         lu(k,69) = 1._r8 / lu(k,69)
+         lu(k,69) = 1._r4 / lu(k,69)
          lu(k,70) = lu(k,70) * lu(k,69)
          lu(k,71) = lu(k,71) * lu(k,69)
          lu(k,411) = lu(k,411) - lu(k,70) * lu(k,410)
@@ -211,7 +211,7 @@
          lu(k,1282) = - lu(k,70) * lu(k,1271)
          lu(k,1333) = lu(k,1333) - lu(k,71) * lu(k,1271)
 !DIR$ DISTRIBUTE POINT
-         lu(k,72) = 1._r8 / lu(k,72)
+         lu(k,72) = 1._r4 / lu(k,72)
          lu(k,73) = lu(k,73) * lu(k,72)
          lu(k,74) = lu(k,74) * lu(k,72)
          lu(k,1143) = - lu(k,73) * lu(k,1100)
@@ -219,21 +219,21 @@
          lu(k,1346) = lu(k,1346) - lu(k,73) * lu(k,1342)
          lu(k,1362) = lu(k,1362) - lu(k,74) * lu(k,1342)
 !DIR$ DISTRIBUTE POINT
-         lu(k,75) = 1._r8 / lu(k,75)
+         lu(k,75) = 1._r4 / lu(k,75)
          lu(k,76) = lu(k,76) * lu(k,75)
          lu(k,79) = lu(k,79) - lu(k,76) * lu(k,77)
          lu(k,843) = lu(k,843) - lu(k,76) * lu(k,830)
          lu(k,1213) = lu(k,1213) - lu(k,76) * lu(k,1188)
          lu(k,1454) = lu(k,1454) - lu(k,76) * lu(k,1435)
 !DIR$ DISTRIBUTE POINT
-         lu(k,78) = 1._r8 / lu(k,78)
+         lu(k,78) = 1._r4 / lu(k,78)
          lu(k,79) = lu(k,79) * lu(k,78)
          lu(k,843) = lu(k,843) - lu(k,79) * lu(k,831)
          lu(k,1213) = lu(k,1213) - lu(k,79) * lu(k,1189)
          lu(k,1349) = lu(k,1349) - lu(k,79) * lu(k,1343)
          lu(k,1454) = lu(k,1454) - lu(k,79) * lu(k,1436)
 !DIR$ DISTRIBUTE POINT
-         lu(k,80) = 1._r8 / lu(k,80)
+         lu(k,80) = 1._r4 / lu(k,80)
          lu(k,81) = lu(k,81) * lu(k,80)
          lu(k,516) = lu(k,516) - lu(k,81) * lu(k,510)
          lu(k,589) = lu(k,589) - lu(k,81) * lu(k,579)
@@ -241,7 +241,7 @@
          lu(k,1087) = lu(k,1087) - lu(k,81) * lu(k,1065)
          lu(k,1433) = lu(k,1433) - lu(k,81) * lu(k,1401)
 !DIR$ DISTRIBUTE POINT
-         lu(k,82) = 1._r8 / lu(k,82)
+         lu(k,82) = 1._r4 / lu(k,82)
          lu(k,83) = lu(k,83) * lu(k,82)
          lu(k,84) = lu(k,84) * lu(k,82)
          lu(k,85) = lu(k,85) * lu(k,82)
@@ -252,7 +252,7 @@
          lu(k,1396) = lu(k,1396) - lu(k,84) * lu(k,1366)
          lu(k,1398) = lu(k,1398) - lu(k,85) * lu(k,1366)
 !DIR$ DISTRIBUTE POINT
-         lu(k,86) = 1._r8 / lu(k,86)
+         lu(k,86) = 1._r4 / lu(k,86)
          lu(k,87) = lu(k,87) * lu(k,86)
          lu(k,88) = lu(k,88) * lu(k,86)
          lu(k,89) = lu(k,89) * lu(k,86)
@@ -263,7 +263,7 @@
          lu(k,1362) = lu(k,1362) - lu(k,88) * lu(k,1344)
          lu(k,1364) = lu(k,1364) - lu(k,89) * lu(k,1344)
 !DIR$ DISTRIBUTE POINT
-         lu(k,90) = 1._r8 / lu(k,90)
+         lu(k,90) = 1._r4 / lu(k,90)
          lu(k,91) = lu(k,91) * lu(k,90)
          lu(k,92) = lu(k,92) * lu(k,90)
          lu(k,93) = lu(k,93) * lu(k,90)
@@ -274,7 +274,7 @@
          lu(k,1361) = lu(k,1361) - lu(k,92) * lu(k,1345)
          lu(k,1362) = lu(k,1362) - lu(k,93) * lu(k,1345)
 !DIR$ DISTRIBUTE POINT
-         lu(k,94) = 1._r8 / lu(k,94)
+         lu(k,94) = 1._r4 / lu(k,94)
          lu(k,95) = lu(k,95) * lu(k,94)
          lu(k,96) = lu(k,96) * lu(k,94)
          lu(k,448) = lu(k,448) - lu(k,95) * lu(k,447)
@@ -286,7 +286,7 @@
          lu(k,867) = lu(k,867) - lu(k,95) * lu(k,866)
          lu(k,875) = - lu(k,96) * lu(k,866)
 !DIR$ DISTRIBUTE POINT
-         lu(k,98) = 1._r8 / lu(k,98)
+         lu(k,98) = 1._r4 / lu(k,98)
          lu(k,99) = lu(k,99) * lu(k,98)
          lu(k,100) = lu(k,100) * lu(k,98)
          lu(k,101) = lu(k,101) * lu(k,98)
@@ -307,7 +307,7 @@
       subroutine lu_fac03( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -317,7 +317,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -327,7 +327,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,103) = 1._r8 / lu(k,103)
+         lu(k,103) = 1._r4 / lu(k,103)
          lu(k,104) = lu(k,104) * lu(k,103)
          lu(k,105) = lu(k,105) * lu(k,103)
          lu(k,405) = lu(k,405) - lu(k,104) * lu(k,401)
@@ -339,7 +339,7 @@
          lu(k,1075) = - lu(k,104) * lu(k,1066)
          lu(k,1087) = lu(k,1087) - lu(k,105) * lu(k,1066)
 !DIR$ DISTRIBUTE POINT
-         lu(k,106) = 1._r8 / lu(k,106)
+         lu(k,106) = 1._r4 / lu(k,106)
          lu(k,107) = lu(k,107) * lu(k,106)
          lu(k,108) = lu(k,108) * lu(k,106)
          lu(k,109) = lu(k,109) * lu(k,106)
@@ -353,7 +353,7 @@
          lu(k,1179) = lu(k,1179) - lu(k,108) * lu(k,1105)
          lu(k,1183) = lu(k,1183) - lu(k,109) * lu(k,1105)
 !DIR$ DISTRIBUTE POINT
-         lu(k,110) = 1._r8 / lu(k,110)
+         lu(k,110) = 1._r4 / lu(k,110)
          lu(k,111) = lu(k,111) * lu(k,110)
          lu(k,112) = lu(k,112) * lu(k,110)
          lu(k,113) = lu(k,113) * lu(k,110)
@@ -367,7 +367,7 @@
          lu(k,1325) = lu(k,1325) - lu(k,112) * lu(k,1272)
          lu(k,1333) = lu(k,1333) - lu(k,113) * lu(k,1272)
 !DIR$ DISTRIBUTE POINT
-         lu(k,114) = 1._r8 / lu(k,114)
+         lu(k,114) = 1._r4 / lu(k,114)
          lu(k,115) = lu(k,115) * lu(k,114)
          lu(k,116) = lu(k,116) * lu(k,114)
          lu(k,117) = lu(k,117) * lu(k,114)
@@ -384,7 +384,7 @@
          lu(k,1426) = lu(k,1426) - lu(k,118) * lu(k,1402)
          lu(k,1433) = lu(k,1433) - lu(k,119) * lu(k,1402)
 !DIR$ DISTRIBUTE POINT
-         lu(k,120) = 1._r8 / lu(k,120)
+         lu(k,120) = 1._r4 / lu(k,120)
          lu(k,121) = lu(k,121) * lu(k,120)
          lu(k,122) = lu(k,122) * lu(k,120)
          lu(k,123) = lu(k,123) * lu(k,120)
@@ -401,7 +401,7 @@
          lu(k,1426) = lu(k,1426) - lu(k,124) * lu(k,1403)
          lu(k,1430) = lu(k,1430) - lu(k,125) * lu(k,1403)
 !DIR$ DISTRIBUTE POINT
-         lu(k,126) = 1._r8 / lu(k,126)
+         lu(k,126) = 1._r4 / lu(k,126)
          lu(k,127) = lu(k,127) * lu(k,126)
          lu(k,128) = lu(k,128) * lu(k,126)
          lu(k,129) = lu(k,129) * lu(k,126)
@@ -418,7 +418,7 @@
          lu(k,1398) = lu(k,1398) - lu(k,130) * lu(k,1367)
          lu(k,1400) = lu(k,1400) - lu(k,131) * lu(k,1367)
 !DIR$ DISTRIBUTE POINT
-         lu(k,132) = 1._r8 / lu(k,132)
+         lu(k,132) = 1._r4 / lu(k,132)
          lu(k,133) = lu(k,133) * lu(k,132)
          lu(k,134) = lu(k,134) * lu(k,132)
          lu(k,135) = lu(k,135) * lu(k,132)
@@ -438,7 +438,7 @@
          lu(k,1183) = lu(k,1183) - lu(k,137) * lu(k,1109)
          lu(k,1185) = lu(k,1185) - lu(k,138) * lu(k,1109)
 !DIR$ DISTRIBUTE POINT
-         lu(k,139) = 1._r8 / lu(k,139)
+         lu(k,139) = 1._r4 / lu(k,139)
          lu(k,140) = lu(k,140) * lu(k,139)
          lu(k,141) = lu(k,141) * lu(k,139)
          lu(k,142) = lu(k,142) * lu(k,139)
@@ -463,7 +463,7 @@
       subroutine lu_fac04( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -473,7 +473,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -484,7 +484,7 @@
 !dir$ simd
       do k = ofl,ofu
 !DIR$ DISTRIBUTE POINT
-         lu(k,144) = 1._r8 / lu(k,144)
+         lu(k,144) = 1._r4 / lu(k,144)
          lu(k,145) = lu(k,145) * lu(k,144)
          lu(k,146) = lu(k,146) * lu(k,144)
          lu(k,147) = lu(k,147) * lu(k,144)
@@ -502,7 +502,7 @@
          lu(k,1333) = lu(k,1333) - lu(k,147) * lu(k,1274)
          lu(k,1337) = lu(k,1337) - lu(k,148) * lu(k,1274)
 !DIR$ DISTRIBUTE POINT
-         lu(k,149) = 1._r8 / lu(k,149)
+         lu(k,149) = 1._r4 / lu(k,149)
          lu(k,150) = lu(k,150) * lu(k,149)
          lu(k,151) = lu(k,151) * lu(k,149)
          lu(k,152) = lu(k,152) * lu(k,149)
@@ -520,7 +520,7 @@
          lu(k,1333) = lu(k,1333) - lu(k,152) * lu(k,1275)
          lu(k,1337) = lu(k,1337) - lu(k,153) * lu(k,1275)
 !DIR$ DISTRIBUTE POINT
-         lu(k,154) = 1._r8 / lu(k,154)
+         lu(k,154) = 1._r4 / lu(k,154)
          lu(k,155) = lu(k,155) * lu(k,154)
          lu(k,156) = lu(k,156) * lu(k,154)
          lu(k,560) = - lu(k,155) * lu(k,557)
@@ -538,7 +538,7 @@
          lu(k,1163) = lu(k,1163) - lu(k,155) * lu(k,1113)
          lu(k,1179) = lu(k,1179) - lu(k,156) * lu(k,1113)
 !DIR$ DISTRIBUTE POINT
-         lu(k,157) = 1._r8 / lu(k,157)
+         lu(k,157) = 1._r4 / lu(k,157)
          lu(k,158) = lu(k,158) * lu(k,157)
          lu(k,159) = lu(k,159) * lu(k,157)
          lu(k,160) = lu(k,160) * lu(k,157)
@@ -558,7 +558,7 @@
          lu(k,1179) = lu(k,1179) - lu(k,159) * lu(k,1114)
          lu(k,1185) = lu(k,1185) - lu(k,160) * lu(k,1114)
 !DIR$ DISTRIBUTE POINT
-         lu(k,161) = 1._r8 / lu(k,161)
+         lu(k,161) = 1._r4 / lu(k,161)
          lu(k,162) = lu(k,162) * lu(k,161)
          lu(k,163) = lu(k,163) * lu(k,161)
          lu(k,164) = lu(k,164) * lu(k,161)
@@ -580,7 +580,7 @@
          lu(k,1316) = - lu(k,165) * lu(k,1276)
          lu(k,1333) = lu(k,1333) - lu(k,166) * lu(k,1276)
 !DIR$ DISTRIBUTE POINT
-         lu(k,168) = 1._r8 / lu(k,168)
+         lu(k,168) = 1._r4 / lu(k,168)
          lu(k,169) = lu(k,169) * lu(k,168)
          lu(k,170) = lu(k,170) * lu(k,168)
          lu(k,171) = lu(k,171) * lu(k,168)
@@ -602,7 +602,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,172) * lu(k,1277)
          lu(k,1339) = lu(k,1339) - lu(k,173) * lu(k,1277)
 !DIR$ DISTRIBUTE POINT
-         lu(k,174) = 1._r8 / lu(k,174)
+         lu(k,174) = 1._r4 / lu(k,174)
          lu(k,175) = lu(k,175) * lu(k,174)
          lu(k,176) = lu(k,176) * lu(k,174)
          lu(k,177) = lu(k,177) * lu(k,174)
@@ -631,7 +631,7 @@
       subroutine lu_fac05( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -641,7 +641,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -651,7 +651,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,180) = 1._r8 / lu(k,180)
+         lu(k,180) = 1._r4 / lu(k,180)
          lu(k,181) = lu(k,181) * lu(k,180)
          lu(k,182) = lu(k,182) * lu(k,180)
          lu(k,183) = lu(k,183) * lu(k,180)
@@ -673,7 +673,7 @@
          lu(k,1333) = lu(k,1333) - lu(k,184) * lu(k,1279)
          lu(k,1335) = lu(k,1335) - lu(k,185) * lu(k,1279)
 !DIR$ DISTRIBUTE POINT
-         lu(k,186) = 1._r8 / lu(k,186)
+         lu(k,186) = 1._r4 / lu(k,186)
          lu(k,187) = lu(k,187) * lu(k,186)
          lu(k,188) = lu(k,188) * lu(k,186)
          lu(k,189) = lu(k,189) * lu(k,186)
@@ -695,7 +695,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,190) * lu(k,1280)
          lu(k,1339) = lu(k,1339) - lu(k,191) * lu(k,1280)
 !DIR$ DISTRIBUTE POINT
-         lu(k,192) = 1._r8 / lu(k,192)
+         lu(k,192) = 1._r4 / lu(k,192)
          lu(k,193) = lu(k,193) * lu(k,192)
          lu(k,194) = lu(k,194) * lu(k,192)
          lu(k,195) = lu(k,195) * lu(k,192)
@@ -717,7 +717,7 @@
          lu(k,1335) = lu(k,1335) - lu(k,196) * lu(k,1281)
          lu(k,1336) = lu(k,1336) - lu(k,197) * lu(k,1281)
 !DIR$ DISTRIBUTE POINT
-         lu(k,198) = 1._r8 / lu(k,198)
+         lu(k,198) = 1._r4 / lu(k,198)
          lu(k,199) = lu(k,199) * lu(k,198)
          lu(k,200) = lu(k,200) * lu(k,198)
          lu(k,201) = lu(k,201) * lu(k,198)
@@ -739,7 +739,7 @@
          lu(k,1168) = lu(k,1168) - lu(k,201) * lu(k,1120)
          lu(k,1179) = lu(k,1179) - lu(k,202) * lu(k,1120)
 !DIR$ DISTRIBUTE POINT
-         lu(k,203) = 1._r8 / lu(k,203)
+         lu(k,203) = 1._r4 / lu(k,203)
          lu(k,204) = lu(k,204) * lu(k,203)
          lu(k,205) = lu(k,205) * lu(k,203)
          lu(k,206) = lu(k,206) * lu(k,203)
@@ -761,7 +761,7 @@
          lu(k,1335) = lu(k,1335) - lu(k,206) * lu(k,1282)
          lu(k,1337) = lu(k,1337) - lu(k,207) * lu(k,1282)
 !DIR$ DISTRIBUTE POINT
-         lu(k,208) = 1._r8 / lu(k,208)
+         lu(k,208) = 1._r4 / lu(k,208)
          lu(k,209) = lu(k,209) * lu(k,208)
          lu(k,210) = lu(k,210) * lu(k,208)
          lu(k,211) = lu(k,211) * lu(k,208)
@@ -794,7 +794,7 @@
       subroutine lu_fac06( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -804,7 +804,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -814,7 +814,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,216) = 1._r8 / lu(k,216)
+         lu(k,216) = 1._r4 / lu(k,216)
          lu(k,217) = lu(k,217) * lu(k,216)
          lu(k,218) = lu(k,218) * lu(k,216)
          lu(k,219) = lu(k,219) * lu(k,216)
@@ -840,7 +840,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,221) * lu(k,1284)
          lu(k,1339) = lu(k,1339) - lu(k,222) * lu(k,1284)
 !DIR$ DISTRIBUTE POINT
-         lu(k,223) = 1._r8 / lu(k,223)
+         lu(k,223) = 1._r4 / lu(k,223)
          lu(k,224) = lu(k,224) * lu(k,223)
          lu(k,225) = lu(k,225) * lu(k,223)
          lu(k,226) = lu(k,226) * lu(k,223)
@@ -866,7 +866,7 @@
          lu(k,1454) = lu(k,1454) - lu(k,228) * lu(k,1437)
          lu(k,1471) = lu(k,1471) - lu(k,229) * lu(k,1437)
 !DIR$ DISTRIBUTE POINT
-         lu(k,230) = 1._r8 / lu(k,230)
+         lu(k,230) = 1._r4 / lu(k,230)
          lu(k,231) = lu(k,231) * lu(k,230)
          lu(k,232) = lu(k,232) * lu(k,230)
          lu(k,233) = lu(k,233) * lu(k,230)
@@ -892,7 +892,7 @@
          lu(k,1396) = lu(k,1396) - lu(k,235) * lu(k,1368)
          lu(k,1398) = lu(k,1398) - lu(k,236) * lu(k,1368)
 !DIR$ DISTRIBUTE POINT
-         lu(k,237) = 1._r8 / lu(k,237)
+         lu(k,237) = 1._r4 / lu(k,237)
          lu(k,238) = lu(k,238) * lu(k,237)
          lu(k,239) = lu(k,239) * lu(k,237)
          lu(k,240) = lu(k,240) * lu(k,237)
@@ -918,7 +918,7 @@
          lu(k,1394) = - lu(k,242) * lu(k,1369)
          lu(k,1398) = lu(k,1398) - lu(k,243) * lu(k,1369)
 !DIR$ DISTRIBUTE POINT
-         lu(k,244) = 1._r8 / lu(k,244)
+         lu(k,244) = 1._r4 / lu(k,244)
          lu(k,245) = lu(k,245) * lu(k,244)
          lu(k,246) = lu(k,246) * lu(k,244)
          lu(k,247) = lu(k,247) * lu(k,244)
@@ -945,7 +945,7 @@
          lu(k,1333) = lu(k,1333) - lu(k,248) * lu(k,1286)
          lu(k,1335) = lu(k,1335) - lu(k,249) * lu(k,1286)
 !DIR$ DISTRIBUTE POINT
-         lu(k,250) = 1._r8 / lu(k,250)
+         lu(k,250) = 1._r4 / lu(k,250)
          lu(k,251) = lu(k,251) * lu(k,250)
          lu(k,252) = lu(k,252) * lu(k,250)
          lu(k,253) = lu(k,253) * lu(k,250)
@@ -978,7 +978,7 @@
       subroutine lu_fac07( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -988,7 +988,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -998,7 +998,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,255) = 1._r8 / lu(k,255)
+         lu(k,255) = 1._r4 / lu(k,255)
          lu(k,256) = lu(k,256) * lu(k,255)
          lu(k,257) = lu(k,257) * lu(k,255)
          lu(k,258) = lu(k,258) * lu(k,255)
@@ -1028,7 +1028,7 @@
          lu(k,1428) = lu(k,1428) - lu(k,261) * lu(k,1404)
          lu(k,1430) = lu(k,1430) - lu(k,262) * lu(k,1404)
 !DIR$ DISTRIBUTE POINT
-         lu(k,263) = 1._r8 / lu(k,263)
+         lu(k,263) = 1._r4 / lu(k,263)
          lu(k,264) = lu(k,264) * lu(k,263)
          lu(k,265) = lu(k,265) * lu(k,263)
          lu(k,266) = lu(k,266) * lu(k,263)
@@ -1051,7 +1051,7 @@
          lu(k,1426) = lu(k,1426) - lu(k,265) * lu(k,1405)
          lu(k,1430) = lu(k,1430) - lu(k,266) * lu(k,1405)
 !DIR$ DISTRIBUTE POINT
-         lu(k,267) = 1._r8 / lu(k,267)
+         lu(k,267) = 1._r4 / lu(k,267)
          lu(k,268) = lu(k,268) * lu(k,267)
          lu(k,269) = lu(k,269) * lu(k,267)
          lu(k,270) = lu(k,270) * lu(k,267)
@@ -1077,7 +1077,7 @@
          lu(k,1181) = lu(k,1181) - lu(k,269) * lu(k,1128)
          lu(k,1183) = lu(k,1183) - lu(k,270) * lu(k,1128)
 !DIR$ DISTRIBUTE POINT
-         lu(k,271) = 1._r8 / lu(k,271)
+         lu(k,271) = 1._r4 / lu(k,271)
          lu(k,272) = lu(k,272) * lu(k,271)
          lu(k,273) = lu(k,273) * lu(k,271)
          lu(k,274) = lu(k,274) * lu(k,271)
@@ -1107,7 +1107,7 @@
          lu(k,1469) = lu(k,1469) - lu(k,277) * lu(k,1439)
          lu(k,1471) = lu(k,1471) - lu(k,278) * lu(k,1439)
 !DIR$ DISTRIBUTE POINT
-         lu(k,279) = 1._r8 / lu(k,279)
+         lu(k,279) = 1._r4 / lu(k,279)
          lu(k,280) = lu(k,280) * lu(k,279)
          lu(k,281) = lu(k,281) * lu(k,279)
          lu(k,282) = lu(k,282) * lu(k,279)
@@ -1137,7 +1137,7 @@
          lu(k,1396) = lu(k,1396) - lu(k,285) * lu(k,1371)
          lu(k,1398) = lu(k,1398) - lu(k,286) * lu(k,1371)
 !DIR$ DISTRIBUTE POINT
-         lu(k,287) = 1._r8 / lu(k,287)
+         lu(k,287) = 1._r4 / lu(k,287)
          lu(k,288) = lu(k,288) * lu(k,287)
          lu(k,289) = lu(k,289) * lu(k,287)
          lu(k,290) = lu(k,290) * lu(k,287)
@@ -1174,7 +1174,7 @@
       subroutine lu_fac08( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -1184,7 +1184,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1194,7 +1194,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,295) = 1._r8 / lu(k,295)
+         lu(k,295) = 1._r4 / lu(k,295)
          lu(k,296) = lu(k,296) * lu(k,295)
          lu(k,297) = lu(k,297) * lu(k,295)
          lu(k,298) = lu(k,298) * lu(k,295)
@@ -1224,7 +1224,7 @@
          lu(k,1335) = lu(k,1335) - lu(k,301) * lu(k,1289)
          lu(k,1337) = lu(k,1337) - lu(k,302) * lu(k,1289)
 !DIR$ DISTRIBUTE POINT
-         lu(k,304) = 1._r8 / lu(k,304)
+         lu(k,304) = 1._r4 / lu(k,304)
          lu(k,305) = lu(k,305) * lu(k,304)
          lu(k,306) = lu(k,306) * lu(k,304)
          lu(k,307) = lu(k,307) * lu(k,304)
@@ -1254,7 +1254,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,310) * lu(k,1290)
          lu(k,1339) = lu(k,1339) - lu(k,311) * lu(k,1290)
 !DIR$ DISTRIBUTE POINT
-         lu(k,312) = 1._r8 / lu(k,312)
+         lu(k,312) = 1._r4 / lu(k,312)
          lu(k,313) = lu(k,313) * lu(k,312)
          lu(k,314) = lu(k,314) * lu(k,312)
          lu(k,315) = lu(k,315) * lu(k,312)
@@ -1281,7 +1281,7 @@
          lu(k,1381) = lu(k,1381) - lu(k,316) * lu(k,1372)
          lu(k,1396) = lu(k,1396) - lu(k,317) * lu(k,1372)
 !DIR$ DISTRIBUTE POINT
-         lu(k,318) = 1._r8 / lu(k,318)
+         lu(k,318) = 1._r4 / lu(k,318)
          lu(k,319) = lu(k,319) * lu(k,318)
          lu(k,320) = lu(k,320) * lu(k,318)
          lu(k,321) = lu(k,321) * lu(k,318)
@@ -1315,7 +1315,7 @@
          lu(k,1226) = lu(k,1226) - lu(k,325) * lu(k,1192)
          lu(k,1228) = lu(k,1228) - lu(k,326) * lu(k,1192)
 !DIR$ DISTRIBUTE POINT
-         lu(k,327) = 1._r8 / lu(k,327)
+         lu(k,327) = 1._r4 / lu(k,327)
          lu(k,328) = lu(k,328) * lu(k,327)
          lu(k,329) = lu(k,329) * lu(k,327)
          lu(k,330) = lu(k,330) * lu(k,327)
@@ -1344,7 +1344,7 @@
          lu(k,1331) = lu(k,1331) - lu(k,329) * lu(k,1292)
          lu(k,1333) = lu(k,1333) - lu(k,330) * lu(k,1292)
 !DIR$ DISTRIBUTE POINT
-         lu(k,331) = 1._r8 / lu(k,331)
+         lu(k,331) = 1._r4 / lu(k,331)
          lu(k,332) = lu(k,332) * lu(k,331)
          lu(k,333) = lu(k,333) * lu(k,331)
          lu(k,334) = lu(k,334) * lu(k,331)
@@ -1383,7 +1383,7 @@
       subroutine lu_fac09( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -1393,7 +1393,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1403,7 +1403,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,338) = 1._r8 / lu(k,338)
+         lu(k,338) = 1._r4 / lu(k,338)
          lu(k,339) = lu(k,339) * lu(k,338)
          lu(k,340) = lu(k,340) * lu(k,338)
          lu(k,341) = lu(k,341) * lu(k,338)
@@ -1435,7 +1435,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,343) * lu(k,1441)
          lu(k,1471) = lu(k,1471) - lu(k,344) * lu(k,1441)
 !DIR$ DISTRIBUTE POINT
-         lu(k,346) = 1._r8 / lu(k,346)
+         lu(k,346) = 1._r4 / lu(k,346)
          lu(k,347) = lu(k,347) * lu(k,346)
          lu(k,348) = lu(k,348) * lu(k,346)
          lu(k,349) = lu(k,349) * lu(k,346)
@@ -1473,7 +1473,7 @@
          lu(k,1335) = lu(k,1335) - lu(k,354) * lu(k,1294)
          lu(k,1337) = lu(k,1337) - lu(k,355) * lu(k,1294)
 !DIR$ DISTRIBUTE POINT
-         lu(k,357) = 1._r8 / lu(k,357)
+         lu(k,357) = 1._r4 / lu(k,357)
          lu(k,358) = lu(k,358) * lu(k,357)
          lu(k,359) = lu(k,359) * lu(k,357)
          lu(k,360) = lu(k,360) * lu(k,357)
@@ -1505,7 +1505,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,362) * lu(k,1295)
          lu(k,1339) = lu(k,1339) - lu(k,363) * lu(k,1295)
 !DIR$ DISTRIBUTE POINT
-         lu(k,366) = 1._r8 / lu(k,366)
+         lu(k,366) = 1._r4 / lu(k,366)
          lu(k,367) = lu(k,367) * lu(k,366)
          lu(k,368) = lu(k,368) * lu(k,366)
          lu(k,369) = lu(k,369) * lu(k,366)
@@ -1543,7 +1543,7 @@
          lu(k,1468) = lu(k,1468) - lu(k,374) * lu(k,1442)
          lu(k,1471) = lu(k,1471) - lu(k,375) * lu(k,1442)
 !DIR$ DISTRIBUTE POINT
-         lu(k,380) = 1._r8 / lu(k,380)
+         lu(k,380) = 1._r4 / lu(k,380)
          lu(k,381) = lu(k,381) * lu(k,380)
          lu(k,382) = lu(k,382) * lu(k,380)
          lu(k,383) = lu(k,383) * lu(k,380)
@@ -1585,7 +1585,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,389) * lu(k,1296)
          lu(k,1339) = lu(k,1339) - lu(k,390) * lu(k,1296)
 !DIR$ DISTRIBUTE POINT
-         lu(k,391) = 1._r8 / lu(k,391)
+         lu(k,391) = 1._r4 / lu(k,391)
          lu(k,392) = lu(k,392) * lu(k,391)
          lu(k,393) = lu(k,393) * lu(k,391)
          lu(k,394) = lu(k,394) * lu(k,391)
@@ -1629,7 +1629,7 @@
       subroutine lu_fac10( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -1639,7 +1639,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1649,7 +1649,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,397) = 1._r8 / lu(k,397)
+         lu(k,397) = 1._r4 / lu(k,397)
          lu(k,398) = lu(k,398) * lu(k,397)
          lu(k,399) = lu(k,399) * lu(k,397)
          lu(k,400) = lu(k,400) * lu(k,397)
@@ -1687,7 +1687,7 @@
          lu(k,1426) = lu(k,1426) - lu(k,399) * lu(k,1407)
          lu(k,1430) = lu(k,1430) - lu(k,400) * lu(k,1407)
 !DIR$ DISTRIBUTE POINT
-         lu(k,402) = 1._r8 / lu(k,402)
+         lu(k,402) = 1._r4 / lu(k,402)
          lu(k,403) = lu(k,403) * lu(k,402)
          lu(k,404) = lu(k,404) * lu(k,402)
          lu(k,405) = lu(k,405) * lu(k,402)
@@ -1731,7 +1731,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,408) * lu(k,1443)
          lu(k,1471) = lu(k,1471) - lu(k,409) * lu(k,1443)
 !DIR$ DISTRIBUTE POINT
-         lu(k,412) = 1._r8 / lu(k,412)
+         lu(k,412) = 1._r4 / lu(k,412)
          lu(k,413) = lu(k,413) * lu(k,412)
          lu(k,414) = lu(k,414) * lu(k,412)
          lu(k,415) = lu(k,415) * lu(k,412)
@@ -1775,7 +1775,7 @@
          lu(k,1430) = lu(k,1430) - lu(k,418) * lu(k,1408)
          lu(k,1432) = - lu(k,419) * lu(k,1408)
 !DIR$ DISTRIBUTE POINT
-         lu(k,420) = 1._r8 / lu(k,420)
+         lu(k,420) = 1._r4 / lu(k,420)
          lu(k,421) = lu(k,421) * lu(k,420)
          lu(k,422) = lu(k,422) * lu(k,420)
          lu(k,423) = lu(k,423) * lu(k,420)
@@ -1819,7 +1819,7 @@
          lu(k,1468) = lu(k,1468) - lu(k,426) * lu(k,1444)
          lu(k,1471) = lu(k,1471) - lu(k,427) * lu(k,1444)
 !DIR$ DISTRIBUTE POINT
-         lu(k,429) = 1._r8 / lu(k,429)
+         lu(k,429) = 1._r4 / lu(k,429)
          lu(k,430) = lu(k,430) * lu(k,429)
          lu(k,431) = lu(k,431) * lu(k,429)
          lu(k,432) = lu(k,432) * lu(k,429)
@@ -1857,7 +1857,7 @@
          lu(k,1468) = lu(k,1468) - lu(k,434) * lu(k,1445)
          lu(k,1471) = lu(k,1471) - lu(k,435) * lu(k,1445)
 !DIR$ DISTRIBUTE POINT
-         lu(k,440) = 1._r8 / lu(k,440)
+         lu(k,440) = 1._r4 / lu(k,440)
          lu(k,441) = lu(k,441) * lu(k,440)
          lu(k,442) = lu(k,442) * lu(k,440)
          lu(k,443) = lu(k,443) * lu(k,440)
@@ -1896,7 +1896,7 @@
       subroutine lu_fac11( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -1906,7 +1906,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -1916,7 +1916,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,448) = 1._r8 / lu(k,448)
+         lu(k,448) = 1._r4 / lu(k,448)
          lu(k,449) = lu(k,449) * lu(k,448)
          lu(k,450) = lu(k,450) * lu(k,448)
          lu(k,451) = lu(k,451) * lu(k,448)
@@ -1960,7 +1960,7 @@
          lu(k,1357) = lu(k,1357) - lu(k,454) * lu(k,1346)
          lu(k,1360) = lu(k,1360) - lu(k,455) * lu(k,1346)
 !DIR$ DISTRIBUTE POINT
-         lu(k,456) = 1._r8 / lu(k,456)
+         lu(k,456) = 1._r4 / lu(k,456)
          lu(k,457) = lu(k,457) * lu(k,456)
          lu(k,458) = lu(k,458) * lu(k,456)
          lu(k,459) = lu(k,459) * lu(k,456)
@@ -2007,7 +2007,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,464) * lu(k,1301)
          lu(k,1339) = lu(k,1339) - lu(k,465) * lu(k,1301)
 !DIR$ DISTRIBUTE POINT
-         lu(k,467) = 1._r8 / lu(k,467)
+         lu(k,467) = 1._r4 / lu(k,467)
          lu(k,468) = lu(k,468) * lu(k,467)
          lu(k,469) = lu(k,469) * lu(k,467)
          lu(k,470) = lu(k,470) * lu(k,467)
@@ -2054,7 +2054,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,475) * lu(k,1302)
          lu(k,1339) = lu(k,1339) - lu(k,476) * lu(k,1302)
 !DIR$ DISTRIBUTE POINT
-         lu(k,477) = 1._r8 / lu(k,477)
+         lu(k,477) = 1._r4 / lu(k,477)
          lu(k,478) = lu(k,478) * lu(k,477)
          lu(k,479) = lu(k,479) * lu(k,477)
          lu(k,480) = lu(k,480) * lu(k,477)
@@ -2105,7 +2105,7 @@
       subroutine lu_fac12( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -2115,7 +2115,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2125,7 +2125,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,489) = 1._r8 / lu(k,489)
+         lu(k,489) = 1._r4 / lu(k,489)
          lu(k,490) = lu(k,490) * lu(k,489)
          lu(k,491) = lu(k,491) * lu(k,489)
          lu(k,492) = lu(k,492) * lu(k,489)
@@ -2175,7 +2175,7 @@
          lu(k,1469) = lu(k,1469) - lu(k,496) * lu(k,1448)
          lu(k,1471) = lu(k,1471) - lu(k,497) * lu(k,1448)
 !DIR$ DISTRIBUTE POINT
-         lu(k,501) = 1._r8 / lu(k,501)
+         lu(k,501) = 1._r4 / lu(k,501)
          lu(k,502) = lu(k,502) * lu(k,501)
          lu(k,503) = lu(k,503) * lu(k,501)
          lu(k,504) = lu(k,504) * lu(k,501)
@@ -2225,7 +2225,7 @@
          lu(k,1430) = lu(k,1430) - lu(k,508) * lu(k,1409)
          lu(k,1432) = lu(k,1432) - lu(k,509) * lu(k,1409)
 !DIR$ DISTRIBUTE POINT
-         lu(k,511) = 1._r8 / lu(k,511)
+         lu(k,511) = 1._r4 / lu(k,511)
          lu(k,512) = lu(k,512) * lu(k,511)
          lu(k,513) = lu(k,513) * lu(k,511)
          lu(k,514) = lu(k,514) * lu(k,511)
@@ -2275,7 +2275,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,516) * lu(k,1449)
          lu(k,1471) = lu(k,1471) - lu(k,517) * lu(k,1449)
 !DIR$ DISTRIBUTE POINT
-         lu(k,520) = 1._r8 / lu(k,520)
+         lu(k,520) = 1._r4 / lu(k,520)
          lu(k,521) = lu(k,521) * lu(k,520)
          lu(k,522) = lu(k,522) * lu(k,520)
          lu(k,523) = lu(k,523) * lu(k,520)
@@ -2332,7 +2332,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,530) * lu(k,1306)
          lu(k,1339) = lu(k,1339) - lu(k,531) * lu(k,1306)
 !DIR$ DISTRIBUTE POINT
-         lu(k,534) = 1._r8 / lu(k,534)
+         lu(k,534) = 1._r4 / lu(k,534)
          lu(k,535) = lu(k,535) * lu(k,534)
          lu(k,536) = lu(k,536) * lu(k,534)
          lu(k,537) = lu(k,537) * lu(k,534)
@@ -2405,7 +2405,7 @@
       subroutine lu_fac13( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -2415,7 +2415,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2425,7 +2425,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,552) = 1._r8 / lu(k,552)
+         lu(k,552) = 1._r4 / lu(k,552)
          lu(k,553) = lu(k,553) * lu(k,552)
          lu(k,554) = lu(k,554) * lu(k,552)
          lu(k,555) = lu(k,555) * lu(k,552)
@@ -2479,7 +2479,7 @@
          lu(k,1428) = lu(k,1428) - lu(k,555) * lu(k,1411)
          lu(k,1430) = lu(k,1430) - lu(k,556) * lu(k,1411)
 !DIR$ DISTRIBUTE POINT
-         lu(k,558) = 1._r8 / lu(k,558)
+         lu(k,558) = 1._r4 / lu(k,558)
          lu(k,559) = lu(k,559) * lu(k,558)
          lu(k,560) = lu(k,560) * lu(k,558)
          lu(k,561) = lu(k,561) * lu(k,558)
@@ -2537,7 +2537,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,564) * lu(k,1308)
          lu(k,1339) = lu(k,1339) - lu(k,565) * lu(k,1308)
 !DIR$ DISTRIBUTE POINT
-         lu(k,568) = 1._r8 / lu(k,568)
+         lu(k,568) = 1._r4 / lu(k,568)
          lu(k,569) = lu(k,569) * lu(k,568)
          lu(k,570) = lu(k,570) * lu(k,568)
          lu(k,571) = lu(k,571) * lu(k,568)
@@ -2599,7 +2599,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,577) * lu(k,1309)
          lu(k,1339) = lu(k,1339) - lu(k,578) * lu(k,1309)
 !DIR$ DISTRIBUTE POINT
-         lu(k,581) = 1._r8 / lu(k,581)
+         lu(k,581) = 1._r4 / lu(k,581)
          lu(k,582) = lu(k,582) * lu(k,581)
          lu(k,583) = lu(k,583) * lu(k,581)
          lu(k,584) = lu(k,584) * lu(k,581)
@@ -2664,7 +2664,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,589) * lu(k,1450)
          lu(k,1471) = lu(k,1471) - lu(k,590) * lu(k,1450)
 !DIR$ DISTRIBUTE POINT
-         lu(k,594) = 1._r8 / lu(k,594)
+         lu(k,594) = 1._r4 / lu(k,594)
          lu(k,595) = lu(k,595) * lu(k,594)
          lu(k,596) = lu(k,596) * lu(k,594)
          lu(k,597) = lu(k,597) * lu(k,594)
@@ -2743,7 +2743,7 @@
       subroutine lu_fac14( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -2753,7 +2753,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -2763,7 +2763,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,609) = 1._r8 / lu(k,609)
+         lu(k,609) = 1._r4 / lu(k,609)
          lu(k,610) = lu(k,610) * lu(k,609)
          lu(k,611) = lu(k,611) * lu(k,609)
          lu(k,612) = lu(k,612) * lu(k,609)
@@ -2828,7 +2828,7 @@
          lu(k,1466) = lu(k,1466) - lu(k,611) * lu(k,1451)
          lu(k,1467) = lu(k,1467) - lu(k,612) * lu(k,1451)
 !DIR$ DISTRIBUTE POINT
-         lu(k,614) = 1._r8 / lu(k,614)
+         lu(k,614) = 1._r4 / lu(k,614)
          lu(k,615) = lu(k,615) * lu(k,614)
          lu(k,616) = lu(k,616) * lu(k,614)
          lu(k,617) = lu(k,617) * lu(k,614)
@@ -2902,7 +2902,7 @@
          lu(k,1429) = lu(k,1429) - lu(k,621) * lu(k,1414)
          lu(k,1430) = lu(k,1430) - lu(k,622) * lu(k,1414)
 !DIR$ DISTRIBUTE POINT
-         lu(k,625) = 1._r8 / lu(k,625)
+         lu(k,625) = 1._r4 / lu(k,625)
          lu(k,626) = lu(k,626) * lu(k,625)
          lu(k,627) = lu(k,627) * lu(k,625)
          lu(k,628) = lu(k,628) * lu(k,625)
@@ -2981,7 +2981,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,635) * lu(k,1312)
          lu(k,1339) = lu(k,1339) - lu(k,636) * lu(k,1312)
 !DIR$ DISTRIBUTE POINT
-         lu(k,637) = 1._r8 / lu(k,637)
+         lu(k,637) = 1._r4 / lu(k,637)
          lu(k,638) = lu(k,638) * lu(k,637)
          lu(k,639) = lu(k,639) * lu(k,637)
          lu(k,640) = lu(k,640) * lu(k,637)
@@ -3053,7 +3053,7 @@
          lu(k,1394) = lu(k,1394) - lu(k,641) * lu(k,1378)
          lu(k,1396) = lu(k,1396) - lu(k,642) * lu(k,1378)
 !DIR$ DISTRIBUTE POINT
-         lu(k,644) = 1._r8 / lu(k,644)
+         lu(k,644) = 1._r4 / lu(k,644)
          lu(k,645) = lu(k,645) * lu(k,644)
          lu(k,646) = lu(k,646) * lu(k,644)
          lu(k,647) = lu(k,647) * lu(k,644)
@@ -3152,7 +3152,7 @@
       subroutine lu_fac15( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -3162,7 +3162,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -3172,7 +3172,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,657) = 1._r8 / lu(k,657)
+         lu(k,657) = 1._r4 / lu(k,657)
          lu(k,658) = lu(k,658) * lu(k,657)
          lu(k,659) = lu(k,659) * lu(k,657)
          lu(k,660) = lu(k,660) * lu(k,657)
@@ -3274,7 +3274,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,666) * lu(k,1452)
          lu(k,1471) = lu(k,1471) - lu(k,667) * lu(k,1452)
 !DIR$ DISTRIBUTE POINT
-         lu(k,669) = 1._r8 / lu(k,669)
+         lu(k,669) = 1._r4 / lu(k,669)
          lu(k,670) = lu(k,670) * lu(k,669)
          lu(k,671) = lu(k,671) * lu(k,669)
          lu(k,672) = lu(k,672) * lu(k,669)
@@ -3374,7 +3374,7 @@
          lu(k,1395) = lu(k,1395) - lu(k,675) * lu(k,1379)
          lu(k,1396) = lu(k,1396) - lu(k,676) * lu(k,1379)
 !DIR$ DISTRIBUTE POINT
-         lu(k,684) = 1._r8 / lu(k,684)
+         lu(k,684) = 1._r4 / lu(k,684)
          lu(k,685) = lu(k,685) * lu(k,684)
          lu(k,686) = lu(k,686) * lu(k,684)
          lu(k,687) = lu(k,687) * lu(k,684)
@@ -3493,7 +3493,7 @@
       subroutine lu_fac16( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -3503,7 +3503,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -3513,7 +3513,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,707) = 1._r8 / lu(k,707)
+         lu(k,707) = 1._r4 / lu(k,707)
          lu(k,708) = lu(k,708) * lu(k,707)
          lu(k,709) = lu(k,709) * lu(k,707)
          lu(k,710) = lu(k,710) * lu(k,707)
@@ -3635,7 +3635,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,721) * lu(k,1318)
          lu(k,1339) = lu(k,1339) - lu(k,722) * lu(k,1318)
 !DIR$ DISTRIBUTE POINT
-         lu(k,731) = 1._r8 / lu(k,731)
+         lu(k,731) = 1._r4 / lu(k,731)
          lu(k,732) = lu(k,732) * lu(k,731)
          lu(k,733) = lu(k,733) * lu(k,731)
          lu(k,734) = lu(k,734) * lu(k,731)
@@ -3745,7 +3745,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,742) * lu(k,1319)
          lu(k,1339) = lu(k,1339) - lu(k,743) * lu(k,1319)
 !DIR$ DISTRIBUTE POINT
-         lu(k,750) = 1._r8 / lu(k,750)
+         lu(k,750) = 1._r4 / lu(k,750)
          lu(k,751) = lu(k,751) * lu(k,750)
          lu(k,752) = lu(k,752) * lu(k,750)
          lu(k,753) = lu(k,753) * lu(k,750)
@@ -3859,7 +3859,7 @@
          lu(k,1337) = lu(k,1337) - lu(k,763) * lu(k,1320)
          lu(k,1339) = lu(k,1339) - lu(k,764) * lu(k,1320)
 !DIR$ DISTRIBUTE POINT
-         lu(k,770) = 1._r8 / lu(k,770)
+         lu(k,770) = 1._r4 / lu(k,770)
          lu(k,771) = lu(k,771) * lu(k,770)
          lu(k,772) = lu(k,772) * lu(k,770)
          lu(k,773) = lu(k,773) * lu(k,770)
@@ -3985,7 +3985,7 @@
       subroutine lu_fac17( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -3995,7 +3995,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -4005,7 +4005,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,799) = 1._r8 / lu(k,799)
+         lu(k,799) = 1._r4 / lu(k,799)
          lu(k,800) = lu(k,800) * lu(k,799)
          lu(k,801) = lu(k,801) * lu(k,799)
          lu(k,802) = lu(k,802) * lu(k,799)
@@ -4115,7 +4115,7 @@
          lu(k,1430) = lu(k,1430) - lu(k,810) * lu(k,1416)
          lu(k,1432) = lu(k,1432) - lu(k,811) * lu(k,1416)
 !DIR$ DISTRIBUTE POINT
-         lu(k,816) = 1._r8 / lu(k,816)
+         lu(k,816) = 1._r4 / lu(k,816)
          lu(k,817) = lu(k,817) * lu(k,816)
          lu(k,818) = lu(k,818) * lu(k,816)
          lu(k,819) = lu(k,819) * lu(k,816)
@@ -4247,7 +4247,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,828) * lu(k,1453)
          lu(k,1471) = lu(k,1471) - lu(k,829) * lu(k,1453)
 !DIR$ DISTRIBUTE POINT
-         lu(k,843) = 1._r8 / lu(k,843)
+         lu(k,843) = 1._r4 / lu(k,843)
          lu(k,844) = lu(k,844) * lu(k,843)
          lu(k,845) = lu(k,845) * lu(k,843)
          lu(k,846) = lu(k,846) * lu(k,843)
@@ -4391,7 +4391,7 @@
       subroutine lu_fac18( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -4401,7 +4401,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -4411,7 +4411,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,856) = 1._r8 / lu(k,856)
+         lu(k,856) = 1._r4 / lu(k,856)
          lu(k,857) = lu(k,857) * lu(k,856)
          lu(k,858) = lu(k,858) * lu(k,856)
          lu(k,859) = lu(k,859) * lu(k,856)
@@ -4566,7 +4566,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,864) * lu(k,1455)
          lu(k,1471) = lu(k,1471) - lu(k,865) * lu(k,1455)
 !DIR$ DISTRIBUTE POINT
-         lu(k,870) = 1._r8 / lu(k,870)
+         lu(k,870) = 1._r4 / lu(k,870)
          lu(k,871) = lu(k,871) * lu(k,870)
          lu(k,872) = lu(k,872) * lu(k,870)
          lu(k,873) = lu(k,873) * lu(k,870)
@@ -4712,7 +4712,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,878) * lu(k,1456)
          lu(k,1471) = lu(k,1471) - lu(k,879) * lu(k,1456)
 !DIR$ DISTRIBUTE POINT
-         lu(k,890) = 1._r8 / lu(k,890)
+         lu(k,890) = 1._r4 / lu(k,890)
          lu(k,891) = lu(k,891) * lu(k,890)
          lu(k,892) = lu(k,892) * lu(k,890)
          lu(k,893) = lu(k,893) * lu(k,890)
@@ -4868,7 +4868,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,903) * lu(k,1457)
          lu(k,1471) = lu(k,1471) - lu(k,904) * lu(k,1457)
 !DIR$ DISTRIBUTE POINT
-         lu(k,912) = 1._r8 / lu(k,912)
+         lu(k,912) = 1._r4 / lu(k,912)
          lu(k,913) = lu(k,913) * lu(k,912)
          lu(k,914) = lu(k,914) * lu(k,912)
          lu(k,915) = lu(k,915) * lu(k,912)
@@ -5033,7 +5033,7 @@
       subroutine lu_fac19( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -5043,7 +5043,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -5053,7 +5053,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,971) = 1._r8 / lu(k,971)
+         lu(k,971) = 1._r4 / lu(k,971)
          lu(k,972) = lu(k,972) * lu(k,971)
          lu(k,973) = lu(k,973) * lu(k,971)
          lu(k,974) = lu(k,974) * lu(k,971)
@@ -5211,7 +5211,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,982) * lu(k,1459)
          lu(k,1471) = lu(k,1471) - lu(k,983) * lu(k,1459)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1013) = 1._r8 / lu(k,1013)
+         lu(k,1013) = 1._r4 / lu(k,1013)
          lu(k,1014) = lu(k,1014) * lu(k,1013)
          lu(k,1015) = lu(k,1015) * lu(k,1013)
          lu(k,1016) = lu(k,1016) * lu(k,1013)
@@ -5345,7 +5345,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1023) * lu(k,1460)
          lu(k,1471) = lu(k,1471) - lu(k,1024) * lu(k,1460)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1054) = 1._r8 / lu(k,1054)
+         lu(k,1054) = 1._r4 / lu(k,1054)
          lu(k,1055) = lu(k,1055) * lu(k,1054)
          lu(k,1056) = lu(k,1056) * lu(k,1054)
          lu(k,1057) = lu(k,1057) * lu(k,1054)
@@ -5457,7 +5457,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1063) * lu(k,1461)
          lu(k,1471) = lu(k,1471) - lu(k,1064) * lu(k,1461)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1079) = 1._r8 / lu(k,1079)
+         lu(k,1079) = 1._r4 / lu(k,1079)
          lu(k,1080) = lu(k,1080) * lu(k,1079)
          lu(k,1081) = lu(k,1081) * lu(k,1079)
          lu(k,1082) = lu(k,1082) * lu(k,1079)
@@ -5549,7 +5549,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1087) * lu(k,1462)
          lu(k,1471) = lu(k,1471) - lu(k,1088) * lu(k,1462)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1179) = 1._r8 / lu(k,1179)
+         lu(k,1179) = 1._r4 / lu(k,1179)
          lu(k,1180) = lu(k,1180) * lu(k,1179)
          lu(k,1181) = lu(k,1181) * lu(k,1179)
          lu(k,1182) = lu(k,1182) * lu(k,1179)
@@ -5630,7 +5630,7 @@
       subroutine lu_fac20( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -5640,7 +5640,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -5650,7 +5650,7 @@
 !DIR$ ASSUME (mod(k,13) .eq. 0)
 !dir$ simd
       do k = ofl,ofu
-         lu(k,1223) = 1._r8 / lu(k,1223)
+         lu(k,1223) = 1._r4 / lu(k,1223)
          lu(k,1224) = lu(k,1224) * lu(k,1223)
          lu(k,1225) = lu(k,1225) * lu(k,1223)
          lu(k,1226) = lu(k,1226) * lu(k,1223)
@@ -5708,7 +5708,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1229) * lu(k,1464)
          lu(k,1471) = lu(k,1471) - lu(k,1230) * lu(k,1464)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1245) = 1._r8 / lu(k,1245)
+         lu(k,1245) = 1._r4 / lu(k,1245)
          lu(k,1246) = lu(k,1246) * lu(k,1245)
          lu(k,1247) = lu(k,1247) * lu(k,1245)
          lu(k,1248) = lu(k,1248) * lu(k,1245)
@@ -5752,7 +5752,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1250) * lu(k,1465)
          lu(k,1471) = lu(k,1471) - lu(k,1251) * lu(k,1465)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1263) = 1._r8 / lu(k,1263)
+         lu(k,1263) = 1._r4 / lu(k,1263)
          lu(k,1264) = lu(k,1264) * lu(k,1263)
          lu(k,1265) = lu(k,1265) * lu(k,1263)
          lu(k,1266) = lu(k,1266) * lu(k,1263)
@@ -5784,7 +5784,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1267) * lu(k,1466)
          lu(k,1471) = lu(k,1471) - lu(k,1268) * lu(k,1466)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1337) = 1._r8 / lu(k,1337)
+         lu(k,1337) = 1._r4 / lu(k,1337)
          lu(k,1338) = lu(k,1338) * lu(k,1337)
          lu(k,1339) = lu(k,1339) * lu(k,1337)
          lu(k,1340) = lu(k,1340) * lu(k,1337)
@@ -5806,7 +5806,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1340) * lu(k,1467)
          lu(k,1471) = lu(k,1471) - lu(k,1341) * lu(k,1467)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1362) = 1._r8 / lu(k,1362)
+         lu(k,1362) = 1._r4 / lu(k,1362)
          lu(k,1363) = lu(k,1363) * lu(k,1362)
          lu(k,1364) = lu(k,1364) * lu(k,1362)
          lu(k,1365) = lu(k,1365) * lu(k,1362)
@@ -5820,7 +5820,7 @@
          lu(k,1470) = lu(k,1470) - lu(k,1364) * lu(k,1468)
          lu(k,1471) = lu(k,1471) - lu(k,1365) * lu(k,1468)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1398) = 1._r8 / lu(k,1398)
+         lu(k,1398) = 1._r4 / lu(k,1398)
          lu(k,1399) = lu(k,1399) * lu(k,1398)
          lu(k,1400) = lu(k,1400) * lu(k,1398)
          lu(k,1433) = lu(k,1433) - lu(k,1399) * lu(k,1432)
@@ -5828,11 +5828,11 @@
          lu(k,1470) = lu(k,1470) - lu(k,1399) * lu(k,1469)
          lu(k,1471) = lu(k,1471) - lu(k,1400) * lu(k,1469)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1433) = 1._r8 / lu(k,1433)
+         lu(k,1433) = 1._r4 / lu(k,1433)
          lu(k,1434) = lu(k,1434) * lu(k,1433)
          lu(k,1471) = lu(k,1471) - lu(k,1434) * lu(k,1470)
 !DIR$ DISTRIBUTE POINT
-         lu(k,1471) = 1._r8 / lu(k,1471)
+         lu(k,1471) = 1._r4 / lu(k,1471)
 
       end do
 
@@ -5841,7 +5841,7 @@
       subroutine lu_fac( ofl, ofu, lu, chnkpnts )
 
 
-          USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
 
       implicit none
 
@@ -5851,7 +5851,7 @@
       integer, intent(in) :: ofl
       integer, intent(in) :: ofu
       integer, intent(in) :: chnkpnts ! total spatial points in chunk;
-      real(r8), intent(inout) :: lu(chnkpnts,nzcnt)
+      real(r4), intent(inout) :: lu(chnkpnts,nzcnt)
 
       call lu_fac01( ofl, ofu, lu, chnkpnts )
       call lu_fac02( ofl, ofu, lu, chnkpnts )

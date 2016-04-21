@@ -8,6 +8,7 @@
         USE mo_gas_phase_chemdr, ONLY: gas_phase_chemdr
         
         USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+        USE shr_kind_mod, ONLY: r4 => shr_kind_r4
         USE mo_imp_sol, ONLY: kr_externs_in_mo_imp_sol
         USE chem_mods, ONLY: kr_externs_in_chem_mods
         USE mo_tracname, ONLY: kr_externs_in_mo_tracname
@@ -27,6 +28,7 @@
         INTEGER :: lchnk
         INTEGER :: ncol
         REAL(KIND=r8) :: delt
+        REAL(KIND=r4) :: delt_4        
 
         integer rank, size, ierror
 
@@ -50,32 +52,33 @@
                 CALL kgen_error_stop("FILE OPEN ERROR: " // TRIM(ADJUSTL(kgen_filepath)))
             END IF 
             
-!            WRITE (*, *) ""
-!            WRITE (*, *) "***************** Verification against '" // trim(adjustl(kgen_filepath)) // "' *****************"
+            WRITE (*, *) ""
+            WRITE (*, *) "***************** Verification against '" // trim(adjustl(kgen_filepath)) // "' *****************"
             
             
             !driver read in arguments
             READ (UNIT = kgen_unit) lchnk
             READ (UNIT = kgen_unit) ncol
             READ (UNIT = kgen_unit) delt
-            
+            delt_4 = REAL(delt)           
+ 
             !extern input variables
             CALL kr_externs_in_mo_imp_sol(kgen_unit)
             CALL kr_externs_in_chem_mods(kgen_unit)
             CALL kr_externs_in_mo_tracname(kgen_unit)
             
             !callsite part
-            CALL gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
+            CALL gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt_4)
             CLOSE (UNIT=kgen_unit)
             
         END DO 
         
-!        WRITE (*, *) ""
-!        WRITE (*, *) "******************************************************************************"
-!        WRITE (*, *) "imp_sol summary: Total number of verification cases: 4"
-!        WRITE (*, *) "imp_sol summary: Average call time of all calls (usec): ", kgen_total_time / 4
-!        WRITE (*, *) "******************************************************************************"
-!        WRITE (*, *) rank,"/",size,kgen_total_time / 4
-         WRITE (*, *)kgen_total_time / 4
+        WRITE (*, *) ""
+        WRITE (*, *) "******************************************************************************"
+        WRITE (*, *) "imp_sol summary: Total number of verification cases: 4"
+        WRITE (*, *) "imp_sol summary: Average call time of all calls (usec): ", kgen_total_time / 4
+        WRITE (*, *) "******************************************************************************"
+        WRITE (*, *) rank,"/",size,kgen_total_time / 4
+!        WRITE (*, *)kgen_total_time / 4
         call MPI_FINALIZE(ierror)
     END PROGRAM 

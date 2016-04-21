@@ -11,6 +11,7 @@
       module mo_imp_sol
 
           USE shr_kind_mod, ONLY: r8 => shr_kind_r8
+          USE shr_kind_mod, ONLY: r4 => shr_kind_r4
           USE chem_mods, ONLY: clscnt4, gas_pcnst, clsmap
 
           USE kgen_utils_mod, ONLY: kgen_dp, kgen_array_sumcheck
@@ -21,12 +22,14 @@
 !-----------------------------------------------------------------------
       integer, parameter :: itermax = 11
       integer, parameter :: cut_limit = 5
-      real(r8), parameter :: sol_min = 1.e-20_r8
-      real(r8), parameter :: small = 1.e-40_r8
+      real(r4), parameter :: sol_min = 1.e-20_r4
+!SAM      real(r4), parameter :: small = 1.e-40_r4
+      real(r4), parameter :: small = 1.e-32_r4 
 
       SAVE
 
-      real(r8) :: epsilon(clscnt4)
+      real(r4) :: epsilon(clscnt4)
+      real(r8) :: epsilon_8(clscnt4)
       logical :: factor(itermax)
 
       PRIVATE
@@ -76,11 +79,11 @@
       integer, intent(in) :: ncol ! columns in chunck
       integer, intent(in) :: lchnk ! chunk id
       integer, intent(in) :: chnkpnts ! total spatial points in chunk; ncol*pver
-      real(r8), intent(in) :: delt ! time step (s)
-      real(r8), intent(in) :: reaction_rates(chnkpnts,max(1,rxntot)) ! rxt rates (1/cm^3/s)
-      real(r8), intent(in) :: extfrc(chnkpnts,max(1,extcnt)) ! external in-situ forcing (1/cm^3/s)
-      real(r8), intent(in) :: het_rates(chnkpnts,max(1,gas_pcnst)) ! washout rates (1/s)
-      real(r8), intent(inout) :: base_sol(chnkpnts,gas_pcnst) ! species mixing ratios (vmr)
+      real(r4), intent(in) :: delt ! time step (s)
+      real(r4), intent(in) :: reaction_rates(chnkpnts,max(1,rxntot)) ! rxt rates (1/cm^3/s)
+      real(r4), intent(in) :: extfrc(chnkpnts,max(1,extcnt)) ! external in-situ forcing (1/cm^3/s)
+      real(r4), intent(in) :: het_rates(chnkpnts,max(1,gas_pcnst)) ! washout rates (1/s)
+      real(r4), intent(inout) :: base_sol(chnkpnts,gas_pcnst) ! species mixing ratios (vmr)
 
 !-----------------------------------------------------------------------
 ! ... local variables
@@ -96,20 +99,20 @@
       integer :: cut_cnt
       integer :: stp_con_cnt
       integer :: nstep
-      real(r8) :: interval_done
-      real(r8) :: dt
-      real(r8) :: dti
-      real(r8) :: max_delta(max(1,clscnt4))
-      real(r8) :: sys_jac(chnkpnts,max(1,nzcnt))
-      real(r8) :: lin_jac(chnkpnts,max(1,nzcnt))
-      real(r8) :: solution(chnkpnts,max(1,clscnt4))
-      real(r8) :: forcing(chnkpnts,max(1,clscnt4))
-      real(r8) :: iter_invariant(chnkpnts,max(1,clscnt4))
-      real(r8) :: prod(chnkpnts,max(1,clscnt4))
-      real(r8) :: loss(chnkpnts,max(1,clscnt4))
-      real(r8) :: ind_prd(chnkpnts,max(1,clscnt4))
-      real(r8) :: sbase_sol(chnkpnts,gas_pcnst)
-      real(r8) :: wrk(chnkpnts)
+      real(r4) :: interval_done
+      real(r4) :: dt
+      real(r4) :: dti
+      real(r4) :: max_delta(max(1,clscnt4))
+      real(r4) :: sys_jac(chnkpnts,max(1,nzcnt))
+      real(r4) :: lin_jac(chnkpnts,max(1,nzcnt))
+      real(r4) :: solution(chnkpnts,max(1,clscnt4))
+      real(r4) :: forcing(chnkpnts,max(1,clscnt4))
+      real(r4) :: iter_invariant(chnkpnts,max(1,clscnt4))
+      real(r4) :: prod(chnkpnts,max(1,clscnt4))
+      real(r4) :: loss(chnkpnts,max(1,clscnt4))
+      real(r4) :: ind_prd(chnkpnts,max(1,clscnt4))
+      real(r4) :: sbase_sol(chnkpnts,gas_pcnst)
+      real(r4) :: wrk(chnkpnts)
       logical :: convergence
       logical :: spc_conv(chnkpnts,max(1,clscnt4))
       logical :: cls_conv(chnkpnts)
@@ -127,7 +130,7 @@
          call indprd( 4, ind_prd, base_sol, extfrc, reaction_rates, chnkpnts )
       else
          do m = 1,clscnt4
-            ind_prd(:,m) = 0._r8
+            ind_prd(:,m) = 0._r4
          end do
       end if
 
@@ -145,10 +148,10 @@ chnkpnts_loop : &
          cut_cnt = 0
          fail_cnt = 0
          stp_con_cnt = 0
-         interval_done = 0._r8
+         interval_done = 0._r4
 time_step_loop : &
          do
-            dti = 1._r8 / dt
+            dti = 1._r4 / dt
 !-----------------------------------------------------------------------
 ! ... transfer from base to class array
 !-----------------------------------------------------------------------
@@ -207,7 +210,7 @@ iter_loop : do nr_iter = 1,itermax
                   where( .not. cls_conv(ofl:ofu) )
                      solution(ofl:ofu,m) = solution(ofl:ofu,m) + forcing(ofl:ofu,m)
                   elsewhere
-                     forcing(ofl:ofu,m) = 0._r8
+                     forcing(ofl:ofu,m) = 0._r4
                   endwhere
                end do
 !-----------------------------------------------------------------------
@@ -224,10 +227,10 @@ iter_loop : do nr_iter = 1,itermax
                      where( abs( solution(ofl:ofu,pndx) ) > sol_min )
                         wrk(ofl:ofu) = abs( forcing(ofl:ofu,pndx)/solution(ofl:ofu,pndx) )
                      elsewhere
-                        wrk(ofl:ofu) = 0._r8
+                        wrk(ofl:ofu) = 0._r4
                      endwhere
                      max_delta(cndx) = maxval( wrk(ofl:ofu) )
-                     solution(ofl:ofu,pndx) = max( 0._r8,solution(ofl:ofu,pndx) )
+                     solution(ofl:ofu,pndx) = max( 0._r4,solution(ofl:ofu,pndx) )
                      base_sol(ofl:ofu,bndx) = solution(ofl:ofu,pndx)
                      where( abs( forcing(ofl:ofu,pndx) ) > small )
                         spc_conv(ofl:ofu,cndx) = abs(forcing(ofl:ofu,pndx)) <= epsilon(cndx)*abs(solution(ofl:ofu,pndx))
@@ -251,7 +254,7 @@ iter_loop : do nr_iter = 1,itermax
 ! ... limit iterate
 !-----------------------------------------------------------------------
                   do m = 1,clscnt4
-                     solution(ofl:ofu,m) = max( 0._r8,solution(ofl:ofu,m) )
+                     solution(ofl:ofu,m) = max( 0._r4,solution(ofl:ofu,m) )
                   end do
 !-----------------------------------------------------------------------
 ! ... transfer latest solution back to base array
@@ -282,9 +285,9 @@ iter_loop : do nr_iter = 1,itermax
                if( cut_cnt < cut_limit ) then
                   cut_cnt = cut_cnt + 1
                   if( cut_cnt < cut_limit ) then
-                     dt = .5_r8 * dt
+                     dt = .5_r4 * dt
                   else
-                     dt = .1_r8 * dt
+                     dt = .1_r4 * dt
                   end if
 !!$                  do m = 1,gas_pcnst
 !!$                     base_sol(ofl:ofu,m) = sbase_sol(ofl:ofu,m)
@@ -308,7 +311,7 @@ iter_loop : do nr_iter = 1,itermax
 !-----------------------------------------------------------------------
             interval_done = interval_done + dt
 ! SAM time_step_done : &
-            if( abs( delt - interval_done ) <= .0001_r8 ) then
+            if( abs( delt - interval_done ) <= .0001_r4 ) then
                if( fail_cnt > 0 ) then
 !!$                  write(*,*) 'imp_sol : @ (lchnk,lev) = ',lchnk,lev,' failed ',fail_cnt,' times'
                end if
@@ -325,7 +328,7 @@ iter_loop : do nr_iter = 1,itermax
                   sbase_sol(ofl:ofu,m) = base_sol(ofl:ofu,m)
                end do
                if( stp_con_cnt >= 2 ) then
-                  dt = 2._r8*dt
+                  dt = 2._r4*dt
                   stp_con_cnt = 0
                end if
                dt = min( dt,delt-interval_done )
@@ -349,8 +352,9 @@ iter_loop : do nr_iter = 1,itermax
           READ (UNIT = kgen_unit) kgen_istrue
           IF (kgen_istrue) THEN
               READ (UNIT = kgen_unit) kgen_array_sum
-              READ (UNIT = kgen_unit) epsilon
-              CALL kgen_array_sumcheck("epsilon", kgen_array_sum, REAL(SUM(epsilon), 8), .TRUE.)
+              READ (UNIT = kgen_unit) epsilon_8
+              CALL kgen_array_sumcheck("epsilon", kgen_array_sum, REAL(SUM(epsilon_8), 8), .TRUE.)
+              epsilon = REAL(epsilon_8)
           END IF 
           READ (UNIT = kgen_unit) kgen_istrue
           IF (kgen_istrue) THEN

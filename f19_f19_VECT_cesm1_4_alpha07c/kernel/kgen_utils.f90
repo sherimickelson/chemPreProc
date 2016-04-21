@@ -42,8 +42,10 @@ CONTAINS
 
 subroutine kgen_array_sumcheck(varname, sum1, sum2, finish)
     character(*), intent(in) :: varname
-    real(kind=8), intent(in) :: sum1, sum2
-    real(kind=8), parameter  :: max_rel_diff = 1.E-10
+    real(kind=8), intent(in) :: sum1
+    real(kind=8), intent(in) :: sum2
+!    real(kind=8), parameter  :: max_rel_diff = 1.E-10
+    real(kind=8), parameter  :: max_rel_diff = 1.E-6
     real(kind=8)  :: diff, rel_diff
     logical, intent(in), optional :: finish
     logical checkresult
@@ -54,6 +56,10 @@ subroutine kgen_array_sumcheck(varname, sum1, sum2, finish)
         checkresult = .FALSE.
 
         diff = ABS(sum2 - sum1)
+        print *, 'SUM of array, "', varname, '", is different.'
+        print *, 'From file : ', sum1
+        print *, 'From array: ', sum2
+        print *, 'Difference: ', diff
 
         if ( .NOT. (sum1 == 0._8) ) then
 
@@ -67,9 +73,9 @@ subroutine kgen_array_sumcheck(varname, sum1, sum2, finish)
                 print *, 'Difference: ', diff
                 print *, 'Relative difference: ', rel_diff
 
-                if ( present(finish) .AND. finish ) then
-                    stop
-                end if
+                !if ( present(finish) .AND. finish ) then
+                !    stop
+                !end if
             end if
         else
             print *, ''
@@ -78,9 +84,9 @@ subroutine kgen_array_sumcheck(varname, sum1, sum2, finish)
             print *, 'From array: ', sum2
             print *, 'Difference: ', diff
 
-            if ( present(finish) .AND. finish ) then
-                stop
-            end if
+            !if ( present(finish) .AND. finish ) then
+            !    stop
+            !end if
         end if
     end if
 end subroutine
