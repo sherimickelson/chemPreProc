@@ -484,23 +484,23 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
     
     !local verify variables
     CALL kv_gas_phase_chemdr_real__r8_dim3("vmr", check_status, vmr, kgenref_vmr)
-!    WRITE (*, *) ""
-!    IF (check_status%verboseLevel > 0) THEN
-!        WRITE (*, *) "Number of verified variables: ", check_status%numTotal
-!        WRITE (*, *) "Number of identical variables: ", check_status%numIdentical
-!        WRITE (*, *) "Number of non-identical variables within tolerance: ", check_status%numInTol
-!        WRITE (*, *) "Number of non-identical variables out of tolerance: ", check_status%numOutTol
-!        WRITE (*, *) "Tolerance: ", check_status%tolerance
-!    END IF 
-!    WRITE (*, *) ""
-!    IF (check_status%numOutTol > 0) THEN
-!        WRITE (*, *) "Verification FAILED"
-!        check_status%Passed = .FALSE.
-!    ELSE
-!        WRITE (*, *) "Verification PASSED"
-!        check_status%Passed = .TRUE.
-!    END IF 
-!    WRITE (*, *) ""
+    WRITE (*, *) ""
+    IF (check_status%verboseLevel > 0) THEN
+        WRITE (*, *) "Number of verified variables: ", check_status%numTotal
+        WRITE (*, *) "Number of identical variables: ", check_status%numIdentical
+        WRITE (*, *) "Number of non-identical variables within tolerance: ", check_status%numInTol
+        WRITE (*, *) "Number of non-identical variables out of tolerance: ", check_status%numOutTol
+        WRITE (*, *) "Tolerance: ", check_status%tolerance
+    END IF 
+    WRITE (*, *) ""
+    IF (check_status%numOutTol > 0) THEN
+        WRITE (*, *) "Verification FAILED"
+        check_status%Passed = .FALSE.
+    ELSE
+        WRITE (*, *) "Verification PASSED"
+        check_status%Passed = .TRUE.
+    END IF 
+    WRITE (*, *) ""
     
     !Measuring elapsed time. Please increase the value of kgen_maxiter to get improve timing measurment resolution.
     CALL SYSTEM_CLOCK(kgen_start_clock, kgen_rate_clock)
@@ -509,7 +509,7 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
     END DO 
     CALL SYSTEM_CLOCK(kgen_stop_clock, kgen_rate_clock)
     kgen_elapsed_time = 1.0e6*(kgen_stop_clock - kgen_start_clock)/REAL(kgen_rate_clock*kgen_maxiter)
-!    WRITE (*, *) "imp_sol : Time per call (usec): ", kgen_elapsed_time
+    WRITE (*, *) "imp_sol : Time per call (usec): ", kgen_elapsed_time
     kgen_total_time = kgen_total_time + kgen_elapsed_time
     
     CONTAINS
@@ -536,9 +536,9 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
         
         IF (ALL(var == kgenref_var)) THEN
             check_status%numIdentical = check_status%numIdentical + 1
-!            IF (check_status%verboseLevel > 1) THEN
-!                WRITE (*, *) trim(adjustl(varname)), " is IDENTICAL."
-!            END IF 
+            IF (check_status%verboseLevel > 1) THEN
+                WRITE (*, *) trim(adjustl(varname)), " is IDENTICAL."
+            END IF 
             check_result = CHECK_IDENTICAL
         ELSE
             ALLOCATE (buf1(SIZE(var,dim=1),SIZE(var,dim=2),SIZE(var,dim=3)))
@@ -555,46 +555,46 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
             rmsdiff = SQRT(SUM(buf2)/REAL(n))
             IF (nrmsdiff > check_status%tolerance) THEN
                 check_status%numOutTol = check_status%numOutTol + 1
-!                IF (check_status%verboseLevel > 0) THEN
-!                    WRITE (*, *) trim(adjustl(varname)), " is NOT IDENTICAL(out of tolerance)."
-!                END IF 
+                IF (check_status%verboseLevel > 0) THEN
+                    WRITE (*, *) trim(adjustl(varname)), " is NOT IDENTICAL(out of tolerance)."
+                END IF 
                 check_result = CHECK_OUT_TOL
             ELSE
                 check_status%numInTol = check_status%numInTol + 1
-!                IF (check_status%verboseLevel > 0) THEN
-!                    WRITE (*, *) trim(adjustl(varname)), " is NOT IDENTICAL(within tolerance)."
-!                END IF 
+                IF (check_status%verboseLevel > 0) THEN
+                    WRITE (*, *) trim(adjustl(varname)), " is NOT IDENTICAL(within tolerance)."
+                END IF 
                 check_result = CHECK_IN_TOL
             END IF 
         END IF 
-!        IF (check_result == CHECK_IDENTICAL) THEN
-!            IF (check_status%verboseLevel > 2) THEN
-!                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
-!                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
-!                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
-!                WRITE (*, *) "RMS of difference is ", 0
-!                WRITE (*, *) "Normalized RMS of difference is ", 0
-!                WRITE (*, *) ""
-!            END IF 
-!        ELSE IF (check_result == CHECK_OUT_TOL) THEN
-!            IF (check_status%verboseLevel > 0) THEN
-!                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
-!                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
-!                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
-!                WRITE (*, *) "RMS of difference is ", rmsdiff
-!                WRITE (*, *) "Normalized RMS of difference is ", nrmsdiff
-!                WRITE (*, *) ""
-!            END IF 
-!        ELSE IF (check_result == CHECK_IN_TOL) THEN
-!            IF (check_status%verboseLevel > 1) THEN
-!                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
-!                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
-!                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
-!                WRITE (*, *) "RMS of difference is ", rmsdiff
-!                WRITE (*, *) "Normalized RMS of difference is ", nrmsdiff
-!                WRITE (*, *) ""
-!            END IF 
-!        END IF 
+        IF (check_result == CHECK_IDENTICAL) THEN
+            IF (check_status%verboseLevel > 2) THEN
+                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
+                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
+                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
+                WRITE (*, *) "RMS of difference is ", 0
+                WRITE (*, *) "Normalized RMS of difference is ", 0
+                WRITE (*, *) ""
+            END IF 
+        ELSE IF (check_result == CHECK_OUT_TOL) THEN
+            IF (check_status%verboseLevel > 0) THEN
+                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
+                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
+                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
+                WRITE (*, *) "RMS of difference is ", rmsdiff
+                WRITE (*, *) "Normalized RMS of difference is ", nrmsdiff
+                WRITE (*, *) ""
+            END IF 
+        ELSE IF (check_result == CHECK_IN_TOL) THEN
+            IF (check_status%verboseLevel > 1) THEN
+                WRITE (*, *) count( var /= kgenref_var), " of ", size( var ), " elements are different."
+                WRITE (*, *) "Average - kernel ", sum(var)/real(size(var))
+                WRITE (*, *) "Average - reference ", sum(kgenref_var)/real(size(kgenref_var))
+                WRITE (*, *) "RMS of difference is ", rmsdiff
+                WRITE (*, *) "Normalized RMS of difference is ", nrmsdiff
+                WRITE (*, *) ""
+            END IF 
+        END IF 
         
     END SUBROUTINE kv_gas_phase_chemdr_real__r8_dim3
     
