@@ -1,0 +1,314 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+18    Profiling
+19    On-line analysis
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+18    {169,169,169}
+19    {169,0,0}
+
+
+EVENT_TYPE
+6    40000033    Executing CPU
+
+
+EVENT_TYPE
+6    40000001    Application
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000003    Flushing Traces
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000002    Trace initialization
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000036    Process IDentifier
+6    40000037    Parent Process IDentifier
+6    40000038    fork() depth
+
+
+EVENT_TYPE
+7  42000050 (PAPI_TOT_INS) Instr completed
+7  42000059 (PAPI_TOT_CYC) Total cycles
+7  42000020 (PAPI_TLB_DM) Data TLB misses
+7  42000021 (PAPI_TLB_IM) Instr TLB misses
+7  42000106 (PAPI_VEC_DP) DP Vector/SIMD instr
+7  42000104 (PAPI_DP_OPS) DP operations
+7  42000052 (PAPI_FP_INS) FP instructions
+7  42000102 (PAPI_FP_OPS) FP operations
+7  42000054 (PAPI_SR_INS) Stores
+7  42000006 (PAPI_L1_TCM) L1 cache misses
+7  42000007 (PAPI_L2_TCM) L2 cache misses
+7  42000008 (PAPI_L3_TCM) L3 cache misses
+7  42001035 (RESOURCE_STALLS) Resource related stall cycles
+7  41999999 Active hardware counter set
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0    60000019    User function
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   _init
+
+
+EVENT_TYPE
+0    60000119    User function line
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   0 (.) [libpthread-2.17.so]
+
+
+EVENT_TYPE
+0    30000000    Sampled functions
+0    30000001    Sampled functions (depth 1)
+0    30000002    Sampled functions (depth 2)
+0    30000003    Sampled functions (depth 3)
+0    30000004    Sampled functions (depth 4)
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   _init
+
+
+EVENT_TYPE
+0    30000100    Sampled line functions (depth 0)
+0    30000101    Sampled lines functions (depth 1)
+0    30000102    Sampled lines functions (depth 2)
+0    30000103    Sampled lines functions (depth 3)
+0    30000104    Sampled lines functions (depth 4)
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   0 (.) [libpthread-2.17.so]
+
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+
+
+EVENT_TYPE
+0 30000200 Code block for sampled line
+0 30000201 Code block for sampled line (depth 1)
+0 30000202 Code block for sampled line (depth 2)
+0 30000203 Code block for sampled line (depth 3)
+0 30000204 Code block for sampled line (depth 4)
+VALUES
+0 End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (.) [libpthread-2.17.so]
+
+
+EVENT_TYPE
+0 600000000 Folded phase
+
+EVENT_TYPE
+0 630000000 Folded sampling caller level 0
+0 631000000 Folded sampling reverse caller level 0
+0 630000001 Folded sampling caller level 1
+0 631000001 Folded sampling reverse caller level 1
+0 630000002 Folded sampling caller level 2
+0 631000002 Folded sampling reverse caller level 2
+0 630000003 Folded sampling caller level 3
+0 631000003 Folded sampling reverse caller level 3
+0 630000004 Folded sampling caller level 4
+0 631000004 Folded sampling reverse caller level 4
+0 630000005 Folded sampling caller level 5
+0 631000005 Folded sampling reverse caller level 5
+0 630000006 Folded sampling caller level 6
+0 631000006 Folded sampling reverse caller level 6
+0 630000007 Folded sampling caller level 7
+0 631000007 Folded sampling reverse caller level 7
+0 630000008 Folded sampling caller level 8
+0 631000008 Folded sampling reverse caller level 8
+0 630000009 Folded sampling caller level 9
+0 631000009 Folded sampling reverse caller level 9
+0 600000004 Folded processed caller 
+VALUES
+0 End
+1 Unresolved
+2 _NOT_Found
+3 _init
+
+
+EVENT_TYPE
+0 630000100 Folded sampling caller line level 0
+0 631000100 Folded sampling reverse caller line level 0
+0 630000101 Folded sampling caller line level 1
+0 631000101 Folded sampling reverse caller line level 1
+0 630000102 Folded sampling caller line level 2
+0 631000102 Folded sampling reverse caller line level 2
+0 630000103 Folded sampling caller line level 3
+0 631000103 Folded sampling reverse caller line level 3
+0 630000104 Folded sampling caller line level 4
+0 631000104 Folded sampling reverse caller line level 4
+0 630000105 Folded sampling caller line level 5
+0 631000105 Folded sampling reverse caller line level 5
+0 630000106 Folded sampling caller line level 6
+0 631000106 Folded sampling reverse caller line level 6
+0 630000107 Folded sampling caller line level 7
+0 631000107 Folded sampling reverse caller line level 7
+0 630000108 Folded sampling caller line level 8
+0 631000108 Folded sampling reverse caller line level 8
+0 630000109 Folded sampling caller line level 9
+0 631000109 Folded sampling reverse caller line level 9
+VALUES
+0 End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (.) [libpthread-2.17.so]
+
+
+EVENT_TYPE
+0 630000200 Folded sampling caller line AST level 0
+0 631000200 Folded sampling reverse caller line AST level 0
+0 630000201 Folded sampling caller line AST level 1
+0 631000201 Folded sampling reverse caller line AST level 1
+0 630000202 Folded sampling caller line AST level 2
+0 631000202 Folded sampling reverse caller line AST level 2
+0 630000203 Folded sampling caller line AST level 3
+0 631000203 Folded sampling reverse caller line AST level 3
+0 630000204 Folded sampling caller line AST level 4
+0 631000204 Folded sampling reverse caller line AST level 4
+0 630000205 Folded sampling caller line AST level 5
+0 631000205 Folded sampling reverse caller line AST level 5
+0 630000206 Folded sampling caller line AST level 6
+0 631000206 Folded sampling reverse caller line AST level 6
+0 630000207 Folded sampling caller line AST level 7
+0 631000207 Folded sampling reverse caller line AST level 7
+0 630000208 Folded sampling caller line AST level 8
+0 631000208 Folded sampling reverse caller line AST level 8
+0 630000209 Folded sampling caller line AST level 9
+0 631000209 Folded sampling reverse caller line AST level 9
+VALUES
+0 End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (.) [libpthread-2.17.so]
+
+
+EVENT_TYPE
+0 642000104 Folded PAPI_DP_OPS
+0 642000052 Folded PAPI_FP_INS
+0 642000102 Folded PAPI_FP_OPS
+0 642000006 Folded PAPI_L1_TCM
+0 642000007 Folded PAPI_L2_TCM
+0 642000008 Folded PAPI_L3_TCM
+0 642000054 Folded PAPI_SR_INS
+0 642000020 Folded PAPI_TLB_DM
+0 642000021 Folded PAPI_TLB_IM
+0 642000059 Folded PAPI_TOT_CYC
+0 642000050 Folded PAPI_TOT_INS
+0 642000106 Folded PAPI_VEC_DP
+0 642001035 Folded RESOURCE_STALLS
+

@@ -1,0 +1,55 @@
+mickelso@mike-mic1:~/chemPreProc/f19_f19_VECT_cesm1_4_alpha07c/kernel$ ./kernel.exe 
+ 
+ ***************** Verification against 'imp_sol.1.0' *****************
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    1157753.25000000     
+ 
+ ***************** Verification against 'imp_sol.48.0' *****************
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    1112572.00000000     
+ 
+ ***************** Verification against 'imp_sol.1.60' *****************
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    1217259.00000000     
+ 
+ ***************** Verification against 'imp_sol.48.60' *****************
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    1100171.00000000     
+ 
+ ******************************************************************************
+ imp_sol summary: Total number of verification cases: 4
+ imp_sol summary: Average call time of all calls (usec): 
+   1146938.81250000     
+ ******************************************************************************

@@ -6,7 +6,7 @@ FC := ifort
 FC_FLAGS := -qopt-report=5 -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -debug minimal  -openmp -free -no-fma
 ARC_FLAG_MIC := -mmic -O2 -align array64byte
 ARC_FLAG_HASWELL := -xCORE-AVX2 -O2 -align array64byte 
-ARC_FLAG_SANDY := -xAVX -O2
+ARC_FLAG_SANDY := -xAVX -O2 -g
 
 ifeq ($(cpu),haswell)
 	FC_FLAGS := ${FC_FLAGS} ${ARC_FLAG_HASWELL}
@@ -24,11 +24,12 @@ ALL_OBJS := mo_gas_phase_chemdr.o mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_ind
 #	./kernel.exe
 
 build: ${ALL_OBJS}
-	${FC} ${FC_FLAGS}   -o kernel.exe $^
+	${FC} ${FC_FLAGS} -L /ncar/asap/opt/extrae/3.0.1/snb/intel/15.0.0/basic/lib/ -lseqtrace -o kernel.exe $^
+#	${FC} ${FC_FLAGS} -o kernel.exe $^
 
 
 
-mo_gas_phase_chemdr.o: mo_gas_phase_chemdr.F90 mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o ppgrid.o kgen_utils.o
+mo_gas_phase_chemdr.o: mo_gas_phase_chemdr.F90 mo_imp_sol.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o ppgrid.o kgen_utils.o extrae_module.o
 	${FC} ${FC_FLAGS} -c -o $@ $<
 
 mo_imp_sol.o: mo_imp_sol.F90 kgen_utils.o shr_kind_mod.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o mo_tracname.o

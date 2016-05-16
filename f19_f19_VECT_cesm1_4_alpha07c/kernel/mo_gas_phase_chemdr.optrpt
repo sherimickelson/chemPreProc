@@ -1,0 +1,722 @@
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: mo_gas_phase_chemdr._
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (mo_gas_phase_chemdr._) [1/4=25.0%] mo_gas_phase_chemdr.F90(6,8)
+
+===========================================================================
+
+Begin optimization report for: MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR) [2/4=50.0%] mo_gas_phase_chemdr.F90(74,12)
+  -> EXTERN: (74,12) _alloca
+  -> EXTERN: (74,12) _alloca
+  -> EXTERN: (74,12) _alloca
+  -> EXTERN: (74,12) _alloca
+  -> EXTERN: (74,12) _alloca
+  -> EXTERN: (74,12) __getsp_inlined
+  -> EXTERN: (344,5) for_read_seq
+  -> EXTERN: (346,9) for_read_seq
+  -> EXTERN: (347,9) for_read_seq
+  -> EXTERN: (348,14) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (350,5) for_read_seq
+  -> EXTERN: (352,9) for_read_seq
+  -> EXTERN: (353,9) for_read_seq
+  -> EXTERN: (354,14) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (356,5) for_read_seq
+  -> EXTERN: (358,9) for_read_seq
+  -> EXTERN: (359,9) for_read_seq
+  -> EXTERN: (360,14) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (362,5) for_read_seq
+  -> EXTERN: (363,5) for_read_seq
+  -> EXTERN: (365,9) for_read_seq
+  -> EXTERN: (366,9) for_read_seq
+  -> EXTERN: (367,14) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (371,10) KR_EXTERNS_OUT_MO_IMP_SOL
+  -> EXTERN: (374,5) for_read_seq
+  -> EXTERN: (376,9) for_read_seq
+  -> EXTERN: (377,9) for_read_seq
+  -> EXTERN: (378,14) KGEN_ARRAY_SUMCHECK
+  -> INLINE: (387,10) MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KGEN_KERNEL (isz = 22) (sz = 25)
+    -> EXTERN: (520,10) extrae_user_function_
+    -> EXTERN: (521,10) IMP_SOL
+    -> EXTERN: (522,10) extrae_user_function_
+    -> EXTERN: (523,10) extrae_next_hwc_set_
+  -> EXTERN: (481,10) KGEN_INIT_CHECK
+  -> (486,10) MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KV_GAS_PHASE_CHEMDR_REAL__R8_DIM3 (isz = 3696) (sz = 3709)
+     [[ Inlining would exceed -inline-max-size value (3709>253) <1>]]
+  -> EXTERN: (487,5) for_write_seq_lis
+  -> EXTERN: (489,9) for_write_seq_lis
+  -> EXTERN: (489,9) for_write_seq_lis_xmit
+  -> EXTERN: (490,9) for_write_seq_lis
+  -> EXTERN: (490,9) for_write_seq_lis_xmit
+  -> EXTERN: (491,9) for_write_seq_lis
+  -> EXTERN: (491,9) for_write_seq_lis_xmit
+  -> EXTERN: (492,9) for_write_seq_lis
+  -> EXTERN: (492,9) for_write_seq_lis_xmit
+  -> EXTERN: (493,9) for_write_seq_lis
+  -> EXTERN: (493,9) for_write_seq_lis_xmit
+  -> EXTERN: (495,5) for_write_seq_lis
+  -> EXTERN: (497,9) for_write_seq_lis
+  -> EXTERN: (500,9) for_write_seq_lis
+  -> EXTERN: (503,5) for_write_seq_lis
+  -> EXTERN: (506,10) for_system_clock_rate
+  -> EXTERN: (506,10) for_system_clock_count
+  -> INLINE: (508,14) MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KGEN_KERNEL (isz = 22) (sz = 25)
+    -> EXTERN: (520,10) extrae_user_function_
+    -> EXTERN: (521,10) IMP_SOL
+    -> EXTERN: (522,10) extrae_user_function_
+    -> EXTERN: (523,10) extrae_next_hwc_set_
+  -> EXTERN: (510,10) for_system_clock_rate
+  -> EXTERN: (510,10) for_system_clock_count
+  -> EXTERN: (512,5) for_write_seq_lis_xmit
+  -> EXTERN: (512,5) for_write_seq_lis
+  -> EXTERN: (515,5) __resetsp_inlined
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(348,65)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(348,65)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(348,65)
+         remark #25084: Preprocess Loopnests: Moving Out Store    [ mo_gas_phase_chemdr.F90(348,65) ]
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(354,62)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(354,62)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(354,62)
+         remark #25084: Preprocess Loopnests: Moving Out Store    [ mo_gas_phase_chemdr.F90(354,62) ]
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(360,79)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(360,79)
+      remark #25084: Preprocess Loopnests: Moving Out Store    [ mo_gas_phase_chemdr.F90(360,79) ]
+      remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(367,74)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(367,74)
+      remark #25084: Preprocess Loopnests: Moving Out Store    [ mo_gas_phase_chemdr.F90(367,74) ]
+      remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(378,70)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(378,70)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(378,70)
+         remark #25084: Preprocess Loopnests: Moving Out Store    [ mo_gas_phase_chemdr.F90(378,70) ]
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+      LOOP END
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(509,5)
+   remark #15543: loop was not vectorized: loop with function call not considered an optimization candidate.   [ mo_gas_phase_chemdr.F90(520,10) ]
+LOOP END
+===========================================================================
+
+Begin optimization report for: MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KGEN_KERNEL
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KGEN_KERNEL) mo_gas_phase_chemdr.F90(518,16)
+
+===========================================================================
+
+Begin optimization report for: MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KV_GAS_PHASE_CHEMDR_REAL__R8_DIM3
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MO_GAS_PHASE_CHEMDR::GAS_PHASE_CHEMDR:KV_GAS_PHASE_CHEMDR_REAL__R8_DIM3) [4/4=100.0%] mo_gas_phase_chemdr.F90(527,26)
+  -> EXTERN: (544,17) __getsp_inlined
+  -> EXTERN: (544,17) for_write_seq_lis
+  -> EXTERN: (544,17) for_write_seq_lis_xmit
+  -> EXTERN: (544,17) __resetsp_inlined
+  -> EXTERN: (544,30) for_trim
+  -> EXTERN: (544,35) for_adjustl
+  -> EXTERN: (544,35) _alloca
+  -> EXTERN: (544,43) _alloca
+  -> EXTERN: (548,13) for_alloc_allocatable
+  -> EXTERN: (548,13) for_check_mult_overflow64
+  -> EXTERN: (549,13) for_alloc_allocatable
+  -> EXTERN: (549,13) for_check_mult_overflow64
+  -> EXTERN: (551,13) _alloca
+  -> EXTERN: (552,17) for_alloc_allocatable
+  -> EXTERN: (552,17) for_dealloc_allocatable
+  -> EXTERN: (553,17) for_alloc_allocatable
+  -> EXTERN: (553,17) for_dealloc_allocatable
+  -> EXTERN: (555,17) for_alloc_allocatable
+  -> EXTERN: (555,17) for_dealloc_allocatable
+  -> EXTERN: (556,17) for_alloc_allocatable
+  -> EXTERN: (556,17) for_dealloc_allocatable
+  -> EXTERN: (556,17) for_dealloc_allocatable
+  -> EXTERN: (556,17) __resetsp_inlined
+  -> EXTERN: (556,17) __getsp_inlined
+  -> EXTERN: (563,21) __getsp_inlined
+  -> EXTERN: (563,21) for_write_seq_lis
+  -> EXTERN: (563,21) for_write_seq_lis_xmit
+  -> EXTERN: (563,21) __resetsp_inlined
+  -> EXTERN: (563,34) for_trim
+  -> EXTERN: (563,39) for_adjustl
+  -> EXTERN: (563,39) _alloca
+  -> EXTERN: (563,47) _alloca
+  -> EXTERN: (569,21) for_write_seq_lis
+  -> EXTERN: (569,21) for_write_seq_lis_xmit
+  -> EXTERN: (569,21) __resetsp_inlined
+  -> EXTERN: (569,21) __getsp_inlined
+  -> EXTERN: (569,34) for_trim
+  -> EXTERN: (569,39) for_adjustl
+  -> EXTERN: (569,39) _alloca
+  -> EXTERN: (569,47) _alloca
+  -> EXTERN: (576,17) for_write_seq_lis
+  -> EXTERN: (576,17) for_write_seq_lis_xmit
+  -> EXTERN: (576,17) for_write_seq_lis_xmit
+  -> EXTERN: (576,17) for_write_seq_lis_xmit
+  -> EXTERN: (577,17) for_write_seq_lis
+  -> EXTERN: (577,17) for_write_seq_lis_xmit
+  -> EXTERN: (578,17) for_write_seq_lis
+  -> EXTERN: (578,17) for_write_seq_lis_xmit
+  -> EXTERN: (579,17) for_write_seq_lis
+  -> EXTERN: (579,17) for_write_seq_lis_xmit
+  -> EXTERN: (580,17) for_write_seq_lis
+  -> EXTERN: (580,17) for_write_seq_lis_xmit
+  -> EXTERN: (581,17) for_write_seq_lis
+  -> EXTERN: (585,17) for_write_seq_lis
+  -> EXTERN: (585,17) for_write_seq_lis_xmit
+  -> EXTERN: (585,17) for_write_seq_lis_xmit
+  -> EXTERN: (585,17) for_write_seq_lis_xmit
+  -> EXTERN: (586,17) for_write_seq_lis
+  -> EXTERN: (586,17) for_write_seq_lis_xmit
+  -> EXTERN: (587,17) for_write_seq_lis
+  -> EXTERN: (587,17) for_write_seq_lis_xmit
+  -> EXTERN: (588,17) for_write_seq_lis
+  -> EXTERN: (588,17) for_write_seq_lis_xmit
+  -> EXTERN: (589,17) for_write_seq_lis
+  -> EXTERN: (589,17) for_write_seq_lis_xmit
+  -> EXTERN: (590,17) for_write_seq_lis
+  -> EXTERN: (594,17) for_write_seq_lis
+  -> EXTERN: (594,17) for_write_seq_lis_xmit
+  -> EXTERN: (594,17) for_write_seq_lis_xmit
+  -> EXTERN: (594,17) for_write_seq_lis_xmit
+  -> EXTERN: (595,17) for_write_seq_lis
+  -> EXTERN: (595,17) for_write_seq_lis_xmit
+  -> EXTERN: (596,17) for_write_seq_lis
+  -> EXTERN: (596,17) for_write_seq_lis_xmit
+  -> EXTERN: (597,17) for_write_seq_lis
+  -> EXTERN: (597,17) for_write_seq_lis_xmit
+  -> EXTERN: (598,17) for_write_seq_lis
+  -> EXTERN: (598,17) for_write_seq_lis_xmit
+  -> EXTERN: (599,17) for_write_seq_lis
+  -> EXTERN: (603,5) for_dealloc_allocatable
+  -> EXTERN: (603,5) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(541,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(541,13)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(541,13)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 20 
+         remark #15477: vector loop cost: 8.250 
+         remark #15478: estimated potential speedup: 2.320 
+         remark #15479: lightweight vector operations: 13 
+         remark #15480: medium-overhead vector operations: 2 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(541,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(550,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(550,17)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(550,17)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 21 
+         remark #15477: vector loop cost: 13.000 
+         remark #15478: estimated potential speedup: 3.120 
+         remark #15479: lightweight vector operations: 8 
+         remark #15480: medium-overhead vector operations: 2 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(550,17)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(551,13)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(551,13)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(551,13)
+         remark #15389: vectorization support: reference 551 has unaligned access
+         remark #15389: vectorization support: reference 551 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15451: unmasked unaligned unit stride stores: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 26 
+         remark #15477: vector loop cost: 8.250 
+         remark #15478: estimated potential speedup: 3.040 
+         remark #15479: lightweight vector operations: 14 
+         remark #15480: medium-overhead vector operations: 1 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(551,13)
+      <Remainder>
+         remark #15389: vectorization support: reference 551 has unaligned access
+         remark #15389: vectorization support: reference 551 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(551,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(552,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(552,17)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(552,17)
+         remark #15389: vectorization support: reference var has unaligned access   [ mo_gas_phase_chemdr.F90(552,55) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(552,55) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(552,55) ]
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 1 
+         remark #15456: masked unaligned unit stride loads: 3 
+         remark #15457: masked unaligned unit stride stores: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 39 
+         remark #15477: vector loop cost: 21.000 
+         remark #15478: estimated potential speedup: 1.850 
+         remark #15479: lightweight vector operations: 23 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(552,17)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(553,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(553,17)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(553,17)
+         remark #15389: vectorization support: reference var has unaligned access   [ mo_gas_phase_chemdr.F90(553,41) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(553,41) ]
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 1 
+         remark #15456: masked unaligned unit stride loads: 2 
+         remark #15457: masked unaligned unit stride stores: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 25 
+         remark #15477: vector loop cost: 11.000 
+         remark #15478: estimated potential speedup: 2.220 
+         remark #15479: lightweight vector operations: 20 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(553,17)
+      <Remainder>
+         remark #15389: vectorization support: reference var has unaligned access   [ mo_gas_phase_chemdr.F90(553,41) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(553,41) ]
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(553,17)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(555,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(555,17)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(555,17)
+         remark #15389: vectorization support: reference var has unaligned access   [ mo_gas_phase_chemdr.F90(555,41) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(555,41) ]
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 1 
+         remark #15456: masked unaligned unit stride loads: 2 
+         remark #15457: masked unaligned unit stride stores: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 26 
+         remark #15477: vector loop cost: 11.000 
+         remark #15478: estimated potential speedup: 2.310 
+         remark #15479: lightweight vector operations: 20 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(555,17)
+      <Remainder>
+         remark #15389: vectorization support: reference var has unaligned access   [ mo_gas_phase_chemdr.F90(555,41) ]
+         remark #15389: vectorization support: reference kgenref_var has unaligned access   [ mo_gas_phase_chemdr.F90(555,41) ]
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(555,17)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(556,17)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(556,17)
+      remark #25236: Loop with pragma of trip count = 66 ignored for large value
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(556,17)
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15389: vectorization support: reference _30 has unaligned access
+         remark #15381: vectorization support: unaligned access used inside loop body
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 1 
+         remark #15456: masked unaligned unit stride loads: 1 
+         remark #15457: masked unaligned unit stride stores: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 22 
+         remark #15477: vector loop cost: 7.500 
+         remark #15478: estimated potential speedup: 2.840 
+         remark #15479: lightweight vector operations: 12 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(556,17)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(558,29)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(558,29)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(558,29)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(558,29)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(559,28)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(559,28)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(559,28)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(559,28)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(576,30)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(576,30)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(576,30)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 21 
+         remark #15477: vector loop cost: 13.000 
+         remark #15478: estimated potential speedup: 3.120 
+         remark #15479: lightweight vector operations: 8 
+         remark #15480: medium-overhead vector operations: 2 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(576,30)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(577,51)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(577,51)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(577,51)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(577,51)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(578,54)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(578,54)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(578,54)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(578,54)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(585,30)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(585,30)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(585,30)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 21 
+         remark #15477: vector loop cost: 13.000 
+         remark #15478: estimated potential speedup: 3.120 
+         remark #15479: lightweight vector operations: 8 
+         remark #15480: medium-overhead vector operations: 2 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(585,30)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(586,51)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(586,51)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(586,51)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(586,51)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(587,54)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(587,54)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(587,54)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(587,54)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(594,30)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(594,30)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(594,30)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15450: unmasked unaligned unit stride loads: 2 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 21 
+         remark #15477: vector loop cost: 13.000 
+         remark #15478: estimated potential speedup: 3.120 
+         remark #15479: lightweight vector operations: 8 
+         remark #15480: medium-overhead vector operations: 2 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(594,30)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(595,51)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(595,51)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(595,51)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(595,51)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at mo_gas_phase_chemdr.F90(596,54)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at mo_gas_phase_chemdr.F90(596,54)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(596,54)
+         remark #15331: loop was not vectorized: precise FP model implied by the command line or a directive prevents vectorization. Consider using fast FP model
+         remark #25439: unrolled with remainder by 2  
+      LOOP END
+
+      LOOP BEGIN at mo_gas_phase_chemdr.F90(596,54)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+mo_gas_phase_chemdr.F90(537,52):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+mo_gas_phase_chemdr.F90(537,39):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+mo_gas_phase_chemdr.F90(556,17):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (16, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING FOOTNOTES:
+
+<1> The subprogram is larger than the inliner would normally inline.  Use the
+    option -inline-max-size to increase the size of any subprogram that would
+    normally be inlined, add "!DIR$ATTRIBUTES FORCEINLINE" to the
+    declaration of the called function, or add "!DIR$ FORCEINLINE" before
+    the call site.
+

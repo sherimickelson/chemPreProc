@@ -1,0 +1,70 @@
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: KERNEL_DRIVER
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KERNEL_DRIVER) [1/1=100.0%] kernel_driver.f90(7,13)
+  -> EXTERN: (7,13) for_set_reentrancy
+  -> EXTERN: (7,13) for_set_fpe_
+  -> EXTERN: (74,13) for_write_int_lis
+  -> EXTERN: (76,13) for_write_int_lis
+  -> EXTERN: (77,13) for_concat
+  -> EXTERN: (77,43) for_trim
+  -> EXTERN: (77,48) for_adjustl
+  -> EXTERN: (77,86) for_trim
+  -> EXTERN: (77,91) for_adjustl
+  -> EXTERN: (78,25) KGEN_GET_NEWUNIT
+  -> EXTERN: (80,13) for_open
+  -> EXTERN: (82,22) KGEN_ERROR_STOP
+  -> EXTERN: (82,22) __resetsp_inlined
+  -> EXTERN: (82,22) __getsp_inlined
+  -> EXTERN: (82,58) _alloca
+  -> EXTERN: (82,58) for_concat
+  -> EXTERN: (82,61) for_trim
+  -> EXTERN: (82,66) for_adjustl
+  -> EXTERN: (85,13) for_write_seq_lis
+  -> EXTERN: (86,13) __resetsp_inlined
+  -> EXTERN: (86,13) for_write_seq_lis
+  -> EXTERN: (86,13) __getsp_inlined
+  -> EXTERN: (86,72) for_trim
+  -> EXTERN: (86,77) for_adjustl
+  -> EXTERN: (86,101) for_concat
+  -> EXTERN: (86,101) _alloca
+  -> EXTERN: (90,13) for_read_seq
+  -> EXTERN: (91,13) for_read_seq
+  -> EXTERN: (92,13) for_read_seq
+  -> EXTERN: (95,18) KR_EXTERNS_IN_MO_IMP_SOL
+  -> EXTERN: (96,18) KR_EXTERNS_IN_CHEM_MODS
+  -> EXTERN: (97,18) KR_EXTERNS_IN_MO_TRACNAME
+  -> EXTERN: (100,18) GAS_PHASE_CHEMDR
+  -> EXTERN: (101,20) for_close
+  -> EXTERN: (119,9) for_write_seq_lis
+  -> EXTERN: (120,9) for_write_seq_lis
+  -> EXTERN: (121,9) for_write_seq_lis
+  -> EXTERN: (122,9) for_write_seq_lis_xmit
+  -> EXTERN: (122,9) for_write_seq_lis
+  -> EXTERN: (123,9) for_write_seq_lis
+
+===========================================================================

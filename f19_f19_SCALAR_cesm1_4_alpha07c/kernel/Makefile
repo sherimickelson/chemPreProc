@@ -1,7 +1,8 @@
 # Makefile for KGEN-generated kernel
 
 FC := ifort
-FC_FLAGS := -I/ncar/opt/intel/12.1.0.233/impi/4.0.3.008/intel64/include -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source  -O2 -debug minimal  -openmp -free -no-fma -mmic
+FC_FLAGS := -I/ncar/opt/intel/12.1.0.233/impi/4.0.3.008/intel64/include -no-opt-dynamic-align  -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source  -O2 -debug minimal  -openmp -free -no-fma 
+#-mmic
 
 ALL_OBJS := mo_gas_phase_chemdr.o mo_imp_sol.o shr_kind_mod.o ppgrid.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o time_manager.o ESMF.o ESMF_TimeIntervalMod.o ESMF_BaseMod.o ESMF_TimeMod.o ESMF_AlarmMod.o ESMF_ShrTimeMod.o ESMF_BaseTimeMod.o ESMF_CalendarMod.o ESMF_ClockMod.o cam_logfile.o cam_abortutils.o shr_sys_mod.o shr_log_mod.o mo_tracname.o kernel_driver.o kgen_utils.o
 
@@ -9,9 +10,10 @@ run: build
 	./kernel.exe
 
 build: ${ALL_OBJS}
-	${FC} ${FC_FLAGS} -L/ncar/opt/intel/12.1.0.233/impi/4.0.3.008/intel64/lib/  -o kernel.exe $^
+	${FC} ${FC_FLAGS} -L /ncar/asap/opt/extrae/3.0.1/snb/intel/15.0.0/basic/lib/ -lseqtrace -o kernel.exe $^
+#	${FC} ${FC_FLAGS} -L/ncar/opt/intel/12.1.0.233/impi/4.0.3.008/intel64/lib/  -o kernel.exe $^
 
-mo_gas_phase_chemdr.o: mo_gas_phase_chemdr.F90 mo_imp_sol.o shr_kind_mod.o ppgrid.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o time_manager.o ESMF.o ESMF_TimeIntervalMod.o ESMF_BaseMod.o ESMF_TimeMod.o ESMF_AlarmMod.o ESMF_ShrTimeMod.o ESMF_BaseTimeMod.o ESMF_CalendarMod.o ESMF_ClockMod.o cam_logfile.o cam_abortutils.o shr_sys_mod.o shr_log_mod.o mo_tracname.o kgen_utils.o
+mo_gas_phase_chemdr.o: mo_gas_phase_chemdr.F90 mo_imp_sol.o shr_kind_mod.o ppgrid.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o time_manager.o ESMF.o ESMF_TimeIntervalMod.o ESMF_BaseMod.o ESMF_TimeMod.o ESMF_AlarmMod.o ESMF_ShrTimeMod.o ESMF_BaseTimeMod.o ESMF_CalendarMod.o ESMF_ClockMod.o cam_logfile.o cam_abortutils.o shr_sys_mod.o shr_log_mod.o mo_tracname.o kgen_utils.o extrae_module.o
 	${FC} ${FC_FLAGS} -c -o $@ $<
 
 mo_imp_sol.o: mo_imp_sol.F90 kgen_utils.o shr_kind_mod.o ppgrid.o chem_mods.o mo_indprd.o mo_lin_matrix.o mo_nln_matrix.o mo_lu_factor.o mo_prod_loss.o mo_lu_solve.o time_manager.o cam_logfile.o mo_tracname.o

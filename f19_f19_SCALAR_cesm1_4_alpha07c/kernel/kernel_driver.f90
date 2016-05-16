@@ -31,7 +31,7 @@
         REAL(KIND=r8) :: delt
         kgen_total_time = 0.0_kgen_dp
         
-        DO kgen_repeat_counter = 0, 3
+!        DO kgen_repeat_counter = 0, 3
             
             kgen_mpi_rank = kgen_mpi_rank_at(kgen_repeat_counter/2 + 1)
             WRITE (kgen_mpi_rank_conv, *) kgen_mpi_rank
@@ -66,7 +66,7 @@
             CALL gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
             CLOSE (UNIT=kgen_unit)
             
-        END DO 
+!        END DO 
         
         WRITE (*, *) ""
         WRITE (*, *) "******************************************************************************"

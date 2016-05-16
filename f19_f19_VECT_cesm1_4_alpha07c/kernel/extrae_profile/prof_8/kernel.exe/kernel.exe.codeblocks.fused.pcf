@@ -1,0 +1,714 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+18    Profiling
+19    On-line analysis
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+18    {169,169,169}
+19    {169,0,0}
+
+
+EVENT_TYPE
+6    40000033    Executing CPU
+
+
+EVENT_TYPE
+6    40000001    Application
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000003    Flushing Traces
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000002    Trace initialization
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000036    Process IDentifier
+6    40000037    Parent Process IDentifier
+6    40000038    fork() depth
+
+
+EVENT_TYPE
+7  42000050 (PAPI_TOT_INS) Instr completed
+7  42000059 (PAPI_TOT_CYC) Total cycles
+7  42000006 (PAPI_L1_TCM) L1 cache misses
+7  42000007 (PAPI_L2_TCM) L2 cache misses
+7  42000008 (PAPI_L3_TCM) L3 cache misses
+7  41999999 Active hardware counter set
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0    60000019    User function
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   kernel_driver
+4   _init
+5   gas_phase_chemdr
+6   imp_sol
+7   linmat01
+8   nlnmat01
+9   imp_prod_loss
+10   lu_fac06
+11   nlnmat03
+12   lu_fac17
+13   nlnmat06
+14   lu_slv08
+15   nlnmat02
+16   nlnmat_finit
+17   lu_fac19
+18   nlnmat05
+19   lu_fac15
+20   lu_fac16
+21   lu_slv01
+22   lu_slv07
+23   lu_fac13
+24   lu_fac07
+25   lu_fac14
+26   lu_fac18
+27   lu_slv06
+28   lu_fac04
+29   lu_fac11
+30   nlnmat07
+31   lu_fac10
+32   nlnmat04
+33   lu_fac12
+34   lu_slv02
+35   lu_fac01
+36   lu_fac20
+37   lu_fac09
+38   lu_slv04
+39   lu_fac05
+40   lu_slv03
+
+
+EVENT_TYPE
+0    60000119    User function line
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   0 (.) [libpthread-2.17.so]
+4   75 (kernel_driver.f90) [kernel.exe]
+5   360 (mo_gas_phase_chemdr.F90) [kernel.exe]
+6   367 (mo_gas_phase_chemdr.F90) [kernel.exe]
+7   378 (mo_gas_phase_chemdr.F90) [kernel.exe]
+8   163 (mo_imp_sol.F90) [kernel.exe]
+9   197 (mo_imp_sol.F90) [kernel.exe]
+10   198 (mo_imp_sol.F90) [kernel.exe]
+11   206 (mo_imp_sol.F90) [kernel.exe]
+12   208 (mo_imp_sol.F90) [kernel.exe]
+13   223 (mo_imp_sol.F90) [kernel.exe]
+14   231 (mo_imp_sol.F90) [kernel.exe]
+15   235 (mo_imp_sol.F90) [kernel.exe]
+16   47 (mo_lin_matrix.F90) [kernel.exe]
+17   51 (mo_lin_matrix.F90) [kernel.exe]
+18   57 (mo_lin_matrix.F90) [kernel.exe]
+19   60 (mo_lin_matrix.F90) [kernel.exe]
+20   67 (mo_lin_matrix.F90) [kernel.exe]
+21   88 (mo_lin_matrix.F90) [kernel.exe]
+22   105 (mo_lin_matrix.F90) [kernel.exe]
+23   108 (mo_lin_matrix.F90) [kernel.exe]
+24   141 (mo_lin_matrix.F90) [kernel.exe]
+25   50 (mo_lu_factor.F90) [kernel.exe]
+26   52 (mo_lu_factor.F90) [kernel.exe]
+27   70 (mo_lu_factor.F90) [kernel.exe]
+28   479 (mo_lu_factor.F90) [kernel.exe]
+29   533 (mo_lu_factor.F90) [kernel.exe]
+30   666 (mo_lu_factor.F90) [kernel.exe]
+31   862 (mo_lu_factor.F90) [kernel.exe]
+32   877 (mo_lu_factor.F90) [kernel.exe]
+33   884 (mo_lu_factor.F90) [kernel.exe]
+34   1046 (mo_lu_factor.F90) [kernel.exe]
+35   1459 (mo_lu_factor.F90) [kernel.exe]
+36   1686 (mo_lu_factor.F90) [kernel.exe]
+37   1897 (mo_lu_factor.F90) [kernel.exe]
+38   1960 (mo_lu_factor.F90) [kernel.exe]
+39   2339 (mo_lu_factor.F90) [kernel.exe]
+40   2432 (mo_lu_factor.F90) [kernel.exe]
+41   2530 (mo_lu_factor.F90) [kernel.exe]
+42   2815 (mo_lu_factor.F90) [kernel.exe]
+43   2837 (mo_lu_factor.F90) [kernel.exe]
+44   2874 (mo_lu_factor.F90) [kernel.exe]
+45   3091 (mo_lu_factor.F90) [kernel.exe]
+46   3196 (mo_lu_factor.F90) [kernel.exe]
+47   3242 (mo_lu_factor.F90) [kernel.exe]
+48   3348 (mo_lu_factor.F90) [kernel.exe]
+49   3452 (mo_lu_factor.F90) [kernel.exe]
+50   3509 (mo_lu_factor.F90) [kernel.exe]
+51   3659 (mo_lu_factor.F90) [kernel.exe]
+52   3801 (mo_lu_factor.F90) [kernel.exe]
+53   3918 (mo_lu_factor.F90) [kernel.exe]
+54   3924 (mo_lu_factor.F90) [kernel.exe]
+55   3986 (mo_lu_factor.F90) [kernel.exe]
+56   4205 (mo_lu_factor.F90) [kernel.exe]
+57   4383 (mo_lu_factor.F90) [kernel.exe]
+58   4450 (mo_lu_factor.F90) [kernel.exe]
+59   4478 (mo_lu_factor.F90) [kernel.exe]
+60   4482 (mo_lu_factor.F90) [kernel.exe]
+61   4736 (mo_lu_factor.F90) [kernel.exe]
+62   4771 (mo_lu_factor.F90) [kernel.exe]
+63   4812 (mo_lu_factor.F90) [kernel.exe]
+64   4843 (mo_lu_factor.F90) [kernel.exe]
+65   4952 (mo_lu_factor.F90) [kernel.exe]
+66   5050 (mo_lu_factor.F90) [kernel.exe]
+67   5060 (mo_lu_factor.F90) [kernel.exe]
+68   5156 (mo_lu_factor.F90) [kernel.exe]
+69   5201 (mo_lu_factor.F90) [kernel.exe]
+70   5216 (mo_lu_factor.F90) [kernel.exe]
+71   5238 (mo_lu_factor.F90) [kernel.exe]
+72   5301 (mo_lu_factor.F90) [kernel.exe]
+73   5310 (mo_lu_factor.F90) [kernel.exe]
+74   5643 (mo_lu_factor.F90) [kernel.exe]
+75   218 (mo_lu_solve.F90) [kernel.exe]
+76   439 (mo_lu_solve.F90) [kernel.exe]
+77   606 (mo_lu_solve.F90) [kernel.exe]
+78   827 (mo_lu_solve.F90) [kernel.exe]
+79   1201 (mo_lu_solve.F90) [kernel.exe]
+80   1387 (mo_lu_solve.F90) [kernel.exe]
+81   1489 (mo_lu_solve.F90) [kernel.exe]
+82   1507 (mo_lu_solve.F90) [kernel.exe]
+83   1510 (mo_lu_solve.F90) [kernel.exe]
+84   1632 (mo_lu_solve.F90) [kernel.exe]
+85   1633 (mo_lu_solve.F90) [kernel.exe]
+86   1641 (mo_lu_solve.F90) [kernel.exe]
+87   55 (mo_nln_matrix.F90) [kernel.exe]
+88   58 (mo_nln_matrix.F90) [kernel.exe]
+89   63 (mo_nln_matrix.F90) [kernel.exe]
+90   112 (mo_nln_matrix.F90) [kernel.exe]
+91   152 (mo_nln_matrix.F90) [kernel.exe]
+92   500 (mo_nln_matrix.F90) [kernel.exe]
+93   610 (mo_nln_matrix.F90) [kernel.exe]
+94   645 (mo_nln_matrix.F90) [kernel.exe]
+95   654 (mo_nln_matrix.F90) [kernel.exe]
+96   682 (mo_nln_matrix.F90) [kernel.exe]
+97   709 (mo_nln_matrix.F90) [kernel.exe]
+98   890 (mo_nln_matrix.F90) [kernel.exe]
+99   955 (mo_nln_matrix.F90) [kernel.exe]
+100   992 (mo_nln_matrix.F90) [kernel.exe]
+101   993 (mo_nln_matrix.F90) [kernel.exe]
+102   1102 (mo_nln_matrix.F90) [kernel.exe]
+103   1237 (mo_nln_matrix.F90) [kernel.exe]
+104   1243 (mo_nln_matrix.F90) [kernel.exe]
+105   1388 (mo_nln_matrix.F90) [kernel.exe]
+106   1542 (mo_nln_matrix.F90) [kernel.exe]
+107   1631 (mo_nln_matrix.F90) [kernel.exe]
+108   1651 (mo_nln_matrix.F90) [kernel.exe]
+109   1717 (mo_nln_matrix.F90) [kernel.exe]
+110   1756 (mo_nln_matrix.F90) [kernel.exe]
+111   1817 (mo_nln_matrix.F90) [kernel.exe]
+112   1836 (mo_nln_matrix.F90) [kernel.exe]
+113   1992 (mo_nln_matrix.F90) [kernel.exe]
+114   2014 (mo_nln_matrix.F90) [kernel.exe]
+115   2042 (mo_nln_matrix.F90) [kernel.exe]
+116   2051 (mo_nln_matrix.F90) [kernel.exe]
+117   2074 (mo_nln_matrix.F90) [kernel.exe]
+118   2145 (mo_nln_matrix.F90) [kernel.exe]
+119   2158 (mo_nln_matrix.F90) [kernel.exe]
+120   2183 (mo_nln_matrix.F90) [kernel.exe]
+121   2184 (mo_nln_matrix.F90) [kernel.exe]
+122   2205 (mo_nln_matrix.F90) [kernel.exe]
+123   2214 (mo_nln_matrix.F90) [kernel.exe]
+124   2217 (mo_nln_matrix.F90) [kernel.exe]
+125   2258 (mo_nln_matrix.F90) [kernel.exe]
+126   2261 (mo_nln_matrix.F90) [kernel.exe]
+127   2458 (mo_nln_matrix.F90) [kernel.exe]
+128   2511 (mo_nln_matrix.F90) [kernel.exe]
+129   2530 (mo_nln_matrix.F90) [kernel.exe]
+130   2695 (mo_nln_matrix.F90) [kernel.exe]
+131   2710 (mo_nln_matrix.F90) [kernel.exe]
+132   72 (mo_prod_loss.F90) [kernel.exe]
+133   78 (mo_prod_loss.F90) [kernel.exe]
+134   80 (mo_prod_loss.F90) [kernel.exe]
+135   82 (mo_prod_loss.F90) [kernel.exe]
+136   122 (mo_prod_loss.F90) [kernel.exe]
+137   167 (mo_prod_loss.F90) [kernel.exe]
+138   244 (mo_prod_loss.F90) [kernel.exe]
+139   281 (mo_prod_loss.F90) [kernel.exe]
+140   292 (mo_prod_loss.F90) [kernel.exe]
+141   320 (mo_prod_loss.F90) [kernel.exe]
+142   398 (mo_prod_loss.F90) [kernel.exe]
+143   409 (mo_prod_loss.F90) [kernel.exe]
+144   454 (mo_prod_loss.F90) [kernel.exe]
+145   582 (mo_prod_loss.F90) [kernel.exe]
+146   587 (mo_prod_loss.F90) [kernel.exe]
+147   606 (mo_prod_loss.F90) [kernel.exe]
+148   618 (mo_prod_loss.F90) [kernel.exe]
+149   637 (mo_prod_loss.F90) [kernel.exe]
+150   729 (mo_prod_loss.F90) [kernel.exe]
+151   852 (mo_prod_loss.F90) [kernel.exe]
+152   854 (mo_prod_loss.F90) [kernel.exe]
+
+
+EVENT_TYPE
+0    30000000    Sampled functions
+0    30000001    Sampled functions (depth 1)
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   kernel_driver
+4   _init
+5   gas_phase_chemdr
+6   imp_sol
+7   linmat01
+8   nlnmat01
+9   imp_prod_loss
+10   lu_fac06
+11   nlnmat03
+12   lu_fac17
+13   nlnmat06
+14   lu_slv08
+15   nlnmat02
+16   nlnmat_finit
+17   lu_fac19
+18   nlnmat05
+19   lu_fac15
+20   lu_fac16
+21   lu_slv01
+22   lu_slv07
+23   lu_fac13
+24   lu_fac07
+25   lu_fac14
+26   lu_fac18
+27   lu_slv06
+28   lu_fac04
+29   lu_fac11
+30   nlnmat07
+31   lu_fac10
+32   nlnmat04
+33   lu_fac12
+34   lu_slv02
+35   lu_fac01
+36   lu_fac20
+37   lu_fac09
+38   lu_slv04
+39   lu_fac05
+40   lu_slv03
+
+
+EVENT_TYPE
+0    30000100    Sampled line functions (depth 0)
+0    30000101    Sampled lines functions (depth 1)
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   0 (.) [libpthread-2.17.so]
+4   75 (kernel_driver.f90) [kernel.exe]
+5   360 (mo_gas_phase_chemdr.F90) [kernel.exe]
+6   367 (mo_gas_phase_chemdr.F90) [kernel.exe]
+7   378 (mo_gas_phase_chemdr.F90) [kernel.exe]
+8   163 (mo_imp_sol.F90) [kernel.exe]
+9   197 (mo_imp_sol.F90) [kernel.exe]
+10   198 (mo_imp_sol.F90) [kernel.exe]
+11   206 (mo_imp_sol.F90) [kernel.exe]
+12   208 (mo_imp_sol.F90) [kernel.exe]
+13   223 (mo_imp_sol.F90) [kernel.exe]
+14   231 (mo_imp_sol.F90) [kernel.exe]
+15   235 (mo_imp_sol.F90) [kernel.exe]
+16   47 (mo_lin_matrix.F90) [kernel.exe]
+17   51 (mo_lin_matrix.F90) [kernel.exe]
+18   57 (mo_lin_matrix.F90) [kernel.exe]
+19   60 (mo_lin_matrix.F90) [kernel.exe]
+20   67 (mo_lin_matrix.F90) [kernel.exe]
+21   88 (mo_lin_matrix.F90) [kernel.exe]
+22   105 (mo_lin_matrix.F90) [kernel.exe]
+23   108 (mo_lin_matrix.F90) [kernel.exe]
+24   141 (mo_lin_matrix.F90) [kernel.exe]
+25   50 (mo_lu_factor.F90) [kernel.exe]
+26   52 (mo_lu_factor.F90) [kernel.exe]
+27   70 (mo_lu_factor.F90) [kernel.exe]
+28   479 (mo_lu_factor.F90) [kernel.exe]
+29   533 (mo_lu_factor.F90) [kernel.exe]
+30   666 (mo_lu_factor.F90) [kernel.exe]
+31   862 (mo_lu_factor.F90) [kernel.exe]
+32   877 (mo_lu_factor.F90) [kernel.exe]
+33   884 (mo_lu_factor.F90) [kernel.exe]
+34   1046 (mo_lu_factor.F90) [kernel.exe]
+35   1459 (mo_lu_factor.F90) [kernel.exe]
+36   1686 (mo_lu_factor.F90) [kernel.exe]
+37   1897 (mo_lu_factor.F90) [kernel.exe]
+38   1960 (mo_lu_factor.F90) [kernel.exe]
+39   2339 (mo_lu_factor.F90) [kernel.exe]
+40   2432 (mo_lu_factor.F90) [kernel.exe]
+41   2530 (mo_lu_factor.F90) [kernel.exe]
+42   2815 (mo_lu_factor.F90) [kernel.exe]
+43   2837 (mo_lu_factor.F90) [kernel.exe]
+44   2874 (mo_lu_factor.F90) [kernel.exe]
+45   3091 (mo_lu_factor.F90) [kernel.exe]
+46   3196 (mo_lu_factor.F90) [kernel.exe]
+47   3242 (mo_lu_factor.F90) [kernel.exe]
+48   3348 (mo_lu_factor.F90) [kernel.exe]
+49   3452 (mo_lu_factor.F90) [kernel.exe]
+50   3509 (mo_lu_factor.F90) [kernel.exe]
+51   3659 (mo_lu_factor.F90) [kernel.exe]
+52   3801 (mo_lu_factor.F90) [kernel.exe]
+53   3918 (mo_lu_factor.F90) [kernel.exe]
+54   3924 (mo_lu_factor.F90) [kernel.exe]
+55   3986 (mo_lu_factor.F90) [kernel.exe]
+56   4205 (mo_lu_factor.F90) [kernel.exe]
+57   4383 (mo_lu_factor.F90) [kernel.exe]
+58   4450 (mo_lu_factor.F90) [kernel.exe]
+59   4478 (mo_lu_factor.F90) [kernel.exe]
+60   4482 (mo_lu_factor.F90) [kernel.exe]
+61   4736 (mo_lu_factor.F90) [kernel.exe]
+62   4771 (mo_lu_factor.F90) [kernel.exe]
+63   4812 (mo_lu_factor.F90) [kernel.exe]
+64   4843 (mo_lu_factor.F90) [kernel.exe]
+65   4952 (mo_lu_factor.F90) [kernel.exe]
+66   5050 (mo_lu_factor.F90) [kernel.exe]
+67   5060 (mo_lu_factor.F90) [kernel.exe]
+68   5156 (mo_lu_factor.F90) [kernel.exe]
+69   5201 (mo_lu_factor.F90) [kernel.exe]
+70   5216 (mo_lu_factor.F90) [kernel.exe]
+71   5238 (mo_lu_factor.F90) [kernel.exe]
+72   5301 (mo_lu_factor.F90) [kernel.exe]
+73   5310 (mo_lu_factor.F90) [kernel.exe]
+74   5643 (mo_lu_factor.F90) [kernel.exe]
+75   218 (mo_lu_solve.F90) [kernel.exe]
+76   439 (mo_lu_solve.F90) [kernel.exe]
+77   606 (mo_lu_solve.F90) [kernel.exe]
+78   827 (mo_lu_solve.F90) [kernel.exe]
+79   1201 (mo_lu_solve.F90) [kernel.exe]
+80   1387 (mo_lu_solve.F90) [kernel.exe]
+81   1489 (mo_lu_solve.F90) [kernel.exe]
+82   1507 (mo_lu_solve.F90) [kernel.exe]
+83   1510 (mo_lu_solve.F90) [kernel.exe]
+84   1632 (mo_lu_solve.F90) [kernel.exe]
+85   1633 (mo_lu_solve.F90) [kernel.exe]
+86   1641 (mo_lu_solve.F90) [kernel.exe]
+87   55 (mo_nln_matrix.F90) [kernel.exe]
+88   58 (mo_nln_matrix.F90) [kernel.exe]
+89   63 (mo_nln_matrix.F90) [kernel.exe]
+90   112 (mo_nln_matrix.F90) [kernel.exe]
+91   152 (mo_nln_matrix.F90) [kernel.exe]
+92   500 (mo_nln_matrix.F90) [kernel.exe]
+93   610 (mo_nln_matrix.F90) [kernel.exe]
+94   645 (mo_nln_matrix.F90) [kernel.exe]
+95   654 (mo_nln_matrix.F90) [kernel.exe]
+96   682 (mo_nln_matrix.F90) [kernel.exe]
+97   709 (mo_nln_matrix.F90) [kernel.exe]
+98   890 (mo_nln_matrix.F90) [kernel.exe]
+99   955 (mo_nln_matrix.F90) [kernel.exe]
+100   992 (mo_nln_matrix.F90) [kernel.exe]
+101   993 (mo_nln_matrix.F90) [kernel.exe]
+102   1102 (mo_nln_matrix.F90) [kernel.exe]
+103   1237 (mo_nln_matrix.F90) [kernel.exe]
+104   1243 (mo_nln_matrix.F90) [kernel.exe]
+105   1388 (mo_nln_matrix.F90) [kernel.exe]
+106   1542 (mo_nln_matrix.F90) [kernel.exe]
+107   1631 (mo_nln_matrix.F90) [kernel.exe]
+108   1651 (mo_nln_matrix.F90) [kernel.exe]
+109   1717 (mo_nln_matrix.F90) [kernel.exe]
+110   1756 (mo_nln_matrix.F90) [kernel.exe]
+111   1817 (mo_nln_matrix.F90) [kernel.exe]
+112   1836 (mo_nln_matrix.F90) [kernel.exe]
+113   1992 (mo_nln_matrix.F90) [kernel.exe]
+114   2014 (mo_nln_matrix.F90) [kernel.exe]
+115   2042 (mo_nln_matrix.F90) [kernel.exe]
+116   2051 (mo_nln_matrix.F90) [kernel.exe]
+117   2074 (mo_nln_matrix.F90) [kernel.exe]
+118   2145 (mo_nln_matrix.F90) [kernel.exe]
+119   2158 (mo_nln_matrix.F90) [kernel.exe]
+120   2183 (mo_nln_matrix.F90) [kernel.exe]
+121   2184 (mo_nln_matrix.F90) [kernel.exe]
+122   2205 (mo_nln_matrix.F90) [kernel.exe]
+123   2214 (mo_nln_matrix.F90) [kernel.exe]
+124   2217 (mo_nln_matrix.F90) [kernel.exe]
+125   2258 (mo_nln_matrix.F90) [kernel.exe]
+126   2261 (mo_nln_matrix.F90) [kernel.exe]
+127   2458 (mo_nln_matrix.F90) [kernel.exe]
+128   2511 (mo_nln_matrix.F90) [kernel.exe]
+129   2530 (mo_nln_matrix.F90) [kernel.exe]
+130   2695 (mo_nln_matrix.F90) [kernel.exe]
+131   2710 (mo_nln_matrix.F90) [kernel.exe]
+132   72 (mo_prod_loss.F90) [kernel.exe]
+133   78 (mo_prod_loss.F90) [kernel.exe]
+134   80 (mo_prod_loss.F90) [kernel.exe]
+135   82 (mo_prod_loss.F90) [kernel.exe]
+136   122 (mo_prod_loss.F90) [kernel.exe]
+137   167 (mo_prod_loss.F90) [kernel.exe]
+138   244 (mo_prod_loss.F90) [kernel.exe]
+139   281 (mo_prod_loss.F90) [kernel.exe]
+140   292 (mo_prod_loss.F90) [kernel.exe]
+141   320 (mo_prod_loss.F90) [kernel.exe]
+142   398 (mo_prod_loss.F90) [kernel.exe]
+143   409 (mo_prod_loss.F90) [kernel.exe]
+144   454 (mo_prod_loss.F90) [kernel.exe]
+145   582 (mo_prod_loss.F90) [kernel.exe]
+146   587 (mo_prod_loss.F90) [kernel.exe]
+147   606 (mo_prod_loss.F90) [kernel.exe]
+148   618 (mo_prod_loss.F90) [kernel.exe]
+149   637 (mo_prod_loss.F90) [kernel.exe]
+150   729 (mo_prod_loss.F90) [kernel.exe]
+151   852 (mo_prod_loss.F90) [kernel.exe]
+152   854 (mo_prod_loss.F90) [kernel.exe]
+
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+
+
+EVENT_TYPE
+0 30000200 Code block for sampled line
+0 30000201 Code block for sampled line (depth 1)
+VALUES
+0 End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (.) [libpthread-2.17.so]
+4 75 (kernel_driver.f90) [kernel.exe]
+5 360 (mo_gas_phase_chemdr.F90) [kernel.exe]
+6 367 (mo_gas_phase_chemdr.F90) [kernel.exe]
+7 378 (mo_gas_phase_chemdr.F90) [kernel.exe]
+8 163 (mo_imp_sol.F90) [kernel.exe]
+9 197 (mo_imp_sol.F90) [kernel.exe]
+10 198 (mo_imp_sol.F90) [kernel.exe]
+11 206 (mo_imp_sol.F90) [kernel.exe]
+12 208 (mo_imp_sol.F90) [kernel.exe]
+13 223 (mo_imp_sol.F90) [kernel.exe]
+14 231 (mo_imp_sol.F90) [kernel.exe]
+15 235 (mo_imp_sol.F90) [kernel.exe]
+16 47 (mo_lin_matrix.F90) [kernel.exe]
+17 51 (mo_lin_matrix.F90) [kernel.exe]
+18 57 (mo_lin_matrix.F90) [kernel.exe]
+19 60 (mo_lin_matrix.F90) [kernel.exe]
+20 67 (mo_lin_matrix.F90) [kernel.exe]
+21 88 (mo_lin_matrix.F90) [kernel.exe]
+22 105 (mo_lin_matrix.F90) [kernel.exe]
+23 108 (mo_lin_matrix.F90) [kernel.exe]
+24 141 (mo_lin_matrix.F90) [kernel.exe]
+25 50 (mo_lu_factor.F90) [kernel.exe]
+26 52 (mo_lu_factor.F90) [kernel.exe]
+27 70 (mo_lu_factor.F90) [kernel.exe]
+28 479 (mo_lu_factor.F90) [kernel.exe]
+29 533 (mo_lu_factor.F90) [kernel.exe]
+30 666 (mo_lu_factor.F90) [kernel.exe]
+31 862 (mo_lu_factor.F90) [kernel.exe]
+32 877 (mo_lu_factor.F90) [kernel.exe]
+33 884 (mo_lu_factor.F90) [kernel.exe]
+34 1046 (mo_lu_factor.F90) [kernel.exe]
+35 1459 (mo_lu_factor.F90) [kernel.exe]
+36 1686 (mo_lu_factor.F90) [kernel.exe]
+37 1897 (mo_lu_factor.F90) [kernel.exe]
+38 1960 (mo_lu_factor.F90) [kernel.exe]
+39 2339 (mo_lu_factor.F90) [kernel.exe]
+40 2432 (mo_lu_factor.F90) [kernel.exe]
+41 2530 (mo_lu_factor.F90) [kernel.exe]
+42 2815 (mo_lu_factor.F90) [kernel.exe]
+43 2837 (mo_lu_factor.F90) [kernel.exe]
+44 2874 (mo_lu_factor.F90) [kernel.exe]
+45 3091 (mo_lu_factor.F90) [kernel.exe]
+46 3196 (mo_lu_factor.F90) [kernel.exe]
+47 3242 (mo_lu_factor.F90) [kernel.exe]
+48 3348 (mo_lu_factor.F90) [kernel.exe]
+49 3452 (mo_lu_factor.F90) [kernel.exe]
+50 3509 (mo_lu_factor.F90) [kernel.exe]
+51 3659 (mo_lu_factor.F90) [kernel.exe]
+52 3801 (mo_lu_factor.F90) [kernel.exe]
+53 3918 (mo_lu_factor.F90) [kernel.exe]
+54 3924 (mo_lu_factor.F90) [kernel.exe]
+55 3986 (mo_lu_factor.F90) [kernel.exe]
+56 4205 (mo_lu_factor.F90) [kernel.exe]
+57 4383 (mo_lu_factor.F90) [kernel.exe]
+58 4450 (mo_lu_factor.F90) [kernel.exe]
+59 4478 (mo_lu_factor.F90) [kernel.exe]
+60 4482 (mo_lu_factor.F90) [kernel.exe]
+61 4736 (mo_lu_factor.F90) [kernel.exe]
+62 4771 (mo_lu_factor.F90) [kernel.exe]
+63 4812 (mo_lu_factor.F90) [kernel.exe]
+64 4843 (mo_lu_factor.F90) [kernel.exe]
+65 4952 (mo_lu_factor.F90) [kernel.exe]
+66 5050 (mo_lu_factor.F90) [kernel.exe]
+67 5060 (mo_lu_factor.F90) [kernel.exe]
+68 5156 (mo_lu_factor.F90) [kernel.exe]
+69 5201 (mo_lu_factor.F90) [kernel.exe]
+70 5216 (mo_lu_factor.F90) [kernel.exe]
+71 5238 (mo_lu_factor.F90) [kernel.exe]
+72 5301 (mo_lu_factor.F90) [kernel.exe]
+73 5310 (mo_lu_factor.F90) [kernel.exe]
+74 5643 (mo_lu_factor.F90) [kernel.exe]
+75 218 (mo_lu_solve.F90) [kernel.exe]
+76 439 (mo_lu_solve.F90) [kernel.exe]
+77 606 (mo_lu_solve.F90) [kernel.exe]
+78 827 (mo_lu_solve.F90) [kernel.exe]
+79 1201 (mo_lu_solve.F90) [kernel.exe]
+80 1387 (mo_lu_solve.F90) [kernel.exe]
+81 1489 (mo_lu_solve.F90) [kernel.exe]
+82 1507 (mo_lu_solve.F90) [kernel.exe]
+83 1510 (mo_lu_solve.F90) [kernel.exe]
+84 1632 (mo_lu_solve.F90) [kernel.exe]
+85 1633 (mo_lu_solve.F90) [kernel.exe]
+86 1641 (mo_lu_solve.F90) [kernel.exe]
+87 55 (mo_nln_matrix.F90) [kernel.exe]
+88 58 (mo_nln_matrix.F90) [kernel.exe]
+89 63 (mo_nln_matrix.F90) [kernel.exe]
+90 112 (mo_nln_matrix.F90) [kernel.exe]
+91 152 (mo_nln_matrix.F90) [kernel.exe]
+92 500 (mo_nln_matrix.F90) [kernel.exe]
+93 610 (mo_nln_matrix.F90) [kernel.exe]
+94 645 (mo_nln_matrix.F90) [kernel.exe]
+95 654 (mo_nln_matrix.F90) [kernel.exe]
+96 682 (mo_nln_matrix.F90) [kernel.exe]
+97 709 (mo_nln_matrix.F90) [kernel.exe]
+98 890 (mo_nln_matrix.F90) [kernel.exe]
+99 955 (mo_nln_matrix.F90) [kernel.exe]
+100 992 (mo_nln_matrix.F90) [kernel.exe]
+101 993 (mo_nln_matrix.F90) [kernel.exe]
+102 1102 (mo_nln_matrix.F90) [kernel.exe]
+103 1237 (mo_nln_matrix.F90) [kernel.exe]
+104 1243 (mo_nln_matrix.F90) [kernel.exe]
+105 1388 (mo_nln_matrix.F90) [kernel.exe]
+106 1542 (mo_nln_matrix.F90) [kernel.exe]
+107 1631 (mo_nln_matrix.F90) [kernel.exe]
+108 1651 (mo_nln_matrix.F90) [kernel.exe]
+109 1717 (mo_nln_matrix.F90) [kernel.exe]
+110 1756 (mo_nln_matrix.F90) [kernel.exe]
+111 1817 (mo_nln_matrix.F90) [kernel.exe]
+112 1836 (mo_nln_matrix.F90) [kernel.exe]
+113 1992 (mo_nln_matrix.F90) [kernel.exe]
+114 2014 (mo_nln_matrix.F90) [kernel.exe]
+115 2042 (mo_nln_matrix.F90) [kernel.exe]
+116 2051 (mo_nln_matrix.F90) [kernel.exe]
+117 2074 (mo_nln_matrix.F90) [kernel.exe]
+118 2145 (mo_nln_matrix.F90) [kernel.exe]
+119 2158 (mo_nln_matrix.F90) [kernel.exe]
+120 2183 (mo_nln_matrix.F90) [kernel.exe]
+121 2184 (mo_nln_matrix.F90) [kernel.exe]
+122 2205 (mo_nln_matrix.F90) [kernel.exe]
+123 2214 (mo_nln_matrix.F90) [kernel.exe]
+124 2217 (mo_nln_matrix.F90) [kernel.exe]
+125 2258 (mo_nln_matrix.F90) [kernel.exe]
+126 2261 (mo_nln_matrix.F90) [kernel.exe]
+127 2458 (mo_nln_matrix.F90) [kernel.exe]
+128 2511 (mo_nln_matrix.F90) [kernel.exe]
+129 2530 (mo_nln_matrix.F90) [kernel.exe]
+130 2695 (mo_nln_matrix.F90) [kernel.exe]
+131 2710 (mo_nln_matrix.F90) [kernel.exe]
+132 72 (mo_prod_loss.F90) [kernel.exe]
+133 78 (mo_prod_loss.F90) [kernel.exe]
+134 80 (mo_prod_loss.F90) [kernel.exe]
+135 82 (mo_prod_loss.F90) [kernel.exe]
+136 122 (mo_prod_loss.F90) [kernel.exe]
+137 167 (mo_prod_loss.F90) [kernel.exe]
+138 244 (mo_prod_loss.F90) [kernel.exe]
+139 281 (mo_prod_loss.F90) [kernel.exe]
+140 292 (mo_prod_loss.F90) [kernel.exe]
+141 320 (mo_prod_loss.F90) [kernel.exe]
+142 398 (mo_prod_loss.F90) [kernel.exe]
+143 409 (mo_prod_loss.F90) [kernel.exe]
+144 454 (mo_prod_loss.F90) [kernel.exe]
+145 582 (mo_prod_loss.F90) [kernel.exe]
+146 587 (mo_prod_loss.F90) [kernel.exe]
+147 606 (mo_prod_loss.F90) [kernel.exe]
+148 618 (mo_prod_loss.F90) [kernel.exe]
+149 637 (mo_prod_loss.F90) [kernel.exe]
+150 729 (mo_prod_loss.F90) [kernel.exe]
+151 852 (mo_prod_loss.F90) [kernel.exe]
+152 854 (mo_prod_loss.F90) [kernel.exe]
+

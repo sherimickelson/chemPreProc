@@ -1,0 +1,4 @@
+H -2147483598 "(PAPI_TOT_INS) Instr completed"
+H -2147483589 "(PAPI_TOT_CYC) Total cycles"
+H -2147483648 "(PAPI_L1_DCM) L1D cache misses"
+H -2147483596 "(PAPI_FP_INS) FP instructions"

@@ -140,7 +140,7 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
     REAL(KIND=r8), dimension(ncol,pver) :: kgenref_o3s_loss
     TYPE(check_t) :: check_status
     INTEGER*8 :: kgen_intvar, kgen_start_clock, kgen_stop_clock, kgen_rate_clock
-    INTEGER, PARAMETER :: kgen_maxiter = 100
+    INTEGER, PARAMETER :: kgen_maxiter = 1000
     REAL(KIND=kgen_dp) :: kgen_elapsed_time
 
     !-----------------------------------------------------------------------      
@@ -540,8 +540,12 @@ SUBROUTINE gas_phase_chemdr(kgen_unit, kgen_total_time, lchnk, ncol, delt)
     
     !kgen kernel subroutine
     SUBROUTINE kgen_kernel()
+    use extrae_module
+    call extrae_user_function(1)
     call imp_sol( vmr, reaction_rates, het_rates, extfrc, delt, &
                   invariants(1,1,indexm), ncol, lchnk, ltrop_sol(:ncol), o3s_loss=o3s_loss )
+    call extrae_user_function(0)
+    call extrae_next_hwc_set()
     END SUBROUTINE kgen_kernel
     
     !verify state subroutine for kv_gas_phase_chemdr_real__r8_dim3

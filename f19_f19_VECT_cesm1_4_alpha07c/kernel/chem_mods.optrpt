@@ -1,0 +1,131 @@
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: chem_mods._
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (chem_mods._) [1/2=50.0%] chem_mods.F90(11,14)
+
+===========================================================================
+
+Begin optimization report for: CHEM_MODS::KR_EXTERNS_IN_CHEM_MODS
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (CHEM_MODS::KR_EXTERNS_IN_CHEM_MODS) [2/2=100.0%] chem_mods.F90(61,18)
+  -> EXTERN: (66,11) for_read_seq
+  -> EXTERN: (68,15) for_read_seq
+  -> EXTERN: (69,15) for_read_seq
+  -> EXTERN: (70,20) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (72,11) for_read_seq
+  -> EXTERN: (74,15) for_read_seq
+  -> EXTERN: (75,15) for_read_seq
+  -> EXTERN: (76,20) KGEN_ARRAY_SUMCHECK
+  -> EXTERN: (78,11) for_read_seq
+  -> EXTERN: (80,15) for_read_seq
+  -> EXTERN: (81,15) for_read_seq
+  -> EXTERN: (82,20) KGEN_ARRAY_SUMCHECK
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at chem_mods.F90(70,76)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+   remark #25436: completely unrolled by 5  
+
+   LOOP BEGIN at chem_mods.F90(70,76)
+      remark #15388: vectorization support: reference cls_rxt_cnt has aligned access
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15475: --- begin vector loop cost summary ---
+      remark #15476: scalar loop cost: 3 
+      remark #15477: vector loop cost: 1.250 
+      remark #15478: estimated potential speedup: 2.400 
+      remark #15479: lightweight vector operations: 5 
+      remark #15488: --- end vector loop cost summary ---
+      remark #25436: completely unrolled by 4  
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(70,76)
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(70,76)
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(70,76)
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(70,76)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at chem_mods.F90(76,71)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at chem_mods.F90(76,71)
+      remark #15389: vectorization support: reference clsmap has unaligned access
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15399: vectorization support: unroll factor set to 2
+      remark #15300: LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 1 
+      remark #15475: --- begin vector loop cost summary ---
+      remark #15476: scalar loop cost: 3 
+      remark #15477: vector loop cost: 3.000 
+      remark #15478: estimated potential speedup: 1.900 
+      remark #15479: lightweight vector operations: 5 
+      remark #15488: --- end vector loop cost summary ---
+      remark #25015: Estimate of max trip count of loop=22
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(76,71)
+   <Remainder>
+      remark #25436: completely unrolled by 7  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at chem_mods.F90(82,72)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at chem_mods.F90(82,72)
+      remark #15389: vectorization support: reference permute has unaligned access
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15399: vectorization support: unroll factor set to 2
+      remark #15300: LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 1 
+      remark #15475: --- begin vector loop cost summary ---
+      remark #15476: scalar loop cost: 3 
+      remark #15477: vector loop cost: 3.000 
+      remark #15478: estimated potential speedup: 1.900 
+      remark #15479: lightweight vector operations: 5 
+      remark #15488: --- end vector loop cost summary ---
+      remark #25015: Estimate of max trip count of loop=22
+   LOOP END
+
+   LOOP BEGIN at chem_mods.F90(82,72)
+   <Remainder>
+      remark #25436: completely unrolled by 7  
+   LOOP END
+LOOP END
+===========================================================================

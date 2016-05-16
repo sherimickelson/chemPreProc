@@ -1,0 +1,8 @@
+LEVEL CPU SIZE 1
+1.hl02.ssg.ucar.edu
+
+LEVEL NODE SIZE 1
+hl02.ssg.ucar.edu
+
+LEVEL THREAD SIZE 1
+THREAD 1.1.1

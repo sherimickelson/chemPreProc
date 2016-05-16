@@ -115,8 +115,11 @@
       logical :: cls_conv(chnkpnts)
       logical :: converged(max(1,clscnt4))
       integer :: vec_len
-      vec_len = ncol
-      !vec_len=chnkpnts
+!      vec_len = ncol
+!      vec_len=chnkpnts
+!      vec_len = 64
+      vec_len = 8
+
 !-----------------------------------------------------------------------
 ! ... class independent forcing
 !-----------------------------------------------------------------------

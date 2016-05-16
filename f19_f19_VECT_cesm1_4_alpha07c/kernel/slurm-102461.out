@@ -1,0 +1,26 @@
+ ERROR:            0
+ 
+ ***************** Verification against 'imp_sol.1.0' *****************
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    57519.0000000000     
+ ERROR:            0
+ Total L1 Misses:               20900177
+ Total L2 Misses:                9492340
+ Total number of instructions:              194797298
+ ---------------------------
+ L1 Misses   10.72919    
+ L2 Misses   4.872932    
+ 
+ ******************************************************************************
+ imp_sol summary: Total number of verification cases: 4
+ imp_sol summary: Average call time of all calls (usec): 
+   14379.7500000000     
+ ******************************************************************************

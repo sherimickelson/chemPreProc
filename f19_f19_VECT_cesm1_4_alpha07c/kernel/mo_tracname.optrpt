@@ -1,0 +1,40 @@
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: mo_tracname._
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (mo_tracname._) [1/2=50.0%] mo_tracname.F90(7,14)
+
+===========================================================================
+
+Begin optimization report for: MO_TRACNAME::KR_EXTERNS_IN_MO_TRACNAME
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MO_TRACNAME::KR_EXTERNS_IN_MO_TRACNAME) [2/2=100.0%] mo_tracname.F90(24,18)
+  -> EXTERN: (29,11) for_read_seq
+  -> EXTERN: (31,15) for_read_seq
+
+===========================================================================

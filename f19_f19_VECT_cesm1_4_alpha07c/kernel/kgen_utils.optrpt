@@ -1,0 +1,640 @@
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: kgen_utils_mod._
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (kgen_utils_mod._) [1/18=5.6%] kgen_utils.f90(1,8)
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_ARRAY_SUMCHECK
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_ARRAY_SUMCHECK) [2/18=11.1%] kgen_utils.f90(43,12)
+  -> EXTERN: (63,17) for_write_seq_lis
+  -> EXTERN: (64,17) for_write_seq_lis
+  -> EXTERN: (64,17) for_write_seq_lis_xmit
+  -> EXTERN: (64,17) for_write_seq_lis_xmit
+  -> EXTERN: (65,17) for_write_seq_lis
+  -> EXTERN: (65,17) for_write_seq_lis_xmit
+  -> EXTERN: (66,17) for_write_seq_lis
+  -> EXTERN: (66,17) for_write_seq_lis_xmit
+  -> EXTERN: (67,17) for_write_seq_lis
+  -> EXTERN: (67,17) for_write_seq_lis_xmit
+  -> EXTERN: (68,17) for_write_seq_lis
+  -> EXTERN: (68,17) for_write_seq_lis_xmit
+  -> EXTERN: (71,21) for_stop_core
+  -> EXTERN: (75,13) for_write_seq_lis
+  -> EXTERN: (76,13) for_write_seq_lis_xmit
+  -> EXTERN: (76,13) for_write_seq_lis_xmit
+  -> EXTERN: (76,13) for_write_seq_lis
+  -> EXTERN: (77,13) for_write_seq_lis_xmit
+  -> EXTERN: (77,13) for_write_seq_lis
+  -> EXTERN: (78,13) for_write_seq_lis_xmit
+  -> EXTERN: (78,13) for_write_seq_lis
+  -> EXTERN: (79,13) for_write_seq_lis_xmit
+  -> EXTERN: (79,13) for_write_seq_lis
+  -> EXTERN: (82,17) for_stop_core
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS1
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS1) [3/18=16.7%] kgen_utils.f90(88,10)
+  -> EXTERN: (93,5) for_write_int_lis
+  -> EXTERN: (94,5) for_cpystr
+  -> EXTERN: (94,13) for_trim
+  -> EXTERN: (94,18) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS2
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS2) [4/18=22.2%] kgen_utils.f90(97,10)
+  -> EXTERN: (102,5) for_write_int_lis
+  -> EXTERN: (103,5) for_write_int_lis
+  -> EXTERN: (104,5) for_concat
+  -> EXTERN: (104,13) for_trim
+  -> EXTERN: (104,18) for_adjustl
+  -> EXTERN: (104,48) for_trim
+  -> EXTERN: (104,53) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS3
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS3) [5/18=27.8%] kgen_utils.f90(107,10)
+  -> EXTERN: (112,5) for_write_int_lis
+  -> EXTERN: (113,5) for_write_int_lis
+  -> EXTERN: (114,5) for_write_int_lis
+  -> EXTERN: (115,5) for_concat
+  -> EXTERN: (115,13) for_trim
+  -> EXTERN: (115,18) for_adjustl
+  -> EXTERN: (115,48) for_trim
+  -> EXTERN: (115,53) for_adjustl
+  -> EXTERN: (116,20) for_trim
+  -> EXTERN: (116,25) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS4
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS4) [6/18=33.3%] kgen_utils.f90(119,10)
+  -> EXTERN: (124,5) for_write_int_lis
+  -> EXTERN: (125,5) for_write_int_lis
+  -> EXTERN: (126,5) for_write_int_lis
+  -> EXTERN: (127,5) for_write_int_lis
+  -> EXTERN: (128,5) for_concat
+  -> EXTERN: (128,13) for_trim
+  -> EXTERN: (128,18) for_adjustl
+  -> EXTERN: (128,48) for_trim
+  -> EXTERN: (128,53) for_adjustl
+  -> EXTERN: (129,20) for_trim
+  -> EXTERN: (129,25) for_adjustl
+  -> EXTERN: (129,55) for_trim
+  -> EXTERN: (129,60) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS5
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS5) [7/18=38.9%] kgen_utils.f90(132,10)
+  -> EXTERN: (137,5) for_write_int_lis
+  -> EXTERN: (138,5) for_write_int_lis
+  -> EXTERN: (139,5) for_write_int_lis
+  -> EXTERN: (140,5) for_write_int_lis
+  -> EXTERN: (141,5) for_write_int_lis
+  -> EXTERN: (142,5) for_concat
+  -> EXTERN: (142,13) for_trim
+  -> EXTERN: (142,18) for_adjustl
+  -> EXTERN: (142,48) for_trim
+  -> EXTERN: (142,53) for_adjustl
+  -> EXTERN: (143,20) for_trim
+  -> EXTERN: (143,25) for_adjustl
+  -> EXTERN: (143,55) for_trim
+  -> EXTERN: (143,60) for_adjustl
+  -> EXTERN: (144,20) for_trim
+  -> EXTERN: (144,25) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_TOSTR_ARGS6
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_TOSTR_ARGS6) [8/18=44.4%] kgen_utils.f90(147,10)
+  -> EXTERN: (152,5) for_write_int_lis
+  -> EXTERN: (153,5) for_write_int_lis
+  -> EXTERN: (154,5) for_write_int_lis
+  -> EXTERN: (155,5) for_write_int_lis
+  -> EXTERN: (156,5) for_write_int_lis
+  -> EXTERN: (157,5) for_write_int_lis
+  -> EXTERN: (158,5) for_concat
+  -> EXTERN: (158,13) for_trim
+  -> EXTERN: (158,18) for_adjustl
+  -> EXTERN: (158,48) for_trim
+  -> EXTERN: (158,53) for_adjustl
+  -> EXTERN: (159,20) for_trim
+  -> EXTERN: (159,25) for_adjustl
+  -> EXTERN: (159,55) for_trim
+  -> EXTERN: (159,60) for_adjustl
+  -> EXTERN: (160,20) for_trim
+  -> EXTERN: (160,25) for_adjustl
+  -> EXTERN: (160,55) for_trim
+  -> EXTERN: (160,60) for_adjustl
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM1
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM1) [9/18=50.0%] kgen_utils.f90(163,12)
+  -> EXTERN: (171,10) for_random_seed_bit_size
+  -> EXTERN: (172,5) for_alloc_allocatable
+  -> EXTERN: (172,5) for_check_mult_overflow64
+  -> EXTERN: (174,10) for_random_seed_put
+  -> EXTERN: (176,14) for_random_number_single
+  -> EXTERN: (180,5) for_dealloc_allocatable
+  -> EXTERN: (181,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(173,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(173,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(175,5)
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15460: masked strided loads: 1 
+   remark #15462: unmasked indexed (or gather) loads: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 116 
+   remark #15477: vector loop cost: 14.870 
+   remark #15478: estimated potential speedup: 7.130 
+   remark #15479: lightweight vector operations: 16 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15482: vectorized math library calls: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(175,5)
+<Remainder>
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(166,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM2
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM2) [10/18=55.6%] kgen_utils.f90(183,12)
+  -> EXTERN: (191,10) for_random_seed_bit_size
+  -> EXTERN: (192,5) for_alloc_allocatable
+  -> EXTERN: (192,5) for_check_mult_overflow64
+  -> EXTERN: (194,10) for_random_seed_put
+  -> EXTERN: (197,18) for_random_number_single
+  -> EXTERN: (202,5) for_dealloc_allocatable
+  -> EXTERN: (203,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(193,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(193,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(195,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at kgen_utils.f90(196,9)
+      remark #15300: LOOP WAS VECTORIZED
+      remark #15460: masked strided loads: 1 
+      remark #15462: unmasked indexed (or gather) loads: 1 
+      remark #15475: --- begin vector loop cost summary ---
+      remark #15476: scalar loop cost: 116 
+      remark #15477: vector loop cost: 14.870 
+      remark #15478: estimated potential speedup: 7.130 
+      remark #15479: lightweight vector operations: 16 
+      remark #15481: heavy-overhead vector operations: 1 
+      remark #15482: vectorized math library calls: 1 
+      remark #15488: --- end vector loop cost summary ---
+   LOOP END
+
+   LOOP BEGIN at kgen_utils.f90(196,9)
+   <Remainder>
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(186,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM3
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL4_DIM3) [11/18=61.1%] kgen_utils.f90(205,12)
+  -> EXTERN: (213,10) for_random_seed_bit_size
+  -> EXTERN: (214,5) for_alloc_allocatable
+  -> EXTERN: (214,5) for_check_mult_overflow64
+  -> EXTERN: (216,10) for_random_seed_put
+  -> EXTERN: (220,22) for_random_number_single
+  -> EXTERN: (226,5) for_dealloc_allocatable
+  -> EXTERN: (227,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(215,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(215,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(217,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at kgen_utils.f90(218,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at kgen_utils.f90(219,13)
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15460: masked strided loads: 1 
+         remark #15462: unmasked indexed (or gather) loads: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 116 
+         remark #15477: vector loop cost: 14.870 
+         remark #15478: estimated potential speedup: 7.130 
+         remark #15479: lightweight vector operations: 16 
+         remark #15481: heavy-overhead vector operations: 1 
+         remark #15482: vectorized math library calls: 1 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at kgen_utils.f90(219,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(208,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM1
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM1) [12/18=66.7%] kgen_utils.f90(229,12)
+  -> EXTERN: (237,10) for_random_seed_bit_size
+  -> EXTERN: (238,5) for_alloc_allocatable
+  -> EXTERN: (238,5) for_check_mult_overflow64
+  -> EXTERN: (240,10) for_random_seed_put
+  -> EXTERN: (242,14) for_random_number
+  -> EXTERN: (246,5) for_dealloc_allocatable
+  -> EXTERN: (247,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(239,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(239,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(241,5)
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15460: masked strided loads: 1 
+   remark #15462: unmasked indexed (or gather) loads: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 119 
+   remark #15477: vector loop cost: 25.750 
+   remark #15478: estimated potential speedup: 4.610 
+   remark #15479: lightweight vector operations: 16 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15482: vectorized math library calls: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(241,5)
+<Remainder>
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(232,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM2
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM2) [13/18=72.2%] kgen_utils.f90(249,12)
+  -> EXTERN: (257,10) for_random_seed_bit_size
+  -> EXTERN: (258,5) for_alloc_allocatable
+  -> EXTERN: (258,5) for_check_mult_overflow64
+  -> EXTERN: (260,10) for_random_seed_put
+  -> EXTERN: (263,18) for_random_number
+  -> EXTERN: (268,5) for_dealloc_allocatable
+  -> EXTERN: (269,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(259,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(259,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(261,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at kgen_utils.f90(262,9)
+      remark #15300: LOOP WAS VECTORIZED
+      remark #15460: masked strided loads: 1 
+      remark #15462: unmasked indexed (or gather) loads: 1 
+      remark #15475: --- begin vector loop cost summary ---
+      remark #15476: scalar loop cost: 119 
+      remark #15477: vector loop cost: 25.750 
+      remark #15478: estimated potential speedup: 4.610 
+      remark #15479: lightweight vector operations: 16 
+      remark #15481: heavy-overhead vector operations: 1 
+      remark #15482: vectorized math library calls: 1 
+      remark #15488: --- end vector loop cost summary ---
+   LOOP END
+
+   LOOP BEGIN at kgen_utils.f90(262,9)
+   <Remainder>
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(252,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM3
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PERTURB_REAL8_DIM3) [14/18=77.8%] kgen_utils.f90(271,12)
+  -> EXTERN: (279,10) for_random_seed_bit_size
+  -> EXTERN: (280,5) for_alloc_allocatable
+  -> EXTERN: (280,5) for_check_mult_overflow64
+  -> EXTERN: (282,10) for_random_seed_put
+  -> EXTERN: (286,22) for_random_number
+  -> EXTERN: (292,5) for_dealloc_allocatable
+  -> EXTERN: (293,1) for_dealloc_allocatable
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(281,5)
+   remark #15389: vectorization support: reference RNDM_SEED has unaligned access
+   remark #15381: vectorization support: unaligned access used inside loop body
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15451: unmasked unaligned unit stride stores: 1 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 2 
+   remark #15477: vector loop cost: 1.500 
+   remark #15478: estimated potential speedup: 1.320 
+   remark #15479: lightweight vector operations: 2 
+   remark #15481: heavy-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(281,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at kgen_utils.f90(283,5)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at kgen_utils.f90(284,9)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at kgen_utils.f90(285,13)
+         remark #15300: LOOP WAS VECTORIZED
+         remark #15460: masked strided loads: 1 
+         remark #15462: unmasked indexed (or gather) loads: 1 
+         remark #15475: --- begin vector loop cost summary ---
+         remark #15476: scalar loop cost: 119 
+         remark #15477: vector loop cost: 25.750 
+         remark #15478: estimated potential speedup: 4.610 
+         remark #15479: lightweight vector operations: 16 
+         remark #15481: heavy-overhead vector operations: 1 
+         remark #15482: vectorized math library calls: 1 
+         remark #15488: --- end vector loop cost summary ---
+      LOOP END
+
+      LOOP BEGIN at kgen_utils.f90(285,13)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+kgen_utils.f90(274,29):remark #34000: call to memcpy implemented inline with loads and stores with proven source (alignment, offset): (32, 0), and destination (alignment, offset): (16, 0)
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_PRINT_CHECK
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_PRINT_CHECK) [15/18=83.3%] kgen_utils.f90(324,12)
+  -> EXTERN: (328,4) __resetsp_inlined
+  -> EXTERN: (328,4) for_write_seq_lis_xmit
+  -> EXTERN: (328,4) for_write_seq_lis_xmit
+  -> EXTERN: (328,4) for_write_seq_lis
+  -> EXTERN: (328,4) __getsp_inlined
+  -> EXTERN: (328,16) for_trim
+  -> EXTERN: (328,21) _alloca
+  -> EXTERN: (330,4) __resetsp_inlined
+  -> EXTERN: (330,4) for_write_seq_lis_xmit
+  -> EXTERN: (330,4) for_write_seq_lis_xmit
+  -> EXTERN: (330,4) for_write_seq_lis
+  -> EXTERN: (330,4) __getsp_inlined
+  -> EXTERN: (330,16) for_trim
+  -> EXTERN: (330,21) _alloca
+  -> EXTERN: (331,4) __resetsp_inlined
+  -> EXTERN: (331,4) for_write_seq_lis_xmit
+  -> EXTERN: (331,4) for_write_seq_lis_xmit
+  -> EXTERN: (331,4) for_write_seq_lis
+  -> EXTERN: (331,4) __getsp_inlined
+  -> EXTERN: (331,16) for_trim
+  -> EXTERN: (331,21) _alloca
+  -> EXTERN: (332,4) __resetsp_inlined
+  -> EXTERN: (332,4) for_write_seq_lis_xmit
+  -> EXTERN: (332,4) for_write_seq_lis_xmit
+  -> EXTERN: (332,4) for_write_seq_lis
+  -> EXTERN: (332,4) __getsp_inlined
+  -> EXTERN: (332,16) for_trim
+  -> EXTERN: (332,21) _alloca
+  -> EXTERN: (333,4) __resetsp_inlined
+  -> EXTERN: (333,4) for_write_seq_lis_xmit
+  -> EXTERN: (333,4) for_write_seq_lis_xmit
+  -> EXTERN: (333,4) for_write_seq_lis
+  -> EXTERN: (333,4) __getsp_inlined
+  -> EXTERN: (333,16) for_trim
+  -> EXTERN: (333,21) _alloca
+  -> EXTERN: (336,9) for_write_seq_lis
+  -> EXTERN: (336,9) for_write_seq_lis_xmit
+  -> EXTERN: (336,9) __resetsp_inlined
+  -> EXTERN: (336,9) __getsp_inlined
+  -> EXTERN: (336,20) for_trim
+  -> EXTERN: (336,25) _alloca
+  -> EXTERN: (338,9) __resetsp_inlined
+  -> EXTERN: (338,9) for_write_seq_lis_xmit
+  -> EXTERN: (338,9) for_write_seq_lis
+  -> EXTERN: (338,9) __getsp_inlined
+  -> EXTERN: (338,20) for_trim
+  -> EXTERN: (338,25) _alloca
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_GET_NEWUNIT
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_GET_NEWUNIT) [16/18=88.9%] kgen_utils.f90(342,10)
+  -> EXTERN: (349,16) for_inquire
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at kgen_utils.f90(348,4)
+   remark #15521: loop was not vectorized: explicitly compute the iteration count before executing the loop or try using canonical loop form
+LOOP END
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_ERROR_STOP
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_ERROR_STOP) [17/18=94.4%] kgen_utils.f90(357,12)
+  -> EXTERN: (361,5) for_write_seq_lis
+  -> EXTERN: (362,10) for_stop_core
+
+===========================================================================
+
+Begin optimization report for: KGEN_UTILS_MOD::KGEN_INIT_CHECK
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (KGEN_UTILS_MOD::KGEN_INIT_CHECK) [18/18=100.0%] kgen_utils.f90(295,12)
+
+===========================================================================
