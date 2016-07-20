@@ -1,0 +1,3286 @@
+hl02
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    45090.5976562500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    42911.4375000000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    46550.5625000000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    42749.6718750000     
+           0 /           1   44325.5673828125     
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    43554.1015625000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    44116.0781250000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    42094.3710937500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    42349.1601562500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    45738.6718750000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    45964.1093750000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    41661.6796875000     
+           0 /           2   43262.2060546875     
+ imp_sol : Time per call (usec):    41904.1289062500     
+           1 /           2   43583.3691406250     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    71248.1718750000     
+ imp_sol : Time per call (usec):    71248.3203125000     
+ 
+ 
+ imp_sol : Time per call (usec):    71743.2265625000     
+ imp_sol : Time per call (usec):    71743.2265625000     
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    68518.2734375000     
+ imp_sol : Time per call (usec):    68518.2734375000     
+ 
+ 
+ imp_sol : Time per call (usec):    68966.7187500000     
+ imp_sol : Time per call (usec):    68966.7187500000     
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    74804.9531250000     
+ imp_sol : Time per call (usec):    74805.1406250000     
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    75375.5000000000     
+ imp_sol : Time per call (usec):    75375.5156250000     
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    67698.8046875000     
+ imp_sol : Time per call (usec):    67698.8203125000     
+           0 /           4   70567.5878906250     
+           1 /           4   70567.6015625000     
+ imp_sol : Time per call (usec):    68264.4296875000     
+ imp_sol : Time per call (usec):    68264.4296875000     
+           2 /           4   71087.4687500000     
+           3 /           4   71087.4726562500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    78072.0390625000     
+ imp_sol : Time per call (usec):    78072.2578125000     
+ imp_sol : Time per call (usec):    78072.1875000000     
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    78436.9375000000     
+ imp_sol : Time per call (usec):    78436.9296875000     
+ imp_sol : Time per call (usec):    78437.1953125000     
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    74962.3593750000     
+ imp_sol : Time per call (usec):    74962.3906250000     
+ imp_sol : Time per call (usec):    74962.3671875000     
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    75289.1718750000     
+ imp_sol : Time per call (usec):    75289.1171875000     
+ imp_sol : Time per call (usec):    75289.1171875000     
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    81967.6562500000     
+ imp_sol : Time per call (usec):    81967.6718750000     
+ imp_sol : Time per call (usec):    81967.5703125000     
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    82318.8203125000     
+ imp_sol : Time per call (usec):    82318.6406250000     
+ imp_sol : Time per call (usec):    82318.6250000000     
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    74129.0000000000     
+ imp_sol : Time per call (usec):    74128.9531250000     
+           1 /           6   77282.8007812500     
+ imp_sol : Time per call (usec):    74128.9843750000     
+           2 /           6   77282.7402343750     
+           0 /           6   77282.8183593750     
+ imp_sol : Time per call (usec):    74443.1093750000     
+ imp_sol : Time per call (usec):    74443.1093750000     
+           4 /           6   77621.9511718750     
+ imp_sol : Time per call (usec):    74443.1093750000     
+           5 /           6   77621.9453125000     
+           3 /           6   77622.0742187500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    82308.8281250000     
+ imp_sol : Time per call (usec):    82308.5156250000     
+ imp_sol : Time per call (usec):    82308.8281250000     
+ imp_sol : Time per call (usec):    82308.7734375000     
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    82535.5156250000     
+ imp_sol : Time per call (usec):    82535.2421875000     
+ imp_sol : Time per call (usec):    82535.2109375000     
+ imp_sol : Time per call (usec):    82535.2343750000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    78999.0000000000     
+ imp_sol : Time per call (usec):    78997.7031250000     
+ imp_sol : Time per call (usec):    78998.8750000000     
+ imp_sol : Time per call (usec):    78999.2109375000     
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    79351.2890625000     
+ imp_sol : Time per call (usec):    79351.2812500000     
+ imp_sol : Time per call (usec):    79351.2734375000     
+ imp_sol : Time per call (usec):    79351.2734375000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    86429.8593750000     
+ imp_sol : Time per call (usec):    86429.2812500000     
+ imp_sol : Time per call (usec):    86429.8125000000     
+ imp_sol : Time per call (usec):    86429.6718750000     
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    86744.4375000000     
+ imp_sol : Time per call (usec):    86744.4062500000     
+ imp_sol : Time per call (usec):    86744.4062500000     
+ imp_sol : Time per call (usec):    86744.4062500000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    78163.3828125000     
+           0 /           8   81475.2675781250     
+ imp_sol : Time per call (usec):    78163.2109375000     
+           1 /           8   81474.6777343750     
+ imp_sol : Time per call (usec):    78163.2187500000     
+           3 /           8   81475.1347656250     
+ imp_sol : Time per call (usec):    78162.9218750000     
+           2 /           8   81475.1933593750     
+ imp_sol : Time per call (usec):    78446.0859375000     
+           4 /           8   81769.3320312500     
+ imp_sol : Time per call (usec):    78446.0781250000     
+           5 /           8   81769.2519531250     
+ imp_sol : Time per call (usec):    78446.1171875000     
+           6 /           8   81769.2519531250     
+ imp_sol : Time per call (usec):    78446.0781250000     
+           7 /           8   81769.2480468750     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    87016.2421875000     
+ imp_sol : Time per call (usec):    87016.3906250000     
+ imp_sol : Time per call (usec):    87015.9687500000     
+ imp_sol : Time per call (usec):    87016.3515625000     
+ imp_sol : Time per call (usec):    87016.4609375000     
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    87702.9453125000     
+ imp_sol : Time per call (usec):    87702.9687500000     
+ imp_sol : Time per call (usec):    87702.7500000000     
+ imp_sol : Time per call (usec):    87702.9453125000     
+ imp_sol : Time per call (usec):    87702.9140625000     
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    83546.9609375000     
+ imp_sol : Time per call (usec):    83547.1562500000     
+ imp_sol : Time per call (usec):    83546.9531250000     
+ imp_sol : Time per call (usec):    83546.9687500000     
+ imp_sol : Time per call (usec):    83547.1406250000     
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    84210.1015625000     
+ imp_sol : Time per call (usec):    84210.3750000000     
+ imp_sol : Time per call (usec):    84210.3515625000     
+ imp_sol : Time per call (usec):    84210.1015625000     
+ imp_sol : Time per call (usec):    84210.2187500000     
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    91338.5312500000     
+ imp_sol : Time per call (usec):    91338.5703125000     
+ imp_sol : Time per call (usec):    91338.3203125000     
+ imp_sol : Time per call (usec):    91338.5625000000     
+ imp_sol : Time per call (usec):    91338.6796875000     
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    92058.9453125000     
+ imp_sol : Time per call (usec):    92059.0312500000     
+ imp_sol : Time per call (usec):    92059.1953125000     
+ imp_sol : Time per call (usec):    92058.9531250000     
+ imp_sol : Time per call (usec):    92059.1328125000     
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    82637.7734375000     
+           0 /          10   86134.9042968750     
+ imp_sol : Time per call (usec):    82637.9609375000     
+           1 /          10   86134.9824218750     
+ imp_sol : Time per call (usec):    82637.9296875000     
+           3 /          10   86134.8574218750     
+ imp_sol : Time per call (usec):    82637.9375000000     
+           4 /          10   86135.0546875000     
+ imp_sol : Time per call (usec):    82638.2968750000     
+           2 /          10   86134.9902343750     
+ imp_sol : Time per call (usec):    83304.2656250000     
+           5 /          10   86819.0644531250     
+ imp_sol : Time per call (usec):    83304.2812500000     
+           8 /          10   86819.0703125000     
+ imp_sol : Time per call (usec):    83304.5078125000     
+           9 /          10   86819.1933593750     
+ imp_sol : Time per call (usec):    83304.7734375000     
+           6 /          10   86819.2871093750     
+ imp_sol : Time per call (usec):    83304.7265625000     
+           7 /          10   86819.2558593750     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    83132.2187500000     
+ imp_sol : Time per call (usec):    83132.4453125000     
+ imp_sol : Time per call (usec):    83132.2187500000     
+ imp_sol : Time per call (usec):    83132.4609375000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    106709.250000000     
+ imp_sol : Time per call (usec):    106709.289062500     
+ imp_sol : Time per call (usec):    106709.218750000     
+ imp_sol : Time per call (usec):    106709.382812500     
+ imp_sol : Time per call (usec):    106709.242187500     
+ imp_sol : Time per call (usec):    106709.078125000     
+ imp_sol : Time per call (usec):    106709.562500000     
+ imp_sol : Time per call (usec):    106709.335937500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    79835.1328125000     
+ imp_sol : Time per call (usec):    79835.1328125000     
+ imp_sol : Time per call (usec):    79835.1328125000     
+ imp_sol : Time per call (usec):    79835.1562500000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    102507.476562500     
+ imp_sol : Time per call (usec):    102507.835937500     
+ imp_sol : Time per call (usec):    102507.648437500     
+ imp_sol : Time per call (usec):    102507.468750000     
+ imp_sol : Time per call (usec):    102507.664062500     
+ imp_sol : Time per call (usec):    102507.468750000     
+ imp_sol : Time per call (usec):    102507.968750000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    102525.710937500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    87300.6718750000     
+ imp_sol : Time per call (usec):    87300.6875000000     
+ imp_sol : Time per call (usec):    87300.7656250000     
+ imp_sol : Time per call (usec):    87302.1640625000     
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    112070.226562500     
+ imp_sol : Time per call (usec):    112070.617187500     
+ imp_sol : Time per call (usec):    112070.742187500     
+ imp_sol : Time per call (usec):    112070.617187500     
+ imp_sol : Time per call (usec):    112070.671875000     
+ imp_sol : Time per call (usec):    112070.703125000     
+ imp_sol : Time per call (usec):    112070.585937500     
+ imp_sol : Time per call (usec):    112070.609375000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    78945.5390625000     
+           8 /          12   82303.7636718750     
+ imp_sol : Time per call (usec):    78945.5625000000     
+           9 /          12   82303.4531250000     
+ imp_sol : Time per call (usec):    78945.5312500000     
+          10 /          12   82303.3925781250     
+ imp_sol : Time per call (usec):    78945.6328125000     
+          11 /          12   82303.5039062500     
+ imp_sol : Time per call (usec):    101195.617187500     
+           0 /          12   105625.279296875     
+ imp_sol : Time per call (usec):    101195.562500000     
+           1 /          12   105620.726562500     
+ imp_sol : Time per call (usec):    101195.562500000     
+           2 /          12   105620.857421875     
+ imp_sol : Time per call (usec):    101195.562500000     
+           3 /          12   105620.761718750     
+ imp_sol : Time per call (usec):    101195.570312500     
+           4 /          12   105620.761718750     
+ imp_sol : Time per call (usec):    101195.656250000     
+           5 /          12   105620.851562500     
+ imp_sol : Time per call (usec):    101195.562500000     
+           6 /          12   105620.714843750     
+ imp_sol : Time per call (usec):    101195.585937500     
+           7 /          12   105620.810546875     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    93796.8125000000     
+ imp_sol : Time per call (usec):    93796.9609375000     
+ imp_sol : Time per call (usec):    93796.9453125000     
+ imp_sol : Time per call (usec):    93796.8437500000     
+ imp_sol : Time per call (usec):    93796.8828125000     
+ imp_sol : Time per call (usec):    93796.8828125000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    106425.859375000     
+ imp_sol : Time per call (usec):    106426.890625000     
+ imp_sol : Time per call (usec):    106426.273437500     
+ imp_sol : Time per call (usec):    106426.843750000     
+ imp_sol : Time per call (usec):    106427.242187500     
+ imp_sol : Time per call (usec):    106427.117187500     
+ imp_sol : Time per call (usec):    106426.953125000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    106440.281250000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    90092.3203125000     
+ imp_sol : Time per call (usec):    90092.3906250000     
+ imp_sol : Time per call (usec):    90092.3593750000     
+ imp_sol : Time per call (usec):    90092.4140625000     
+ imp_sol : Time per call (usec):    90092.3906250000     
+ imp_sol : Time per call (usec):    90092.3593750000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    101993.250000000     
+ imp_sol : Time per call (usec):    101993.414062500     
+ imp_sol : Time per call (usec):    101993.351562500     
+ imp_sol : Time per call (usec):    101993.414062500     
+ imp_sol : Time per call (usec):    101993.531250000     
+ imp_sol : Time per call (usec):    101993.421875000     
+ imp_sol : Time per call (usec):    101993.351562500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    102016.304687500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    98363.8125000000     
+ imp_sol : Time per call (usec):    98363.8437500000     
+ imp_sol : Time per call (usec):    98363.6640625000     
+ imp_sol : Time per call (usec):    98363.7578125000     
+ imp_sol : Time per call (usec):    98363.8437500000     
+ imp_sol : Time per call (usec):    98363.7656250000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    110738.945312500     
+ imp_sol : Time per call (usec):    110738.656250000     
+ imp_sol : Time per call (usec):    110738.945312500     
+ imp_sol : Time per call (usec):    110738.765625000     
+ imp_sol : Time per call (usec):    110738.656250000     
+ imp_sol : Time per call (usec):    110738.781250000     
+ imp_sol : Time per call (usec):    110738.656250000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    111327.617187500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    89053.2968750000     
+           8 /          14   92826.5605468750     
+ imp_sol : Time per call (usec):    89053.3671875000     
+           9 /          14   92826.6406250000     
+ imp_sol : Time per call (usec):    89053.2031250000     
+          10 /          14   92826.5429687500     
+ imp_sol : Time per call (usec):    89053.3750000000     
+          11 /          14   92826.5976562500     
+ imp_sol : Time per call (usec):    89053.4453125000     
+          12 /          14   92826.6406250000     
+ imp_sol : Time per call (usec):    89053.3046875000     
+          13 /          14   92826.5781250000     
+ imp_sol : Time per call (usec):    99831.2890625000     
+           1 /          14   104747.335937500     
+ imp_sol : Time per call (usec):    99830.8828125000     
+           2 /          14   104747.460937500     
+ imp_sol : Time per call (usec):    99831.2109375000     
+           3 /          14   104747.445312500     
+ imp_sol : Time per call (usec):    99830.9609375000     
+           5 /          14   104747.597656250     
+ imp_sol : Time per call (usec):    99831.0312500000     
+           6 /          14   104747.587890625     
+ imp_sol : Time per call (usec):    99830.8593750000     
+           7 /          14   104747.455078125     
+ imp_sol : Time per call (usec):    99831.5468750000     
+           4 /          14   104747.642578125     
+ imp_sol : Time per call (usec):    99883.5468750000     
+           0 /          14   104916.937500000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    105747.125000000     
+ imp_sol : Time per call (usec):    105747.289062500     
+ imp_sol : Time per call (usec):    105747.140625000     
+ imp_sol : Time per call (usec):    105747.320312500     
+ imp_sol : Time per call (usec):    105745.648437500     
+ imp_sol : Time per call (usec):    105747.546875000     
+ imp_sol : Time per call (usec):    105747.109375000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    107132.031250000     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    107505.000000000     
+ imp_sol : Time per call (usec):    107504.773437500     
+ imp_sol : Time per call (usec):    107505.031250000     
+ imp_sol : Time per call (usec):    107504.875000000     
+ imp_sol : Time per call (usec):    107504.859375000     
+ imp_sol : Time per call (usec):    107505.031250000     
+ imp_sol : Time per call (usec):    107505.023437500     
+ imp_sol : Time per call (usec):    107504.859375000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    101304.437500000     
+ imp_sol : Time per call (usec):    101305.976562500     
+ imp_sol : Time per call (usec):    101305.578125000     
+ imp_sol : Time per call (usec):    101305.195312500     
+ imp_sol : Time per call (usec):    101303.093750000     
+ imp_sol : Time per call (usec):    101305.078125000     
+ imp_sol : Time per call (usec):    101305.414062500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    102679.007812500     
+ 
+ imp_sol : Time per call (usec):    103285.382812500     
+ imp_sol : Time per call (usec):    103285.437500000     
+ imp_sol : Time per call (usec):    103285.312500000     
+ imp_sol : Time per call (usec):    103285.531250000     
+ imp_sol : Time per call (usec):    103285.460937500     
+ imp_sol : Time per call (usec):    103285.671875000     
+ imp_sol : Time per call (usec):    103285.796875000     
+ imp_sol : Time per call (usec):    103285.351562500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    110827.617187500     
+ imp_sol : Time per call (usec):    110827.625000000     
+ imp_sol : Time per call (usec):    110827.718750000     
+ imp_sol : Time per call (usec):    110827.656250000     
+ imp_sol : Time per call (usec):    110827.195312500     
+ imp_sol : Time per call (usec):    110826.695312500     
+ imp_sol : Time per call (usec):    110828.015625000     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    111552.054687500     
+ imp_sol : Time per call (usec):    111551.750000000     
+ imp_sol : Time per call (usec):    111551.843750000     
+ imp_sol : Time per call (usec):    111552.328125000     
+ imp_sol : Time per call (usec):    111551.843750000     
+ imp_sol : Time per call (usec):    111552.015625000     
+ imp_sol : Time per call (usec):    111552.351562500     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imp_sol : Time per call (usec):    111697.562500000     
+ 
+ imp_sol : Time per call (usec):    112770.398437500     
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ 
+ Number of verified variables:            1
+ Number of identical variables:            1
+ Number of non-identical variables within tolerance:            0
+ Number of non-identical variables out of tolerance:            0
+ Tolerance:   1.000000000000000E-015
+ 
+ Verification PASSED
+ 
+ imp_sol : Time per call (usec):    100304.421875000     
+           1 /          16   104545.794921875     
+ imp_sol : Time per call (usec):    100304.031250000     
+           2 /          16   104546.228515625     
+ imp_sol : Time per call (usec):    100304.031250000     
+           3 /          16   104546.093750000     
+ imp_sol : Time per call (usec):    100304.031250000     
+           4 /          16   104546.066406250     
+ imp_sol : Time per call (usec):    100304.148437500     
+           7 /          16   104546.082031250     
+ imp_sol : Time per call (usec):    100304.250000000     
+           5 /          16   104544.921875000     
+ imp_sol : Time per call (usec):    100304.507812500     
+           6 /          16   104546.287109375     
+ imp_sol : Time per call (usec):    98407.1093750000     
+           0 /          16   105247.136718750     
+ imp_sol : Time per call (usec):    100652.546875000     
+           8 /          16   105748.746093750     
+ imp_sol : Time per call (usec):    100652.242187500     
+           9 /          16   105748.550781250     
+ imp_sol : Time per call (usec):    100652.289062500     
+          10 /          16   105748.619140625     
+ imp_sol : Time per call (usec):    100652.515625000     
+          13 /          16   105748.765625000     
+ imp_sol : Time per call (usec):    100652.390625000     
+          11 /          16   105748.781250000     
+ imp_sol : Time per call (usec):    100652.507812500     
+          12 /          16   105748.794921875     
+ imp_sol : Time per call (usec):    100653.070312500     
+          14 /          16   105748.976562500     
+ imp_sol : Time per call (usec):    100616.906250000     
+          15 /          16   105776.169921875     
